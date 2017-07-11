@@ -8,6 +8,55 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../font/CenturyGothic.eot');
+  src: url('../font/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+    url('../font/CenturyGothic.woff2') format('woff2'),
+    url('../font/CenturyGothic.woff') format('woff'),
+    url('../font/CenturyGothic.ttf') format('truetype'),
+    url('../font/CenturyGothic.svg#CenturyGothic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../font/CenturyGothic-BoldItalic.eot');
+  src: url('../font/CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../font/CenturyGothic-BoldItalic.woff2') format('woff2'),
+    url('../font/CenturyGothic-BoldItalic.woff') format('woff'),
+    url('../font/CenturyGothic-BoldItalic.ttf') format('truetype'),
+    url('../font/CenturyGothic-BoldItalic.svg#CenturyGothic-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../font/CenturyGothic-Bold.eot');
+  src: url('../font/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/CenturyGothic-Bold.woff2') format('woff2'),
+    url('../font/CenturyGothic-Bold.woff') format('woff'),
+    url('../font/CenturyGothic-Bold.ttf') format('truetype'),
+    url('../font/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../font/CenturyGothic-Italic.eot');
+  src: url('../font/CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../font/CenturyGothic-Italic.woff2') format('woff2'),
+    url('../font/CenturyGothic-Italic.woff') format('woff'),
+    url('../font/CenturyGothic-Italic.ttf') format('truetype'),
+    url('../font/CenturyGothic-Italic.svg#CenturyGothic-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
