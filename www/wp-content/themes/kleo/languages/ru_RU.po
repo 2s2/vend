@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Kleo v3.0.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-10 21:11+0000\n"
-"PO-Revision-Date: 2017-07-10 21:27+0000\n"
+"PO-Revision-Date: 2017-07-10 22:21+0000\n"
 "Last-Translator: admin <vendingportal@gmail.com>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -27,69 +27,6 @@ msgstr ""
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
 msgstr ""
 
-#: 404.php:33 page-templates/404-page.php:31
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Ничего не найдено. Попробуйте поиск."
-
-#: comments.php:24
-msgid "0 Comments"
-msgstr "0 Комментариев"
-
-#: comments.php:24
-msgid "1 Comment"
-msgstr "1 Комментарий"
-
-#: comments.php:24
-msgid "% Comments"
-msgstr "% Комментария (ев)"
-
-#: comments.php:33 comments.php:43
-msgid "Previous"
-msgstr "Предыдущий"
-
-#: comments.php:34 comments.php:44
-msgid "Next"
-msgstr "Следующий"
-
-#: comments.php:49
-msgid "Comments are closed."
-msgstr "Комментарии закрыты."
-
-#: bbpress/user-details.php:65 content-aside.php:32 content-audio.php:30
-#: content-gallery.php:30 content-image.php:30 content-link.php:24
-#: content-quote.php:31 content-video.php:30 content.php:32 functions.php:702
-#: kleo-framework/lib/function-breadcrumb.php:1184
-#: kleo-framework/lib/function-breadcrumb.php:1216
-#: kleo-framework/lib/function-breadcrumb.php:1231
-#: kleo-framework/lib/function-breadcrumb.php:1258
-#: woocommerce/myaccount/my-address.php:46
-#: woocommerce/myaccount/my-address.php:48
-msgid "Edit"
-msgstr "Редактировать"
-
-#: content-aside.php:40 content-audio.php:50 content-gallery.php:59
-#: content-image.php:47 content-video.php:91 content.php:49
-msgid "Continue reading"
-msgstr "Продолжить чтение"
-
-#: content-aside.php:44 content-audio.php:54 content-gallery.php:63
-#: content-image.php:51 content-link.php:29 content-quote.php:36
-#: content-video.php:95 content.php:53
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Продолжить чтение <span class=\"meta-nav\">&rarr;</span>"
-
-#: content-aside.php:45 content-audio.php:55 content-gallery.php:64
-#: content-image.php:52 content-link.php:30 content-page.php:112
-#: content-quote.php:37 content-video.php:96 content.php:54 image.php:51
-msgid "Pages:"
-msgstr "Страницы:"
-
-#: content-none.php:14
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Готовы опубликовать пост? Вам сюда."
-
 #: content-none.php:18
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
@@ -111,20 +48,6 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:67
-msgid "Top Menu"
-msgstr "Верхнее меню"
-
-#: functions.php:68 lib/options.php:742
-msgid "Side Menu"
-msgstr "Боковое меню"
-
-#. Translators: %s is the page number.
-#: functions.php:144 kleo-framework/lib/function-breadcrumb.php:212
-#, php-format
-msgid "Page %s"
-msgstr "Страница №%"
-
 #: functions.php:458
 msgid "Main Sidebar"
 msgstr ""
@@ -137,74 +60,24 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: functions.php:568
-#, php-format
-msgid "View %s's profile"
-msgstr "Посмотреть профиль пользователя %"
-
 #: functions.php:571
 #, php-format
 msgid "View all POSTS by %s"
 msgstr ""
-
-#: functions.php:588
-msgid "View profile"
-msgstr "Посмотреть профиль"
-
-#: functions.php:598
-#, php-format
-msgid "Contact %s"
-msgstr "Связаться с %"
 
 #: functions.php:609
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
 
-#: functions.php:642
-#, php-format
-msgid "This article has one comment"
-msgid_plural "This article has %1$s comments"
-msgstr[0] "У статьи только один комментарий"
-msgstr[1] "У статьи много комментариев"
-
-#: bbpress/loop-search.php:18 bbpress/loop-search.php:40 functions.php:684
-msgid "Author"
-msgstr "Автор"
-
-#: functions.php:692
-msgid "ago"
-msgstr "назад"
-
 #: functions.php:696
 msgid ""
 "<span class='unapproved'>Your comment is awaiting moderation.</span>\n"
-msgstr ""
-
-#: buddypress/activity/comment.php:37
-#: buddypress/groups/single/forum/edit.php:10 functions.php:706
-msgid "Reply"
-msgstr "Ответить"
+msgstr "Ваш комментарий отправлен на модерацию."
 
 #: functions.php:707
 msgid "Log in to reply."
-msgstr ""
-
-#: bbpress/form-user-edit.php:14 bbpress/form-user-edit.php:19
-#: buddypress/members/single/profile/profile-wp.php:15 functions.php:756
-#: kleo-framework/options/inc/welcome/views/status_report.php:582
-msgid "Name"
-msgstr "Имя"
-
-#: bbpress/form-user-edit.php:103 bbpress/form-user-register.php:28
-#: functions.php:757 paid-memberships-pro/pages/account.php:56
-msgid "Email"
-msgstr "Почта"
-
-#: bbpress/form-user-edit.php:57
-#: buddypress/members/single/profile/profile-wp.php:33 functions.php:758
-msgid "Website"
-msgstr "Сайт"
+msgstr "Войдите, чтобы ответить."
 
 #: functions.php:770
 #, php-format
@@ -212,157 +85,37 @@ msgid ""
 "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
 "this account\">Log out?</a>"
 msgstr ""
+"Вы вошли как <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Выйти из "
+"этого аккаунта\">Выйти?</a>"
 
 #: functions.php:771
 msgid "Leave a reply"
-msgstr ""
+msgstr "Оставить отзыв"
 
 #: functions.php:772
 #, php-format
 msgid "Leave a reply to %s"
-msgstr ""
+msgstr "Оставить отзыв для %"
 
 #: functions.php:773
 msgid "Click here to cancel the reply"
-msgstr ""
-
-#: functions.php:774
-msgid "Post comment"
-msgstr "Отправить комментарий"
-
-#: functions.php:775
-msgid "Comment"
-msgstr "Комментарий"
+msgstr "Кликните здесь, чтобы отменить"
 
 #: functions.php:776
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
-
-#: functions.php:1193 functions.php:1196 lib/options.php:65 lib/options.php:69
-msgid "Theme options"
-msgstr "Настройка темы"
-
-#: functions.php:1278
-msgid "Sending info, please wait..."
-msgstr "Отправляем, пожалуйста, ожидайте ..."
-
-#: functions.php:1481
-#, php-format
-msgid ""
-"You are already logged in. Please <a href=\"#\" onclick=\"%s\">refresh</a> "
-"page"
-msgstr "Вы уже залогинены. Пожалуйста, обновите страницу"
-
-#: functions.php:1535 kleo-framework/lib/function-facebook-login.php:332
-msgid "Login successful, redirecting..."
-msgstr "Вы успешно залогинелись, перенаправляем ..."
-
-#: functions.php:1682
-msgid "Failure!"
-msgstr "Ошибка!"
-
-#: functions.php:1687
-msgid "Email successfully sent!"
-msgstr "Email успешно отправлен!"
-
-#: image.php:58
-msgid "Previous Image"
-msgstr "Предыдущая картинка"
-
-#: image.php:59
-msgid "Next Image"
-msgstr "Следующая картинка"
+"Вы должны быть <a href=\"%s\">залогинены</a> , чтобы оставить комментарий."
 
 #: single-portfolio.php:168
 #, php-format
 msgid "Back to %s"
 msgstr ""
 
-#: bbpress/content-statistics.php:22 lib/theme-functions.php:805
-msgid "Forums"
-msgstr "Форумы"
-
-#: bbpress/feedback-logged-in.php:13
-#: kleo-framework/lib/function-facebook-login.php:179
-msgid "You are already logged in."
-msgstr "Вы уже залогинены."
-
-#: bbpress/feedback-no-search.php:12
-msgid "No search results were found here!"
-msgstr "Поиск не дал результатов!"
-
-#: bbpress/feedback-no-search.php:14
-msgid "Go back"
-msgstr "Вернуться"
-
 #: bbpress/form-topic-tag.php:59 bbpress/form-topic-tag.php:73
 #: kleo-framework/lib/function-breadcrumb.php:1212
 msgid "Merge"
 msgstr ""
-
-#: bbpress/form-user-edit.php:90 bbpress/form-user-edit.php:93
-#: lib/plugin-woocommerce/config.php:1558
-#: paid-memberships-pro/pages/confirmation.php:46
-#: paid-memberships-pro/pages/confirmation.php:104
-msgid "Account"
-msgstr "Аккаунт"
-
-#: bbpress/form-user-edit.php:98 bbpress/form-user-login.php:17
-#: bbpress/form-user-register.php:23 buddypress/members/register.php:37
-#: kleo-framework/options/inc/fields/password/field_password.php:63
-#: page-parts/general-popups.php:22 paid-memberships-pro/pages/account.php:55
-#: paid-memberships-pro/pages/checkout.php:171
-msgid "Username"
-msgstr "Имя пользователя"
-
-#: bbpress/form-user-login.php:22
-#: kleo-framework/options/inc/fields/password/field_password.php:62
-#: page-parts/general-popups.php:23 paid-memberships-pro/pages/checkout.php:180
-msgid "Password"
-msgstr "Пароль"
-
-#: bbpress/form-user-lost-pass.php:18 page-parts/general-popups.php:54
-msgid "Username or Email"
-msgstr "Имя пользователя или email"
-
-#: bbpress/form-user-register.php:36 lib/menu-items.php:49
-msgid "Register"
-msgstr "Зарегистрироваться"
-
-#: buddypress/buddypress-functions.php:1858
-msgid "show less"
-msgstr "кратко"
-
-#: buddypress/buddypress-functions.php:1859
-msgid "show more"
-msgstr "полная версия"
-
-#: buddypress/forums/index.php:86 buddypress/groups/single/forum/edit.php:47
-#: buddypress/groups/single/forum.php:75 lib/item-likes.php:239
-#: lib/widgets/recent_posts.php:160
-msgid "Title:"
-msgstr "Заголовок:"
-
-#: buddypress/groups/single/admin.php:291 lib/theme-functions.php:691
-msgid "Members"
-msgstr "Участники"
-
-#: kleo-framework/kleo.php:177
-#: kleo-framework/lib/class-tgm-plugin-activation.php:305
-msgid "Install Required Plugins"
-msgstr "Установить необходимые плагины"
-
-#: kleo-framework/kleo.php:178
-#: kleo-framework/lib/class-tgm-plugin-activation.php:306
-msgid "Install Plugins"
-msgstr "Установить плагины"
-
-#: kleo-framework/kleo.php:179
-#: kleo-framework/lib/class-tgm-plugin-activation.php:307
-#, php-format
-msgid "Installing Plugin: %s"
-msgstr "Установить плагин: %"
 
 #: kleo-framework/kleo.php:180
 #: kleo-framework/lib/class-tgm-plugin-activation.php:308
@@ -536,37 +289,6 @@ msgstr[1] ""
 msgid "Browse:"
 msgstr ""
 
-#: kleo-framework/lib/function-breadcrumb.php:206
-#: lib/plugin-sensei/config.php:56 lib/theme-functions.php:364
-msgid "Home"
-msgstr "Главная"
-
-#: kleo-framework/lib/function-breadcrumb.php:207
-msgid "404 Not Found"
-msgstr "404 Не найдено"
-
-#: kleo-framework/lib/function-breadcrumb.php:208
-msgid "Archives"
-msgstr "Архивы"
-
-#. Translators: %s is the search query. The HTML entities are opening and closing curly quotes.
-#: kleo-framework/lib/function-breadcrumb.php:210
-#, php-format
-msgid "Search results for &#8220;%s&#8221;"
-msgstr "Результаты поиска для \"%\""
-
-#. Translators: Minute archive title. %s is the minute time format.
-#: kleo-framework/lib/function-breadcrumb.php:214
-#, php-format
-msgid "Minute %s"
-msgstr "Минута %"
-
-#. Translators: Weekly archive title. %s is the week date format.
-#: kleo-framework/lib/function-breadcrumb.php:216
-#, php-format
-msgid "Week %s"
-msgstr "Неделя %"
-
 #: kleo-framework/lib/function-breadcrumb.php:759
 msgctxt "minute and hour archives time format"
 msgid "g:i a"
@@ -645,41 +367,9 @@ msgstr ""
 msgid "Author Archive"
 msgstr ""
 
-#: kleo-framework/lib/function-core.php:378
-msgid "for:"
-msgstr "для"
-
-#: kleo-framework/lib/function-core.php:391
-msgid "search results for:"
-msgstr "результаты для:"
-
-#: kleo-framework/lib/function-core.php:395
-msgid "search result for:"
-msgstr "результат для:"
-
-#: kleo-framework/lib/function-core.php:402
-msgid "Search results for:"
-msgstr "Результаты для:"
-
 #: kleo-framework/lib/function-core.php:406
 msgid "To search the site please enter a valid term"
 msgstr ""
-
-#: kleo-framework/lib/function-core.php:418 lib/options.php:813
-msgid "Blog"
-msgstr "Блог"
-
-#: kleo-framework/lib/function-core.php:422
-msgid "Error 404 - Page not found"
-msgstr "Ошибка 404 - Страница не найдена"
-
-#: kleo-framework/lib/function-core.php:430
-msgid "Page"
-msgstr "Страница"
-
-#: kleo-framework/lib/function-facebook-login.php:191
-msgid "Please connect your facebook account."
-msgstr "Прожалуйста, залогиньтесь под своим Facebook-аккаунтом"
 
 #: kleo-framework/lib/function-facebook-login.php:209
 msgid "Registration is not open at this time. Please come back later."
@@ -720,10 +410,6 @@ msgstr ""
 msgid "%s became a registered member"
 msgstr ""
 
-#: kleo-framework/metaboxes/init.php:815
-msgid "Please Try Again"
-msgstr "Попробуйте ещё раз"
-
 #: kleo-framework/metaboxes/init.php:832
 msgid "Remove Embed"
 msgstr ""
@@ -733,54 +419,12 @@ msgstr ""
 msgid "No oEmbed Results Found for %s. View more info at"
 msgstr ""
 
-#: kleo-framework/options/inc/fields/border/field_border.php:125
-#: kleo-framework/options/inc/fields/spacing/field_spacing.php:191
-#: lib/portfolio.php:147
-msgid "All"
-msgstr "Всё"
-
-#: kleo-framework/options/inc/fields/slides/field_slides.php:73
-#: kleo-framework/options/inc/fields/slides/field_slides.php:174
-#: lib/post-types.php:188
-#, php-format
-msgid "New %s"
-msgstr "Новый %"
-
-#: kleo-framework/options/inc/welcome/welcome.php:517 lib/post-types.php:190
-#, php-format
-msgid "View %s"
-msgstr "Смотреть %"
-
 #: lib/item-likes.php:167
 msgid "Displays your most popular posts sorted by most liked"
 msgstr ""
 
-#: lib/item-likes.php:224
-msgid "Popular Posts"
-msgstr "Популярные посты"
-
-#: lib/item-likes.php:243
-msgid "Description:"
-msgstr "Описание:"
-
-#: lib/item-likes.php:247
-msgid "Posts:"
-msgstr "Посты:"
-
-#: lib/item-likes.php:252
-msgid "Display like counts"
-msgstr "Отобразить кол-во лайков"
-
-#: lib/menu-custom.php:155
-msgid "Choose icon"
-msgstr "Выберите иконку"
-
 #: lib/menu-custom.php:160
 msgid "Before title"
-msgstr ""
-
-#: lib/menu-custom.php:161
-msgid "After title"
 msgstr ""
 
 #: lib/menu-custom.php:162
@@ -796,27 +440,11 @@ msgstr ""
 msgid "KLEO"
 msgstr ""
 
-#: lib/menu-items.php:39
-msgid "Login"
-msgstr "Войти"
-
-#: lib/menu-items.php:44
-msgid "Logout"
-msgstr "Выйти"
-
-#: lib/menu-items.php:81
-msgid "No items available here for the moment"
-msgstr "Ничего не доступно для отображения"
-
 #: lib/menu-items.php:90
 msgid ""
 "Some links are relative to the current user, and are not visible to visitors "
 "who are not logged in."
 msgstr ""
-
-#: lib/menu-items.php:102
-msgid "Add to Menu"
-msgstr "Добавить в меню"
 
 #: lib/metaboxes.php:371
 msgid "Clients - link"
@@ -832,10 +460,6 @@ msgid ""
 "<p>Theme customisations are done here. Make sure to <a target=\"_blank\" "
 "href=\"%s\">Import Demo Content</a> first</p>"
 msgstr ""
-
-#: lib/options.php:288
-msgid "General settings"
-msgstr "Общие настройки"
 
 #: lib/options.php:290
 msgid ""
@@ -853,18 +477,6 @@ msgstr ""
 #: lib/options.php:304
 msgid "Message to show in maintenance mode"
 msgstr ""
-
-#: lib/options.php:315
-msgid "Logo"
-msgstr "Лого"
-
-#: lib/options.php:316
-msgid "Upload your own logo."
-msgstr "Загрузите своё лого."
-
-#: lib/options.php:324
-msgid "Logo Retina"
-msgstr "Лого для Retina"
 
 #: lib/options.php:325
 msgid ""
@@ -965,10 +577,6 @@ msgstr ""
 
 #: lib/options.php:432
 msgid "Site Width"
-msgstr ""
-
-#: lib/options.php:444
-msgid "- Background"
 msgstr ""
 
 #: lib/options.php:445
@@ -1235,10 +843,6 @@ msgstr ""
 msgid "Before Menu text"
 msgstr ""
 
-#: lib/options.php:802
-msgid "After Menu text"
-msgstr ""
-
 #: lib/options.php:815
 msgid "<p class=\"description\">Settings related to blog</p>"
 msgstr ""
@@ -1411,10 +1015,6 @@ msgstr ""
 #: lib/options.php:1008
 msgid "Display related posts in custom post type single entry"
 msgstr ""
-
-#: lib/options.php:1017
-msgid "Pages"
-msgstr "Страницы"
 
 #: lib/options.php:1018
 msgid "<p class=\"description\">Settings related to Pages</p>"
@@ -2198,19 +1798,9 @@ msgctxt "post type singular name"
 msgid "%s"
 msgstr ""
 
-#: lib/post-types.php:186
-#, php-format
-msgid "Add New %s"
-msgstr ""
-
 #: lib/post-types.php:187
 #, php-format
 msgid "Edit %s"
-msgstr ""
-
-#: lib/post-types.php:189
-#, php-format
-msgid "All %s"
 msgstr ""
 
 #: lib/post-types.php:191
@@ -2321,10 +1911,6 @@ msgstr ""
 msgid "Email: "
 msgstr ""
 
-#: lib/theme-functions.php:1096
-msgid "Message: "
-msgstr "Сообщение:"
-
 #: lib/theme-functions.php:1104
 msgid "Thank you. Your message has been sent."
 msgstr ""
@@ -2383,23 +1969,8 @@ msgstr ""
 msgid "Import successful. Have fun!"
 msgstr ""
 
-#: lib/plugin-buddypress/config.php:19 lib/plugin-woocommerce/config.php:1612
-#: paid-memberships-pro/pages/account.php:50
-msgid "My Account"
-msgstr "Мой аккаунт"
-
-#: lib/plugin-buddypress/menu-notifications.php:7
-msgid "Live Notifications"
-msgstr ""
-
 #: lib/plugin-buddypress/menu-notifications.php:57
 msgid "View Notifications"
-msgstr ""
-
-#: lib/plugin-buddypress/menu-notifications.php:116
-#: lib/plugin-buddypress/menu-notifications.php:149
-#: lib/plugin-buddypress/menu-notifications.php:188
-msgid "No new notifications"
 msgstr ""
 
 #: lib/plugin-buddypress/menu-notifications.php:125
@@ -2432,10 +2003,6 @@ msgstr ""
 
 #: lib/plugin-pmpro/config.php:30
 msgid "Group page restriction"
-msgstr ""
-
-#: lib/plugin-pmpro/config.php:31
-msgid "Access to groups"
 msgstr ""
 
 #: lib/plugin-pmpro/config.php:35
@@ -2488,7 +2055,7 @@ msgstr ""
 
 #: lib/plugin-woocommerce/config.php:292
 msgid "Shop"
-msgstr ""
+msgstr "Магазин"
 
 #: lib/plugin-woocommerce/config.php:513
 msgid "SAVE NOW"
@@ -2504,7 +2071,7 @@ msgstr ""
 
 #: lib/plugin-woocommerce/config.php:707 lib/plugin-woocommerce/config.php:712
 msgid "Quick View"
-msgstr ""
+msgstr "Быстрый просмотр"
 
 #: lib/plugin-woocommerce/config.php:815
 msgid "<span id=\"older-nav\">Go back</span>"
@@ -2528,15 +2095,15 @@ msgstr ""
 
 #: lib/plugin-woocommerce/config.php:1002
 msgid "% items"
-msgstr ""
+msgstr "% шт"
 
 #: lib/plugin-woocommerce/config.php:1004
 msgid "0 items"
-msgstr ""
+msgstr "пусто"
 
 #: lib/plugin-woocommerce/config.php:1006
 msgid "1 item"
-msgstr ""
+msgstr "1 шт"
 
 #: lib/plugin-woocommerce/config.php:1085
 msgid "Shopping Cart"
@@ -2549,14 +2116,6 @@ msgstr ""
 #: lib/plugin-woocommerce/config.php:1089
 msgid "Order Complete"
 msgstr ""
-
-#: lib/plugin-woocommerce/config.php:1454
-msgid "My Orders"
-msgstr "Мои заказы"
-
-#: lib/plugin-woocommerce/config.php:1465
-msgid "My Downloads"
-msgstr "Мои загрузки"
 
 #: lib/plugin-woocommerce/config.php:1601
 #: lib/plugin-woocommerce/config.php:1611
@@ -2589,10 +2148,6 @@ msgstr ""
 
 #: lib/widgets/recent_posts.php:193
 msgid "Show from category: "
-msgstr ""
-
-#: lib/widgets/recent_posts.php:194
-msgid "All categories"
 msgstr ""
 
 #: lib/widgets/recent_posts.php:197
@@ -2634,7 +2189,7 @@ msgstr ""
 #: page-parts/post-content-masonry.php:197
 #: page-parts/post-content-small.php:198
 msgid "Read more"
-msgstr ""
+msgstr "Далее"
 
 #: page-parts/posts-related.php:14
 msgid "Related Articles"
@@ -2646,7 +2201,7 @@ msgstr ""
 
 #: page-parts/posts-social-share.php:52
 msgid "Share this"
-msgstr ""
+msgstr "Поделиться"
 
 #: paid-memberships-pro/pages/levels.php:108
 #, php-format
@@ -2708,3 +2263,452 @@ msgctxt ""
 "payments."
 msgid "%s per %s for %d more %s."
 msgstr ""
+
+#: lib/menu-custom.php:161
+msgid "After title"
+msgstr "После заголовка"
+
+#: lib/options.php:802
+msgid "After Menu text"
+msgstr "Текст после меню"
+
+#: lib/post-types.php:186
+#, php-format
+msgid "Add New %s"
+msgstr "Добавить новый %"
+
+#: lib/post-types.php:189
+#, php-format
+msgid "All %s"
+msgstr "Все %"
+
+#: lib/plugin-buddypress/menu-notifications.php:7
+msgid "Live Notifications"
+msgstr "Уведомления"
+
+#: lib/plugin-buddypress/menu-notifications.php:116
+#: lib/plugin-buddypress/menu-notifications.php:149
+#: lib/plugin-buddypress/menu-notifications.php:188
+msgid "No new notifications"
+msgstr "Нет новых уведомлений"
+
+#: lib/plugin-pmpro/config.php:31
+msgid "Access to groups"
+msgstr "Доступ к группам"
+
+#: lib/widgets/recent_posts.php:194
+msgid "All categories"
+msgstr "Все категории"
+
+#: 404.php:33 page-templates/404-page.php:31
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Ничего не найдено. Попробуйте поиск."
+
+#: comments.php:24
+msgid "0 Comments"
+msgstr "0 Комментариев"
+
+#: comments.php:24
+msgid "1 Comment"
+msgstr "1 Комментарий"
+
+#: comments.php:24
+msgid "% Comments"
+msgstr "% Комментария (ев)"
+
+#: comments.php:33 comments.php:43
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: comments.php:34 comments.php:44
+msgid "Next"
+msgstr "Следующий"
+
+#: comments.php:49
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#: bbpress/user-details.php:65 content-aside.php:32 content-audio.php:30
+#: content-gallery.php:30 content-image.php:30 content-link.php:24
+#: content-quote.php:31 content-video.php:30 content.php:32 functions.php:702
+#: kleo-framework/lib/function-breadcrumb.php:1184
+#: kleo-framework/lib/function-breadcrumb.php:1216
+#: kleo-framework/lib/function-breadcrumb.php:1231
+#: kleo-framework/lib/function-breadcrumb.php:1258
+#: woocommerce/myaccount/my-address.php:46
+#: woocommerce/myaccount/my-address.php:48
+msgid "Edit"
+msgstr "Редактировать"
+
+#: content-aside.php:40 content-audio.php:50 content-gallery.php:59
+#: content-image.php:47 content-video.php:91 content.php:49
+msgid "Continue reading"
+msgstr "Продолжить чтение"
+
+#: content-aside.php:44 content-audio.php:54 content-gallery.php:63
+#: content-image.php:51 content-link.php:29 content-quote.php:36
+#: content-video.php:95 content.php:53
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Продолжить чтение <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-aside.php:45 content-audio.php:55 content-gallery.php:64
+#: content-image.php:52 content-link.php:30 content-page.php:112
+#: content-quote.php:37 content-video.php:96 content.php:54 image.php:51
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: content-none.php:14
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Готовы опубликовать пост? Вам сюда."
+
+#: functions.php:67
+msgid "Top Menu"
+msgstr "Верхнее меню"
+
+#: functions.php:68 lib/options.php:742
+msgid "Side Menu"
+msgstr "Боковое меню"
+
+#. Translators: %s is the page number.
+#: functions.php:144 kleo-framework/lib/function-breadcrumb.php:212
+#, php-format
+msgid "Page %s"
+msgstr "Страница №%"
+
+#: functions.php:568
+#, php-format
+msgid "View %s's profile"
+msgstr "Посмотреть профиль пользователя %"
+
+#: functions.php:588
+msgid "View profile"
+msgstr "Посмотреть профиль"
+
+#: functions.php:598
+#, php-format
+msgid "Contact %s"
+msgstr "Связаться с %"
+
+#: functions.php:642
+#, php-format
+msgid "This article has one comment"
+msgid_plural "This article has %1$s comments"
+msgstr[0] "1 комментарий"
+msgstr[1] "%s комментариев(я)"
+msgstr[2] "%s комментариев(я)"
+
+#: bbpress/loop-search.php:18 bbpress/loop-search.php:40 functions.php:684
+msgid "Author"
+msgstr "Автор"
+
+#: functions.php:692
+msgid "ago"
+msgstr "назад"
+
+#: buddypress/activity/comment.php:37
+#: buddypress/groups/single/forum/edit.php:10 functions.php:706
+msgid "Reply"
+msgstr "Ответить"
+
+#: bbpress/form-user-edit.php:14 bbpress/form-user-edit.php:19
+#: buddypress/members/single/profile/profile-wp.php:15 functions.php:756
+#: kleo-framework/options/inc/welcome/views/status_report.php:582
+msgid "Name"
+msgstr "Имя"
+
+#: bbpress/form-user-edit.php:103 bbpress/form-user-register.php:28
+#: functions.php:757 paid-memberships-pro/pages/account.php:56
+msgid "Email"
+msgstr "Почта"
+
+#: bbpress/form-user-edit.php:57
+#: buddypress/members/single/profile/profile-wp.php:33 functions.php:758
+msgid "Website"
+msgstr "Сайт"
+
+#: functions.php:774
+msgid "Post comment"
+msgstr "Отправить комментарий"
+
+#: functions.php:775
+msgid "Comment"
+msgstr "Комментарий"
+
+#: functions.php:1193 functions.php:1196 lib/options.php:65 lib/options.php:69
+msgid "Theme options"
+msgstr "Настройка темы"
+
+#: functions.php:1278
+msgid "Sending info, please wait..."
+msgstr "Отправляем, пожалуйста, ожидайте ..."
+
+#: functions.php:1481
+#, php-format
+msgid ""
+"You are already logged in. Please <a href=\"#\" onclick=\"%s\">refresh</a> "
+"page"
+msgstr "Вы уже залогинены. Пожалуйста, обновите страницу"
+
+#: functions.php:1535 kleo-framework/lib/function-facebook-login.php:332
+msgid "Login successful, redirecting..."
+msgstr "Вы успешно залогинелись, перенаправляем ..."
+
+#: functions.php:1682
+msgid "Failure!"
+msgstr "Ошибка!"
+
+#: functions.php:1687
+msgid "Email successfully sent!"
+msgstr "Email успешно отправлен!"
+
+#: image.php:58
+msgid "Previous Image"
+msgstr "Предыдущая картинка"
+
+#: image.php:59
+msgid "Next Image"
+msgstr "Следующая картинка"
+
+#: bbpress/content-statistics.php:22 lib/theme-functions.php:805
+msgid "Forums"
+msgstr "Форумы"
+
+#: bbpress/feedback-logged-in.php:13
+#: kleo-framework/lib/function-facebook-login.php:179
+msgid "You are already logged in."
+msgstr "Вы уже залогинены."
+
+#: bbpress/feedback-no-search.php:12
+msgid "No search results were found here!"
+msgstr "Поиск не дал результатов!"
+
+#: bbpress/feedback-no-search.php:14
+msgid "Go back"
+msgstr "Вернуться"
+
+#: bbpress/form-user-edit.php:90 bbpress/form-user-edit.php:93
+#: lib/plugin-woocommerce/config.php:1558
+#: paid-memberships-pro/pages/confirmation.php:46
+#: paid-memberships-pro/pages/confirmation.php:104
+msgid "Account"
+msgstr "Аккаунт"
+
+#: bbpress/form-user-edit.php:98 bbpress/form-user-login.php:17
+#: bbpress/form-user-register.php:23 buddypress/members/register.php:37
+#: kleo-framework/options/inc/fields/password/field_password.php:63
+#: page-parts/general-popups.php:22 paid-memberships-pro/pages/account.php:55
+#: paid-memberships-pro/pages/checkout.php:171
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: bbpress/form-user-login.php:22
+#: kleo-framework/options/inc/fields/password/field_password.php:62
+#: page-parts/general-popups.php:23 paid-memberships-pro/pages/checkout.php:180
+msgid "Password"
+msgstr "Пароль"
+
+#: bbpress/form-user-lost-pass.php:18 page-parts/general-popups.php:54
+msgid "Username or Email"
+msgstr "Имя пользователя или email"
+
+#: bbpress/form-user-register.php:36 lib/menu-items.php:49
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+#: buddypress/buddypress-functions.php:1858
+msgid "show less"
+msgstr "кратко"
+
+#: buddypress/buddypress-functions.php:1859
+msgid "show more"
+msgstr "полная версия"
+
+#: buddypress/forums/index.php:86 buddypress/groups/single/forum/edit.php:47
+#: buddypress/groups/single/forum.php:75 lib/item-likes.php:239
+#: lib/widgets/recent_posts.php:160
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: buddypress/groups/single/admin.php:291 lib/theme-functions.php:691
+msgid "Members"
+msgstr "Участники"
+
+#: kleo-framework/kleo.php:177
+#: kleo-framework/lib/class-tgm-plugin-activation.php:305
+msgid "Install Required Plugins"
+msgstr "Установить необходимые плагины"
+
+#: kleo-framework/kleo.php:178
+#: kleo-framework/lib/class-tgm-plugin-activation.php:306
+msgid "Install Plugins"
+msgstr "Установить плагины"
+
+#: kleo-framework/kleo.php:179
+#: kleo-framework/lib/class-tgm-plugin-activation.php:307
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Установить плагин: %"
+
+#: kleo-framework/lib/function-breadcrumb.php:206
+#: lib/plugin-sensei/config.php:56 lib/theme-functions.php:364
+msgid "Home"
+msgstr "Главная"
+
+#: kleo-framework/lib/function-breadcrumb.php:207
+msgid "404 Not Found"
+msgstr "404 Не найдено"
+
+#: kleo-framework/lib/function-breadcrumb.php:208
+msgid "Archives"
+msgstr "Архивы"
+
+#. Translators: %s is the search query. The HTML entities are opening and closing curly quotes.
+#: kleo-framework/lib/function-breadcrumb.php:210
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Результаты поиска для \"%\""
+
+#. Translators: Minute archive title. %s is the minute time format.
+#: kleo-framework/lib/function-breadcrumb.php:214
+#, php-format
+msgid "Minute %s"
+msgstr "Минута %"
+
+#. Translators: Weekly archive title. %s is the week date format.
+#: kleo-framework/lib/function-breadcrumb.php:216
+#, php-format
+msgid "Week %s"
+msgstr "Неделя %"
+
+#: kleo-framework/lib/function-core.php:378
+msgid "for:"
+msgstr "для"
+
+#: kleo-framework/lib/function-core.php:391
+msgid "search results for:"
+msgstr "результаты для:"
+
+#: kleo-framework/lib/function-core.php:395
+msgid "search result for:"
+msgstr "результат для:"
+
+#: kleo-framework/lib/function-core.php:402
+msgid "Search results for:"
+msgstr "Результаты для:"
+
+#: kleo-framework/lib/function-core.php:418 lib/options.php:813
+msgid "Blog"
+msgstr "Блог"
+
+#: kleo-framework/lib/function-core.php:422
+msgid "Error 404 - Page not found"
+msgstr "Ошибка 404 - Страница не найдена"
+
+#: kleo-framework/lib/function-core.php:430
+msgid "Page"
+msgstr "Страница"
+
+#: kleo-framework/lib/function-facebook-login.php:191
+msgid "Please connect your facebook account."
+msgstr "Прожалуйста, залогиньтесь под своим Facebook-аккаунтом"
+
+#: kleo-framework/metaboxes/init.php:815
+msgid "Please Try Again"
+msgstr "Попробуйте ещё раз"
+
+#: kleo-framework/options/inc/fields/border/field_border.php:125
+#: kleo-framework/options/inc/fields/spacing/field_spacing.php:191
+#: lib/portfolio.php:147
+msgid "All"
+msgstr "Всё"
+
+#: kleo-framework/options/inc/fields/slides/field_slides.php:73
+#: kleo-framework/options/inc/fields/slides/field_slides.php:174
+#: lib/post-types.php:188
+#, php-format
+msgid "New %s"
+msgstr "Новый %"
+
+#: kleo-framework/options/inc/welcome/welcome.php:517 lib/post-types.php:190
+#, php-format
+msgid "View %s"
+msgstr "Смотреть %"
+
+#: lib/item-likes.php:224
+msgid "Popular Posts"
+msgstr "Популярные посты"
+
+#: lib/item-likes.php:243
+msgid "Description:"
+msgstr "Описание:"
+
+#: lib/item-likes.php:247
+msgid "Posts:"
+msgstr "Посты:"
+
+#: lib/item-likes.php:252
+msgid "Display like counts"
+msgstr "Отобразить кол-во лайков"
+
+#: lib/menu-custom.php:155
+msgid "Choose icon"
+msgstr "Выберите иконку"
+
+#: lib/menu-items.php:39
+msgid "Login"
+msgstr "Войти"
+
+#: lib/menu-items.php:44
+msgid "Logout"
+msgstr "Выйти"
+
+#: lib/menu-items.php:81
+msgid "No items available here for the moment"
+msgstr "Ничего не доступно для отображения"
+
+#: lib/menu-items.php:102
+msgid "Add to Menu"
+msgstr "Добавить в меню"
+
+#: lib/options.php:288
+msgid "General settings"
+msgstr "Общие настройки"
+
+#: lib/options.php:315
+msgid "Logo"
+msgstr "Лого"
+
+#: lib/options.php:316
+msgid "Upload your own logo."
+msgstr "Загрузите своё лого."
+
+#: lib/options.php:324
+msgid "Logo Retina"
+msgstr "Лого для Retina"
+
+#: lib/options.php:444
+msgid "- Background"
+msgstr "- Задний фон"
+
+#: lib/options.php:1017
+msgid "Pages"
+msgstr "Страницы"
+
+#: lib/theme-functions.php:1096
+msgid "Message: "
+msgstr "Сообщение:"
+
+#: lib/plugin-buddypress/config.php:19 lib/plugin-woocommerce/config.php:1612
+#: paid-memberships-pro/pages/account.php:50
+msgid "My Account"
+msgstr "Мой аккаунт"
+
+#: lib/plugin-woocommerce/config.php:1454
+msgid "My Orders"
+msgstr "Мои заказы"
+
+#: lib/plugin-woocommerce/config.php:1465
+msgid "My Downloads"
+msgstr "Мои загрузки"
