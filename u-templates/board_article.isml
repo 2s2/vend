@@ -1,0 +1,315 @@
+<html>
+<head>
+
+<title>$ENTRY_TITLE$ - $CAT_NAME$ <?if($SECTION_NAME$)?>- $SECTION_NAME$<?endif?> - $MODULE_NAME$ - $SITE_NAME$</title>
+<meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
+<link type="text/css" rel="stylesheet" href="/_st/my.css" />
+<link rel="shortcut icon" href="/ico.png" >
+
+
+</head>
+
+<body>
+	$GLOBAL_AHEADER$
+
+	<div class="main">
+		<section class="content">
+			
+			<nav class="main-menu clearfix">
+				$GLOBAL_MENU$
+			</nav>
+
+			<ul class="breadcrumbs">
+				<li><a href="$HOME_PAGE_LINK$">Главная</a> <span class="divider">&raquo;</span></li>
+				<li><a href="$MODULE_URL$">Доска объявлений</a></li>
+			</ul>
+
+			<div class="content-block">
+				<div class="col-left">
+					<div class="seller-personal-info">
+					<h5>Информация о продавце:</h5>
+					<?if($UID$=='0')?>
+					<div class="seller-name"></div>
+					<?else?>
+					<div class="wrapper">
+					<div class="seller-info">
+					<div class="seller-avatar"></div>
+					<div class="fleft">
+					<div class="seller-name"></div>
+					<div class="seller-status"></div>
+					</div>
+					</div>
+					</div>
+					<ul class="seller-list-param">
+					<li class="seller-param seller-param__display-none">
+					<div class="seller-banned-till alert-danger"></div>
+					</li>
+					<?if($GROUP_ID$!='0')?>
+					<li class="seller-param">
+					<div class="seller-send-message"><a href="/index/14-$UID$-0-1" title="Отправить личное сообщение">Отправить личное сообщение</a></div>
+					</li>
+					<?endif?>
+					<li class="seller-param"><div class="seller-login">Логин на сайте: <a href="$PROFILE_URL$">$USER$</a></div></li>
+					<li class="seller-param seller-param__border"></li>
+					<li class="seller-param seller-param__display-none">
+					<div class="hint-wrap">
+					<div class="seller-ban hint-link">
+					<a class="banPercent" onclick="new _uWnd('Bh',' ',400,250,{autosize:1,maxh:300,minh:100,closeonesc:1},{url:'/index/21-$UID$'});return false;" rel="nofollow" href="javascript://"></a>
+					</div>
+					<div class="seller-ban-info hint-block">
+					<p>Замечания получают пользователи, которые нарушают правила пользования нашим сайтов. Максимальное кол-во замечаний - 5, после этого аккаунт будет заблокирован навсегда, а все материалы пользователя удалены.</p>
+					<p>Мы не рекоммендуем доверять продавцам, у которых уровень замечаний больше 1, так как это свидетельствует о неуважении как к сайту, так и к его посетителям!</p>
+					</div>
+					</div>
+					</li>
+					<li class="seller-param">
+					<div class="hint-wrap">
+					<div class="seller-reputation hint-link">
+					<a class="repHistory" onclick="new _uWnd('Rh',' ',400,250,{autosize:1,maxh:300,minh:100,closeonesc:1},{url:'/index/9-$UID$'});return false;" rel="nofollow" href="javascript://">Репутация пользователя: <b></b></a>
+					</div>
+					<div class="seller-reputation-info hint-block">
+					<p>Репутация отражает отношение других пользователей к данному продавцу.</p>
+					<p>Вы можете повысить репутацию, если, к примеру, уже покупали у него товар и остались довольны. Или же, наоборот, понизить его рейтинг, если вы недовольны качеством товара или обслуживанием.</p>
+					</div>
+					</div>
+					</li>
+					<?if($GROUP_ID$!='0')?>
+					<li class="seller-param">
+					<a onclick="new _uWnd('Rd',' ',380,200,{autosize:1,closeonesc:1},{url:'/index/',type:'post',data:{a:'23',s:'$UID$',c:'/index/$UID$'}});return false;" rel="nofollow" href="javascript://" title="Изменить репутацию" class="reputationDo">Изменить репутацию</a>
+					</li>
+					<?endif?>
+					<li class="seller-param seller-param__border"></li>
+					<?if($GROUP_ID$='4')?>
+					<li class="seller-param"><div class="seller-registration"></div></li>
+					<li class="seller-param"><div class="seller-last-visit"></div></li>
+					<?endif?>
+					<?if($UID$>0)?><li class="seller-param"><a href="/board/0-0-$UID$-0-17">Посмотреть все объявления</a></li><?endif?>
+					</ul>
+
+					<?endif?>
+					</div>
+					<script type="text/javascript"> 
+					if ($UID$=='0') {
+					 $('.seller-name').append('Гость'); 
+					}
+					else {
+					 ProfilePage='http://www.vendors.com.ua/api/index/8-' + $UID$;
+					 BanPage='http://www.vendors.com.ua/api/index/21-' + $UID$;
+
+					 $.get(ProfilePage,function(data) {
+
+					 function convertDate(elem, data) {
+					 var date = new Date( $(elem, data).text() * 1000 );
+
+					 return date.getDate() + '.' + date.getMonth() + '.' + date.getFullYear();
+					 }
+
+					 UserStatus = $('member:contains("USER_STATUS") string', data).text();
+					 UserName = $('member:contains("USER_NAME") string', data).text();
+					 UserAvatar = $('member:contains("USER_AVATAR") string', data).text();
+					 UserReputation = $('member:contains("USER_REPUTATION") string', data).text();
+					 UserBannedTill = $('member:contains("USER_BANNEDTILL") string', data).text();
+					 UserStatus = $('member:contains("USER_STATUS") string', data).text();
+
+					 if (UserStatus=='Online') {
+					 SellerStatus = 'seller-online';
+					 } else {
+					 SellerStatus = 'seller-offline';
+					 }
+
+					 $('.seller-name').append('<a href="$PROFILE_URL$" title="Смотреть профиль">' + UserName + '</a>'); 
+					 $('.seller-status').append('<span class="' + SellerStatus + '">' + UserStatus + "</span>");
+					 $('.seller-reputation b').append(UserReputation);
+
+					 if (UserAvatar=='') {
+					 $('.seller-avatar').append('<img src="http://s20.ucoz.net/a/16/2849.jpg" title="' + UserName + '" alt="' + UserName + '" />');
+					 } else {
+					 $('.seller-avatar').append('<img src="' + UserAvatar + '" title="' + UserName + '" alt="' + UserName + '" />');
+					 }
+
+					 function convertDate(elem, data) {
+					 var date = new Date( $(elem, data).text() * 1000 );
+
+					 return date.getDate() + '.' + date.getMonth() + '.' + date.getFullYear();
+					 }
+
+					 $('.seller-registration').append('Регистрация: ' + convertDate('member:contains("USER_REGTIMESTAMP") i4', data)); 
+					 $('.seller-last-visit').append('Был на сайте: ' + convertDate('member:contains("USER_LOGTIMESTAMP") i4', data));
+
+					 if (UserBannedTill != '0') {
+					 $('.seller-banned-till').append('Заблокирован до <br />' + UserBannedTill).parents('li').removeClass('seller-param__display-none'); 
+					 }
+					 },'xml');
+
+					 $.get(BanPage,function(data) {
+					 UserBanCount = 0;
+
+					 $('member:contains("BANCHANGE_VALUE")',data).each(function() {
+					 UserBanCount++;
+					 });
+
+					 if (UserBanCount > 0 ) {
+					 $('.seller-ban a').append('Замечания: <b>' + UserBanCount + '</b>').parents('li').removeClass('seller-param__display-none');
+					 }
+					 },'xml')
+					}
+					</script>
+
+					$GLOBAL_CLEFTER$
+				</div> 
+				<div class="col-main">
+					<?if($GROUP_ID$='4')?> 
+					<div class="board-desc">
+					<div class="board-title">
+					<h2>
+					$ENTRY_TITLE$&nbsp;$MODER_PANEL$
+					</h2> 
+					</div>
+					<?if($TIMESTAMP$ < 1480550400) and ($TIMESTAMP$ != 1320530601)?>
+					<div class="alert alert-error">
+					<strong>Внимание! </strong>
+					Данное объявление устарело! Дата публикации: $ADD_DATE$
+					</div>
+					<?endif?>
+					<div class="eDetails2">
+					<div class="board-body">
+					<?if($SCREEN_URL$)?>
+					<div class="board-img board-img__full">
+					<a class="ulightbox" href="$SCREEN_URL$" title="$ENTRY_TITLE$">
+					<img src="$SCREEN_URL$" title="$ENTRY_TITLE$" alt="$ENTRY_TITLE$" />
+					</a>
+					</div>
+					<?endif?>
+					<div class="board-text">
+					<h4>Информация о товаре</h4>
+					<ul>
+					<?if($OTHER3$)?><li>Цена: <b><font color=red>$OTHER3$</font></b></li><?endif?>
+					<?if($AUTHOR_NAME$)?><li>Контактное лицо: <b>$AUTHOR_NAME$</b></li><?endif?>
+					<?if($AUTHOR_PHONE$)?><li>Телефон: <b>$AUTHOR_PHONE$</b></li><?endif?>
+					<?if($OTHER1$)?><li>Город: <b>$OTHER1$</b></li><?endif?>
+					<?if($OTHER2$)?><li>Срок эксплуатации: <b>$OTHER2$</b></li><?endif?>
+					<?if($AUTHOR_EMAIL$)?><li>E-mail: <b>$AUTHOR_EMAIL$</b></li><?endif?>
+					</ul>
+					<ul>
+					<li>Дата добавления: <b>$ADD_DATE$</b></li>
+					<li>Просмотров: <b>$READS$</b></li>
+					<li>ID объявления: <b>$ID$</b></li>
+					</ul>
+					</div>
+					</div>
+					<hr />
+					<h4>Описание:</h4>
+					$BRIEF$
+					</div>
+					</div>
+					<?else?>
+					<div class="board-desc">
+					<div class="board-title">
+					<h2>
+					$ENTRY_TITLE$&nbsp;$MODER_PANEL$
+					</h2> 
+					</div>
+					<?if($TIMESTAMP$ < 1325506193) and ($TIMESTAMP$ != 1320530601)?>
+					<div class="alert alert-error">
+					<strong>Внимание! </strong>
+					Данное объявление устарело! Дата публикации: $ADD_DATE$
+					</div>
+					<?endif?>
+					<div class="eDetails2">
+					<div class="board-body">
+					<?if($SCREEN_URL$)?>
+					<div class="board-img board-img__full">
+					<a class="ulightbox" href="$SCREEN_URL$" title="$ENTRY_TITLE$">
+					<img src="$SCREEN_URL$" title="$ENTRY_TITLE$" alt="$ENTRY_TITLE$" />
+					</a>
+					</div>
+					<?endif?>
+					<div class="board-text">
+					<h4>Информация о товаре</h4>
+					<ul>
+					<?if($OTHER3$)?><li>Цена: <b><font color=red>$OTHER3$</font></b></li><?endif?>
+					<?if($AUTHOR_NAME$)?><li>Контактное лицо: <b>$AUTHOR_NAME$</b></li><?endif?>
+					<?if($AUTHOR_PHONE$)?><li>Телефон: <b>$AUTHOR_PHONE$</b></li><?endif?>
+					<?if($OTHER1$)?><li>Город: <b>$OTHER1$</b></li><?endif?>
+					<?if($OTHER2$)?><li>Срок эксплуатации: <b>$OTHER2$</b></li><?endif?>
+					<?if($AUTHOR_EMAIL$)?><li>E-mail: <b>$AUTHOR_EMAIL$</b></li><?endif?>
+					</ul>
+					<ul>
+					<li>Дата добавления: <b>$ADD_DATE$</b></li>
+					<li>Просмотров: <b>$READS$</b></li>
+					<li>ID объявления: <b>$ID$</b></li>
+					</ul>
+					</div>
+					</div>
+					<hr />
+					<h4>Описание:</h4>
+					$BRIEF$
+					</div>
+					</div>
+					<?endif?>
+					<div class="google-adv">
+					<script type="text/javascript"><!--
+					google_ad_client = "ca-pub-0669723783840269";
+					/* Доска объявлений */
+					google_ad_slot = "2725897389";
+					google_ad_width = 728;
+					google_ad_height = 90;
+					//-->
+					</script>
+					</div>
+					<br /> 
+					<?if($GROUP_ID$='4')?> 
+					<div style="border:1px solid #999;border-radius:10px;padding:10px;margin-bottom:20px;"><a href="#">Купюрники CashCode</a> На всё гарантия, всё вычищено, отполировано, проведено полное ТО. (012) 345 67 89 mymail@mail.com</div> 
+					<div style="border:1px solid #999;border-radius:10px;padding:10px; margin-bottom:20px; "><a href="#">Продам вендинговый ксерокс</a> В хорошем состоянии в отличном месте, цена - 2000 $. (012) 345 67 89 vend@gmail.com</div> <div style="text-align:right"><a href="#">Добавить сообщение</a></div>
+					<?endif?>
+					<hr /><b>Нашли ошибку или неточность?</b><br />
+					Выделите её мышью и нажмите Ctrl + Enter.<br />
+					<p><?if($TAGS$)?><img align="absmiddle" src="/Images-new/Icos/tags.png" width="24" border="0" alt="" />$TAGS$<?endif?></p> 
+
+					<table cellpadding="0" cellspacing="0" border="0" width="740" align="center">
+					<tr>
+					<td width="340"><?$WIDGET$('45','187|0|1|1|1|ru|0|0|1|0|1|0|0|0|0|0|1|0|1|1|1|1')?></td>
+					<td width="200"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.vendors.com.ua&amp;layout=button_count&amp;show_faces=true&amp;width=150&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe></td> 
+					</tr>
+					</table> 
+
+					<?if($USER_LOGGED_IN$)?>
+					<?else?>
+					<br />
+					<div class="alert alert-danger">
+					Уважаемый посетитель, Вы находитесь в группе <b>Гости</b> и не можете оставлять комментарии. Пожалуйста, <a href="$REGISTER_LINK$">зарегистрируйтесь</a> либо <a href="$LOGIN_LINK$">войдите</a> на сайт под своим логином.
+					</div>
+					<br />
+					<?endif?>
+
+					<?if($COM_IS_ACTIVE$)?>
+					<?if($COM_CAN_READ$)?>
+					<hr />
+					<div style="font-size:20px;"><img align="absmiddle" width="32" src="/Images-new/Icos/Comments.png" border="0" alt="" />
+					<?if($COM_NUM_ENTRIES$=0)?>
+					Комментариев пока нет
+					<?else?>
+					Комментарии ($COM_NUM_ENTRIES$)
+					<?endif?>
+					</div>
+					<p>$COM_BODY$</p>
+					<p align="center">$COM_PAGE_SELECTOR$</p>
+					<?endif?>
+
+					<?if($COM_CAN_ADD$)?>
+					$COM_ADD_FORM$
+					<?endif?>
+					<?endif?> 
+				</div> 
+			</div> 
+
+		</section>
+	</div>
+	
+	$GLOBAL_BFOOTER$
+
+	$GLOBAL_SCRIPTS$
+
+</body>
+
+</html>
