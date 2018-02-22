@@ -1,154 +1,41 @@
 <html>
 <head>
 <title>$TITLE$</title>
-<?$META_DESCRIPTION$?>
-<link type="text/css" rel="stylesheet" href="/_st/my.css" />
+<meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
 <link rel="shortcut icon" href="http://vendors.com.ua/ico.png" >
+<link type="text/css" rel="StyleSheet" href="/_st/my.css" />
+
 </head>
 
-<body style="background-color:#FFFFFF; margin:0 auto; padding:0px;">
-<script type="text/javascript" src="/Orphus/orphus.js"></script>
+<body>
+	$GLOBAL_AHEADER$
 
-<div class="main">
+	<div class="main">
+		<section class="content">
+			
+			<nav class="main-menu clearfix">
+				$GLOBAL_MENU$
+			</nav>
 
-<header>
- <div class="Upper">
- <div id="UpperLeft"><a href="http://www.vendors.com.ua/">ВЕНДОРЫ</a> | <a href="http://www.vending-market.ru/" target="_blank">ВЕНДИНГ МАРКЕТ</a></div>
- <div id="UpperRight">
- <?if($USER_LOGGED_IN$)?><a href="$LOGOUT_LINK$">Выход</a> | <a href="$PERSONAL_PAGE_LINK$">Мой профиль</a> 
- <?if($UNREAD_PM$)?>(<a id="upml2" href="/index/14"><b>$UNREAD_PM$</b></a>)<?endif?>
- <?else?>
- <a href="$LOGIN_LINK$">Вход</a> | <a href="$REGISTER_LINK$">Регистрация</a><?endif?> | <a href="/search">Поиск</a>
- </div>
- </div>
- <div class="preUpperBg" align="center">
- <div class="preUpperLeft"></div>
-</header>
+			<ul class="breadcrumbs">
+				<li><a href="$HOME_PAGE_LINK$">Главная</a> <span class="divider">&raquo;</span></li>
+				<li><a href="$MODULE_URL$">Личные сообщения</a></li>
+			</ul>
 
-<section id="content">
- 
-<div width="980" align="center" id="MainBodyBorder"> 
- <ul class="HMenu">
- <li id="News"><a href="/news">Новости</a></li>
- <li id="Articles"><a href="/publ">Статьи</a></li>
- <li id="Board"><a href="/board">Доска объявлений</a></li>
- <li id="Forum"><a href="/forum">Форум</a></li>
- <li id="Catalog"><a href="/dir/4">Каталог</a></li>
- <li id="Shop"><a href="javascript://" onclick="alert('Извините, этот раздел временно недоступен');return false;">Магазин</a></span><span id="Download"><a href="/load">Скачать</a></li>
- </ul>
- <div class="YouAreHere">&nbsp; Вы здесь: <a href="http://www.vendors.com.ua/">Главная</a> &raquo; <a href="$MODULE_URL$">Личные сообщения</a></div> 
-<div class="space"></div>
+			<div class="content-block">
+				<div class="col-left">$GLOBAL_CLEFTER$</div> 
+				<div class="col-main">
+					$BODY$
+					<?if($PAGE_SELECTOR$)?><div class="catPages1" align="center">$PAGE_SELECTOR$</div><?endif?>
+				</div> 
+			</div> 
 
-<table cellpadding="0" cellspacing="0" border="0" id="MainBodyStyle">
-<tr>
- <td class="LeftColStyle" valign="top">
- 
-<div class="sidebar-block">
-<div class="sidebar-block-title">Наше меню</div> 
-<ul class="sidebar-menu">
- <li class="item-1"><a href="/publ/37">Правовая база</a></li>
- <li class="item-2"><a href="/load/2">Вендинг-договора</a></li>
- <li class="item-3"><a href="/load/1">Расчёт окупаемости</a></li>
- <li class="item-4"><a href="/load/4">Инструкции к автоматам</a></li>
- <li class="item-5"><a href="/publ/39">Выставки</a></li>
- <li class="item-6"><a href="/publ/40">Видео</a></li>
- <li class="item-7"><a href="/index/0-2">Реклама на сайте</a></li>
- <li class="item-8"><a href="/index/0-3">Обратная связь</a></li>
-</ul>
-</div>
- 
-<div class="sidebar-block">
-<div class="sidebar-block-title">Статистика</div>
- 
-<!--Rating@Mail.ru COUNTER--><script language="JavaScript" type="text/javascript"><!--
-d=document;var a='';a+=';r='+escape(d.referrer)
-js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
-a+=';j='+navigator.javaEnabled()
-js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
-s=screen;a+=';s='+s.width+'*'+s.height
-a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
-js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
-js=13//--></script><script language="JavaScript" type="text/javascript"><!--
-d.write('<a href="http://top.mail.ru/jump?from=1494827"'+
-' target="_top"><img src="http://df.cc.b6.a1.top.mail.ru/counter'+
-'?id=1494827;t=57;js='+js+a+';rand='+Math.random()+
-'" alt="Рейтинг@Mail.ru"'+' border="0" height="31" width="88"/><\/a>')
-if(11<js)d.write('<'+'!-- ')//--></script><noscript><a
-target="_top" href="http://top.mail.ru/jump?from=1494827"><img
-src="http://df.cc.b6.a1.top.mail.ru/counter?js=na;id=1494827;t=57"
-border="0" height="31" width="88"
-alt="Рейтинг@Mail.ru"/></a></noscript><script language="JavaScript" type="text/javascript"><!--
-if(11<js)d.write('--'+'>')//--></script><!--/COUNTER-->
+		</section>
+	</div>
+	
+	$GLOBAL_BFOOTER$
 
-<!--LiveInternet counter--><script type="text/javascript">document.write("<a href='http://www.liveinternet.ru/click' target=_blank><img src='http://counter.yadro.ru/hit?t22.10;r" + escape(document.referrer) + ((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + "; u" + escape(document.URL) + ";" + Math.random() + "' border=0 width=88 height=31 alt='' title='LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня'><\/a>")</script><!--/LiveInternet-->
+	$GLOBAL_SCRIPTS$
 
-<!-- MyCounter v.2.0 -->
-<script type="text/javascript"><!--
-my_id = 45566;
-my_width = 88;
-my_height = 31;
-my_alt = "MyCounter - счётчик и статистика";
-//--></script>
-<script type="text/javascript"
- src="http://scripts.mycounter.ua/counter2.0.js">
-</script><noscript>
-<a target="_blank" href="http://mycounter.ua/"><img
-src="http://get.mycounter.ua/counter.php?id=45566"
-title="MyCounter - счётчик и статистика"
-alt="MyCounter - счётчик и статистика"
-width="88" height="31" border="0" /></a></noscript>
-<!--/ MyCounter -->
-
-<a href="http://orphus.ru" id="orphus" target="_blank"><img alt="Система Orphus" src="/Orphus/orphus.gif" border="0" width="88" height="31" /></a>
-
-<!-- I.UA counter -->
-<a href="http://www.i.ua/" target="_blank" onclick="this.href='http://i.ua/r.php?39636';" title="Rated by I.UA">
-<script type="text/javascript" language="javascript"><!--
-iS='<img src="http://r.i.ua/s?u39636&p192&n'+Math.random();
-iD=document;iD.cookie="iua=1";if(iD.cookie)iS+='&c1';
-try{iHP=document.body.firstChild;
-iHP.style.behavior="url('#default#homePage')";
-iHP.addBehavior('#default#homePage');
-if (iHP.isHomePage(window.location.href))iS+='&o1';
-} catch (e) { }
-iS+='&d'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)
-+"&w"+screen.width+'&h'+screen.height
-iT=iD.referrer.slice(7);iH=window.location.href.slice(7);
-((iI=iT.indexOf('/'))!=-1)?(iT=iT.substring(0,iI)):(iI=iT.length);
-if(iT!=iH.substring(0,iI))iS+='&f'+escape(iD.referrer.slice(7))
-iS+='&r'+escape(iH);
-iD.write(iS+'" border="0" width="160" height="19" />');
---></script></a><!-- End of I.UA counter -->
-
-</div>
- 
-<div class="sidebar-block"> 
- <div class="sidebar-block-title">Важно</div> 
-<ul class="uz">
-<li>При полном или частичном использовании материалов портала активная ссылка на <a class="m" href="http://vendors.com.ua/">Вендинг-портал “Вендоры”</a> обязательна.</li>
-<li>При наполнении данного портала использовалась информация из открытых источников.</li>
-<li>Если Вы считаете, что администрация сайта или его пользователи нарушили Ваши права, пожалуйста, поставьте нас в известность через раздел <br /><a class="m" href="http://vendors.com.ua/index/0-3">Обратная связь</a>.</li>
-</ul>
-</div> 
- 
- </td> 
- <td class="MainColStyle" valign="top">$BODY$
- <?if($PAGE_SELECTOR$)?><div class="catPages1" align="center">$PAGE_SELECTOR$</div><?endif?> </td> 
-</tr></table> 
- 
-</div>
- 
- </section>
- 
-<footer>
- <div class="footer-copyright">Copyright "Вендорс Групп Украина" &copy;</div>
- <ul class="footer-links">
- <li><a href="/index/0-3">Обратная связь</a> |</li>
- <li><a href="/index/0-2">Реклама на сайте</a> |</li>
- <li><a href="/index/pravila/0-21">Правила портала</a></li>
- </ul>
-</footer>
-
-</div>
 </body>
 </html>
