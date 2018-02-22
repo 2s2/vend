@@ -2,48 +2,42 @@
 <head>
 
 <title>$SECTION_NAME$ - $MODULE_NAME$ - $SITE_NAME$</title>
-<?$META_DESCRIPTION$?> 
-<link type="text/css" rel="stylesheet" href="/_st/my.css" />
+<meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
 <link rel="shortcut icon" href="http://vendors.com.ua/ico.png" >
+<link type="text/css" rel="StyleSheet" href="/_st/my.css" />
+
 </head>
 
-<body style="background-color:#FFFFFF; margin:0 auto; padding:0px;">
-<script type="text/javascript" src="/Orphus/orphus.js"></script>
- 
-<div class="main">
-$GLOBAL_AHEADER$
-<section id="content">
- 
-<table cellpadding="0" cellspacing="0" border="0" width="980" align="center">
-<tr><td width="980" align="center" id="MainBodyBorder"> 
- <ul class="HMenu">
- <li id="News"><a href="/news">Новости</a></li>
- <li id="Articles"><a href="/publ">Статьи</a></li>
- <li id="Board"><a href="/board">Доска объявлений</a></li>
- <li id="Catalog"><a href="/dir/4">Каталог</a></li>
- <li id="Shop"><a href="javascript://" onclick="alert('Извините, этот раздел временно недоступен');return false;">Магазин</a></span><span id="Download"><a href="/load">Скачать</a></li>
- </ul>
- <div class="YouAreHere">&nbsp; Вы здесь: <a href="$HOME_PAGE_LINK$">Главная</a> &raquo; <a href="$MODULE_URL$">Каталог компаний</a> &raquo; <a href="$SECTION_URL$">$SECTION_NAME$</a></div> 
-<div class="space"></div>
+<body>
+	$GLOBAL_AHEADER$
 
-<table cellpadding="0" cellspacing="0" border="0">
-<tr>
- <td class="LeftColStyle" valign="top">$GLOBAL_CLEFTER$</td> 
- <td class="MainColStyle" valign="top">
- <?if($SORTING_MENU$)?><hr />Сортировать по: $SORTING_MENU$<hr /><?endif?>$BODY$
- <?if($PAGE_SELECTOR$)?><div class="catPages1" align="center">$PAGE_SELECTOR$</div><?endif?> </td> 
-</tr></table> 
+	<div class="main">
+		<section class="content">
+			
+			<nav class="main-menu clearfix">
+				$GLOBAL_MENU$
+			</nav>
 
-<div class="space"></div>
+			<ul class="breadcrumbs">
+				<li><a href="$HOME_PAGE_LINK$">Главная</a> <span class="divider">&raquo;</span></li>
+				<li><a href="$SECTION_URL$">$SECTION_NAME$</a></li>
+			</ul>
 
-</td></tr></table> 
- 
-</section>
-$GLOBAL_BFOOTER$
- </div> 
- 
-<script type="text/javascript">$(document).ready(function(){$("#back-top").hide();if(document.body.clientWidth > 1200) {$(function (){$(window).scroll(function (){if ($(this).scrollTop() > 100){$('#back-top').fadeIn()}else{$('#back-top').fadeOut()}});$('#back-top a').click(function (){$('body,html').animate({scrollTop:0},200);return false});});}});</script> 
-<p id="back-top"><a href="#top"><span>Наверх</span></a></p>
+			<div class="content-block">
+				<div class="col-left">$GLOBAL_CLEFTER$</div> 
+				<div class="col-main">
+					<?if($SORTING_MENU$)?><hr />Сортировать по: $SORTING_MENU$<hr /><?endif?>$BODY$
+					<?if($PAGE_SELECTOR$)?><div class="catPages1" align="center">$PAGE_SELECTOR$</div><?endif?>
+				</div> 
+			</div> 
+
+		</section>
+	</div>
+	
+	$GLOBAL_BFOOTER$
+
+	$GLOBAL_SCRIPTS$
+
 </body>
 
 </html>
