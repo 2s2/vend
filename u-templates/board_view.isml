@@ -1,0 +1,33 @@
+<div class="board-desc">
+ <div class="board-title">
+ <h2>
+ <?if($SECTION_NAME$)?>
+ <a href="$SECTION_URL$">$SECTION_NAME$</a>
+ <?else?>
+ <a href="$CATEGORY_URL$">$CATEGORY_NAME$</a>
+ <?endif?> &rarr; 
+ <?if($ID$='14354')?>
+ <a href="$ENTRY_URL$" class="VipLink">$TITLE$</a>
+ <?else?>
+ <a href="$ENTRY_URL$">$TITLE$</a>$MODER_PANEL$
+ <?endif?>
+ </h2>
+ </div>
+ <div class="board-body">
+ <?if($SCREEN_URL$)?>
+ <div class="board-img">
+ <a class="ulightbox" title="$TITLE$" href="$SCREEN_URL$">
+ <img alt="$TITLE$" src="$SCREEN_URL$">
+ </a>
+ </div>
+ <?endif?>
+ <div class="board-text">
+ $MESSAGE$
+ </div>
+ </div>
+ <div class="eDetails">
+ <img align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/calendar.png"> Дата: $DATE$
+ <img align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/read.png"> Просмотров: $READS$ 
+ <img align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/comments.png"> <a href="$COMMENTS_URL$">Комментарии ($COMMENTS_NUM$)</a>
+ </div>
+</div>
