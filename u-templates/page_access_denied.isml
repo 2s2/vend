@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<title>Доступ запрещен - $SITE_NAME$</title>
+<meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
+<link rel="shortcut icon" href="http://vendors.com.ua/ico.png" >
+<link type="text/css" rel="StyleSheet" href="/_st/my.css" />
+
+</head>
+
+<body class="$MODULE_ID$ $MODULE_ID$-$PAGE_ID$">
+	$GLOBAL_AHEADER$
+
+	<div class="main">
+		<section class="content">
+			
+			<nav class="main-menu clearfix">
+				$GLOBAL_MENU$
+			</nav>
+
+			<div class="content-block">
+				<div class="col-left">$GLOBAL_CLEFTER$</div> 
+				<div class="col-main">
+					<div align="center"><?if($USER_LOGGED_IN$)?><br /><br /><br />Добрый день, $USER_FULL_NAME$, мы рады, что Вы с нами, но у Вас недостаточно прав для просмотра этой страницы.<br><br><br>Пожалуйста, пройдите <a href="/">на главную</a>, Вы там найдёте много интересного!<br /><br /><br /><br /><?endif?>
+					<?if(!$USER_LOGGED_IN$)?><br /><br /><br />Гостям запрещено просматривать данную страницу, пожалуйста войдите на сайт как пользователь.<br /><br /><br /><span style="font-size:13pt;text-transform:uppercase;">[ <a href="$LOGIN_LINK$"><b>Вход</b></a> ]</span><span style="font-size:13pt;text-transform:uppercase;"> [ <a href="http://vendors.com.ua/index/3"><b>Регистрация</b></a> ]</span><br /><br /><br /><br /><?endif?></div>
+				</div> 
+			</div> 
+
+		</section>
+	</div>
+	
+	$GLOBAL_BFOOTER$
+
+	$GLOBAL_SCRIPTS$
+
+</body>
+
+</html>

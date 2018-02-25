@@ -1,0 +1,153 @@
+<?if($CATEGORIES$)?>
+ <div class="sidebar-block">
+	 <div class="sidebar-block-title">Категории</div>
+	 <div class="sidebar-block-content">
+	 	<?if($NUM_ENTRIES$)?><p>Найдено материалов: <b>$NUM_ENTRIES$</b></p><?endif?>$CATEGORIES$
+	 </div>
+ </div>
+<?endif?>
+
+<div class="sidebar-block">
+	<div class="sidebar-block-title">Меню</div>
+	<div class="sidebar-block-content">
+	<ul class="sidebar-menu">
+	 <li class="item-1"><i class="fas fa-balance-scale"></i><a href="/publ/37">Правовая база</a></li>
+	 <li class="item-2"><i class="fas fa-pencil-alt"></i><a href="/load/2">Вендинг-договора</a></li>
+	 <li class="item-3"><i class="fas fa-calculator"></i><a href="/load/1">Расчёт окупаемости</a></li>
+	 <li class="item-4"><i class="fas fa-list"></i><a href="/load/4">Инструкции к автоматам</a></li>
+	 <li class="item-5"><i class="far fa-calendar-alt"></i><a href="/publ/39">Выставки</a></li>
+	 <li class="item-6"><i class="fab fa-youtube"></i><a href="/publ/40">Видео</a></li>
+	 <li class="item-7"><i class="fas fa-arrow-right"></i><a href="/index/0-2">Реклама на сайте</a></li>
+	 <li class="item-8"><i class="fas fa-phone"></i><a href="/index/0-3">Обратная связь</a></li>
+	</ul>
+	</div>
+</div>
+
+<?if($URI_ID$="page2")?>
+
+<div class="sidebar-block">
+<img src="http://www.vendors.com.ua/Images/banners/banner200x200.png" border="0" alt="" />
+</div>
+
+<div class="sidebar-block">
+<img src="http://www.vendors.com.ua/Images/banners/banner200x100.png" border="0" alt="" />
+</div>
+
+<?endif?>
+
+<div class="sidebar-block">
+ <div class="sidebar-block-title">Опрос</div>
+ <div class="sidebar-block-content">$POLL$</div>
+</div>
+
+<?if($GROUP_ID$="4")?>
+<div class="sidebar-block">
+<div class="sidebar-block-title">Мы в социальных сетях</div><a href="http://twitter.com/vendors_ua" target="_blank"><img width="180" src="http://www.vendors.com.ua/Images/Icos/twitter.png" alt="Twitter" /></a>
+</div>
+<?endif?>
+
+<div class="sidebar-block">
+	<div class="sidebar-block-title">Статистика</div>
+	<div class="sidebar-block-content">
+	<!--LiveInternet counter--><script type="text/javascript">document.write("<a href='http://www.liveinternet.ru/click' target=_blank><img src='http://counter.yadro.ru/hit?t22.10;r" + escape(document.referrer) + ((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + "; u" + escape(document.URL) + ";" + Math.random() + "' border=0 width=88 height=31 alt='' title='LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня'><\/a>")</script><!--/LiveInternet--> 
+
+	<!-- MyCounter v.2.0 -->
+	<script type="text/javascript"><!--
+	my_id = 45566;
+	my_width = 88;
+	my_height = 31;
+	my_alt = "MyCounter - счётчик и статистика";
+	//--></script>
+	<script type="text/javascript"
+	 src="http://scripts.mycounter.ua/counter2.0.js">
+	</script><noscript>
+	<a target="_blank" href="http://mycounter.ua/"><img
+	src="http://get.mycounter.ua/counter.php?id=45566"
+	title="MyCounter - счётчик и статистика"
+	alt="MyCounter - счётчик и статистика"
+	width="88" height="31" /></a></noscript>
+	<!--/ MyCounter -->
+
+	<a href="http://orphus.ru" id="orphus" target="_blank"><img alt="Система Orphus" src="/Orphus/orphus.gif" width="88" height="31" /></a>
+
+	<!-- I.UA counter -->
+	<a href="http://www.i.ua/" target="_blank" onclick="this.href='http://i.ua/r.php?39636';" title="Rated by I.UA">
+	<script type="text/javascript"><!--
+	iS='<img src="http://r.i.ua/s?u39636&p192&n'+Math.random();
+	iD=document;iD.cookie="iua=1";if(iD.cookie)iS+='&c1';
+	try{iHP=document.body.firstChild;
+	iHP.style.behavior="url('#default#homePage')";
+	iHP.addBehavior('#default#homePage');
+	if (iHP.isHomePage(window.location.href))iS+='&o1';
+	} catch (e) { }
+	iS+='&d'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)
+	+"&w"+screen.width+'&h'+screen.height
+	iT=iD.referrer.slice(7);iH=window.location.href.slice(7);
+	((iI=iT.indexOf('/'))!=-1)?(iT=iT.substring(0,iI)):(iI=iT.length);
+	if(iT!=iH.substring(0,iI))iS+='&f'+escape(iD.referrer.slice(7))
+	iS+='&r'+escape(iH);
+	iD.write(iS+'" border="0" width="160" height="19" />');
+	--></script></a><!-- End of I.UA counter --> 
+
+	<?if($ONLINE_COUNTER$)?><hr />$ONLINE_COUNTER$$ONLINE_USERS_LIST$<?endif?>
+	</div>
+</div>
+
+<div class="sidebar-block"> 
+	<div class="sidebar-block-title">Важно</div>
+	<div class="sidebar-block-content">
+		<ul class="uz">
+		<li>При полном или частичном использовании материалов портала активная ссылка на <a class="m" href="http://vendors.com.ua/">Вендинг-портал “Вендоры”</a> обязательна.</li>
+		<li>При наполнении данного портала использовалась информация из открытых источников.</li>
+		<li>Если Вы считаете, что администрация сайта или его пользователи нарушили Ваши права, пожалуйста, поставьте нас в известность через раздел <br /><a class="m" href="http://vendors.com.ua/index/0-3">Обратная связь</a>.</li>
+		</ul>
+	</div>
+</div>
+
+<!-- Форма для входа -->
+<div class="sidebar-block login-block">
+	<?if($LOGIN_FORM$)?>
+		<div class="sidebar-block-title">Форма входа</div>
+		<div class="sidebar-block-content">
+		$LOGIN_FORM$
+		</div>
+	<?else?>
+
+		<div class="sidebar-block-title">Мой профиль</div>
+		<div class="sidebar-block-content">
+			<div class="aligncenter">
+				<strong class="username m10">Привет: $USERNAME$</strong> 
+
+				<?if($USER_AVATAR_URL$)?><img class="userAvatar" title="$USERNAME$" src="$USER_AVATAR_URL$" border="0"><?else?><?if($USER_LOGGED_IN$)?><img class="userAvatar" title="$USERNAME$" src="http://vendors.com.ua/Images/Icos/noavatar.jpg" border="0"><?else?><img class="userAvatar" title="$USERNAME$" src="http://s46.radikal.ru/i111/0811/0d/fc11979a3233.jpg" border="0"><?endif?><?endif?> 
+			</div>
+
+			<?if($USER_LOGGED_IN$)?> 
+
+				<ul class="sidebar-menu">
+				 <li class="item-1"><i class="fas fa-user"></i><span>Логин: <b>$USER_FULL_NAME$ </b></span></li>
+				 <li class="item-2"><i class="fas fa-key"></i><span>ID: <b>$USER_ID$</b></span></li>
+				 <li class="item-3"><i class="far fa-calendar-check"></i><span>Вы с нами <font color="#FF0000"><b>$USER_REG_DAYS$</b></font>-й день</span></li>
+				 <li class="item-4"><i class="fas fa-users"></i><a href="$USERS_LIST_URL$">Список пользователей</a></li>
+				 <li class="item-5"><i class="far fa-edit"></i><a href="/index/11">Изменить информацию</a></li>
+				 <li class="item-6"><i class="far fa-envelope"></i><a href="/index/14">Отправить сообщение</a></li>
+				 <li class="item-7"><i class="far fa-envelope-open"></i><a href="/index/14"> Читать ЛС (<b>$UNREAD_PM$</b>)</a></li>
+				 <li class="item-8"><i class="fas fa-sign-out-alt"></i><a href="$LOGOUT_LINK$">Выход</a></li>
+				</ul>
+
+				<script language=javascript type=text/javascript> 
+				 function openOnClick(client_type) 
+				 { 
+				 if(client_type=="mail")clientWindow = window.open("$PM_URL$","pmw","scrollbars=1,top=0,left=0,resizable=1,width=850,height=350") || alert("Отключите блокировку всплывающих окон!"); 
+				 if(client_type=="send")clientWindow = window.open("/index/14-999-0-1","pms","scrollbars=1,top=0,left=0,resizable=1,width=850,height=350") || alert("Отключите блокировку всплывающих окон!"); 
+				 if(client_type=="options")clientWindow = window.open("/index/11","options","scrollbars=1,top=0,left=0,resizable=1,width=680,height=350") || alert("Отключите блокировку всплывающих окон!"); 
+				 if(client_type=="users")clientWindow = window.open("$USERS_LIST_URL$","users","scrollbars=1,top=0,left=0,resizable=1,width=680,height=350") || alert("Отключите блокировку всплывающих окон!"); 
+
+				 } 
+				</script>
+
+			<?endif?>
+
+		</div>
+	<?endif?>
+</div>
+<!--/-->

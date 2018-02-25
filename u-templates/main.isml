@@ -1,0 +1,83 @@
+<html>
+<head>
+
+<title>$SITE_NAME$</title> 
+<meta name="description" content="Вендоры - портал, посвящённый вендингу в Украине. На страницах нашего сайта вы сможете найти много полезной информации о вендинг-бизнесе: новости, статьи, объявления о покупке или продаже вендингового оборудования."/>
+<meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua"/> 
+<link rel="shortcut icon" href="http://vendors.com.ua/ico.png" >
+<link type="text/css" rel="stylesheet" href="/_st/my.css" />
+<script src="js/jquery.equalheights.js"></script>
+</head>
+
+<body class="$MODULE_ID$ $MODULE_ID$-$PAGE_ID$">
+	$GLOBAL_AHEADER$
+
+	<div class="main">
+		<section class="content">
+		 
+			<nav class="main-menu clearfix">
+				$GLOBAL_MENU$
+			</nav>
+			 
+			 <div class="space"></div>
+			 
+			<div class="Maincol">
+			 <div id="MaincolStyle1"><a href="/news/socialnaja_set_v_avtomatakh_po_prodazhe_pepsi/2011-05-26-60">Социальная сеть в автоматах по продаже Pepsi</a>
+			 <img width="200" src="/Images/Articles/pepsi1.jpg" alt=" Социальная сеть в автоматах по продаже Pepsi " class="MainImg">
+			 В конце апреля 2011 года выставке TheOneShow компания Pepsi показала новый торговый автомат Pepsi Social Vending Machine. По замыслу производителей популярной газировки, такие автоматы в скором времени будут установлены повсюду и явят собой оригинальный вариант социальной сети Pepsi.
+			 </div>
+			 <div id="MaincolStyle2"><a href="/publ/torgovye_avtomaty_po_prodazhe_pitevoj_vody_na_razliv/1-1-0-129">Торговые автоматы по продаже питьевой воды на разлив</a>
+			 <div class="aligncenter"><img width="100" src="/_pu/1/15905945.jpg" alt="Торговые автоматы по продаже питьевой воды на разлив" class="MainImg"></div>
+			 Торговые автоматы по продаже очищенной питьевой воды в розлив в тару покупателя. Автомат подключается к системе городского водоснабжения. Вода проходит многоступенчатую систему очистки с участием обратного осмоса и продаётся в розлив.
+			 </div>
+			 <div id="MaincolStyle3">
+			 <p style="border-top:0;padding-top:0;"><a href="/publ/analitika/momentalnye_dengi/42-1-0-128">Моментальные деньги</a></p>Фотобизнес может приносить ощутимую прибыль и во времена нестабильности, если поставить его... на рельсы самообслуживания.
+			 <p><a href="/publ/pokofejnichaem_ili_vsjo_o_kofe/1-1-0-126">Покофейничаем, или Всё о кофе</a></p>Каждый раз, выпивая очередную чашечку ароматного и бодрящего кофе, мы вряд ли задумываемся о свойствах этого поистине божественного напитка. 
+			 <p><a href="/publ/opustil_monetu_poluchil_konfetu/1-1-0-125">Опустил монету, получил конфету</a></p>На дворе 1987-й ...Звяк! Пшш... В стеклянном стакане пузырится сладкая газировка.
+			 </div>
+			 <div id="MaincolStyle4" class="main-last-entries">
+			 <dl><dt><div class="bordered"><span class="bl">Последние</span> объявления</div></dt>$MYINF_1$</dl>
+			 <dl><dt><div class="bordered"><span class="bl">Последнее</span> на форуме</div></dt>$MYINF_2$</dl>
+			 </div>
+			 <div id="MaincolStyle5">
+			 <?if($POLL$)?>$POLLC_17$<hr><?endif?>
+			 </div> 
+			</div>
+			 
+			<ul class="secondary-cols">
+			 <li><div id="exhib">Выставки</div><a href="/publ/chetvjortaja_mezhdunarodnaja_specializirovannaja_vystavka_terminalykioskivending/39-1-0-124">Четвёртая Международная Специализирован- ная Выставка. Терминалы. Киоски. Вендинг</a> <img src="http://vendingtimes.at.ua/Temp/vending-logo-new-2009.gif" alt="Выставка Вендинг" title="Выставка Вендинг" width="135" class="MainImg"></li>
+			 <li><div id="video">Видео</div><a href="/publ/beseda_o_vendinge/40-1-0-137">Разговоры о вендинге. Особенности и подводные камни</a></li>
+			 <li><div id="tehotdel">Техотдел</div><a href="/publ/tekhotdel/moshenniki_nauchilis_obmanyvat_kupjuropriemniki_cashcode/41-1-0-132">Мошенники научились обманывать купюроприемники CashCode?</a> <img src="http://vendingtimes.at.ua/Temp/107.jpg" alt="Купюроприемники CashCode" title="Купюроприемники CashCode" width="100" class="MainImg"></li> 
+			 <li><div id="law">Законодательство</div><a href="/publ/37">Налогообложение вендинга</a> <img src="http://vendingtimes.at.ua/Temp/0_2_220.jpg" alt="Налогообложение вендинга" title="Налогообложение вендинга" width="135" class="MainImg"></li> 
+			 <li class="last">
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-0669723783840269";
+			/* Главная, блок 300X250 */
+			google_ad_slot = "7242567766";
+			google_ad_width = 300;
+			google_ad_height = 250;
+			//-->
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+			 </li> 
+			</ul>
+
+			<ul class="new-companies">$MYINF_6$</ul>
+			 
+			 <ul class="main-news-block">
+			 <li id="vendukr"><div class="title">Вендинг в Украине</div><ul>$MYINF_3$</ul></li>
+			 <li id="vendru"><div class="title">Вендинг в России</div><ul>$MYINF_4$</ul></li>
+			 <li id="vendworld"><div class="title">Вендинг в Мире</div><ul>$MYINF_5$</ul></li>
+			 </ul> 
+		 
+		</section>
+	</div>
+	
+	$GLOBAL_BFOOTER$
+
+	$GLOBAL_SCRIPTS$
+</body>
+
+</html>
