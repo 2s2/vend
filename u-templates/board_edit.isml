@@ -8,7 +8,7 @@
 
 </head>
 
-<body>
+<body class="$MODULE_ID$ $MODULE_ID$-$PAGE_ID$">
 	$GLOBAL_AHEADER$
 
 	<div class="main">
@@ -43,7 +43,7 @@
 					 <h2>Общие правила:</h2>
 					 <input type="checkbox" name="rules" value="rules" disabled="disabled" onClick="document.getElementById('pushme').disabled=false;"> Запрещено многократно размещать одно и тоже объявление, не надо превращать доску объявлений в мусорную корзину<br><br>
 					Нарушители этих ПРОСТЫХ правил будут баниться, а объявления удаляться!<br><br>
-					 <input style="height:25px;" type="button" id="pushme" value="Я прочитал(а) и соглашаюсь с условиями" disabled="disabled" onclick="$('#rules').slideUp(); $('#addpage').slideToggle();"><Br> 
+					 <input type="button" id="pushme" value="Я прочитал(а) и соглашаюсь с условиями" disabled="disabled" onclick="$('#rules').slideUp(); $('#addpage').slideToggle();"><Br> 
 					</form>
 					 </div>
 					 <div id="addpage" style="display: none;">

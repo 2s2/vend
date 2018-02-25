@@ -1,60 +1,68 @@
-<nav class="top-menu">
-<ul class="nav nav-pills">
- <li id="News" class="dropdown">
- <a href="/news">Новости</a>
- <ul class="dropdown-menu">
- <li><a href="/news/1-0-1">В Украине</a></li>
- <li><a href="/news/1-0-2">В России</a></li>
- <li><a href="/news/1-0-3">В мире</a></li>
- </ul>
- </li>
- <li id="Articles" class="dropdown">
- <a href="/publ">Статьи</a>
- <ul class="dropdown-menu">
- <li><a href="/publ/1">Статьи о Вендинге</a></li>
- <li><a href="/publ/37">Правовая база вендинга</a></li>
- <li><a href="/publ/19">Презентации компаний</a></li>
- <li><a href="/publ/39">Выставки</a></li>
- <li><a href="/publ/40">Видео</a></li>
- <li><a href="/publ/tekhotdel/41">Техотдел</a></li>
- <li><a href="/publ/analitika/42">Аналитика</a></li>
- <li><a href="/publ/lichnyj_opyt/43">Личный опыт</a></li>
- </ul>
- </li>
- <li id="Board" class="dropdown">
- <a href="/board">Доска объявлений</a>
- <ul class="dropdown-menu">
- <li><a href="/board/10">Продаю</a></li>
- <li><a href="/board/9">Куплю</a></li>
- <li><a href="/board/23">Аренда</a></li>
- <li><a href="/board/6">Ремонт, обслуживание</a></li>
- <li><a href="/board/7">Работа, сотрудничество</a></li>
- <li class="divider"></li>
- <li><a href="/board/10-0-0-0-1">Добавить объявление</a></li>
- <li><a href="/index/0-18">Добавить VIP-объявление</a></li>
- </ul>
- </li>
- <li id="Catalog" class="dropdown">
- <a href="/dir/4">Каталог</a>
- <ul class="dropdown-menu">
- <li><a href="/dir/4">Вендинговые компании</a></li>
- <li><a href="/dir/5">Торговые автоматы</a></li>
- <li><a href="/dir/16">Ингредиенты</a></li>
- <li><a href="/dir/25">Расходные материалы</a></li>
- <li><a href="/dir/29">Комплектующие</a></li>
- <li><a href="/dir/33">Программное обеспечение</a></li>
- <li><a href="/dir/dostavka/45">Доставка</a></li>
- <li><a href="/dir/41">Автоматы компаний</a></li>
- </ul>
- </li>
- <li id="Download" class="dropdown">
- <a href="/load">Скачать</a>
- <ul class="dropdown-menu">
- <li><a href="/load/1">Расчёт окупаемости</a></li>
- <li><a href="/load/2">Вендинг-договора</a></li>
- <li><a href="/load/4">Инструкции к автоматам</a></li>
- <li><a href="/load/5">Презентации</a></li>
- </ul>
- </li>
+<ul class="top-menu clearfix">
+	<li id="News" class="dropdown">
+		<a href="/news">Новости</a>
+		<ul class="dropdown-menu">
+			<li><a href="/news/1-0-1">В Украине</a></li>
+			<li><a href="/news/1-0-2">В России</a></li>
+			<li><a href="/news/1-0-3">В мире</a></li>
+		</ul>
+	</li>
+	<li id="Articles" class="dropdown">
+		<a href="/publ">Статьи</a>
+		<ul class="dropdown-menu">
+			<li><a href="/publ/1">Статьи о Вендинге</a></li>
+			<li><a href="/publ/37">Правовая база вендинга</a></li>
+			<li><a href="/publ/19">Презентации компаний</a></li>
+			<li><a href="/publ/39">Выставки</a></li>
+			<li><a href="/publ/40">Видео</a></li>
+			<li><a href="/publ/tekhotdel/41">Техотдел</a></li>
+			<li><a href="/publ/analitika/42">Аналитика</a></li>
+			<li><a href="/publ/lichnyj_opyt/43">Личный опыт</a></li>
+		</ul>
+	</li>
+	<li id="Board" class="dropdown">
+		<a href="/board">Доска объявлений</a>
+		<ul class="dropdown-menu">
+			<li><a href="/board/10">Продаю</a></li>
+			<li><a href="/board/9">Куплю</a></li>
+			<li><a href="/board/23">Аренда</a></li>
+			<li><a href="/board/6">Ремонт, обслуживание</a></li>
+			<li><a href="/board/7">Работа, сотрудничество</a></li>
+			<li class="divider"></li>
+			<li><a href="/board/10-0-0-0-1">Добавить объявление</a></li>
+			<li><a href="/index/0-18">Добавить VIP-объявление</a></li>
+		</ul>
+	</li>
+	<li id="Catalog" class="dropdown">
+		<a href="/dir/4">Каталог</a>
+		<ul class="dropdown-menu">
+			<li><a href="/dir/4">Вендинговые компании</a></li>
+			<li><a href="/dir/5">Торговые автоматы</a></li>
+			<li><a href="/dir/16">Ингредиенты</a></li>
+			<li><a href="/dir/25">Расходные материалы</a></li>
+			<li><a href="/dir/29">Комплектующие</a></li>
+			<li><a href="/dir/33">Программное обеспечение</a></li>
+			<li><a href="/dir/dostavka/45">Доставка</a></li>
+			<li><a href="/dir/41">Автоматы компаний</a></li>
+		</ul>
+	</li>
+	<li id="Download" class="dropdown">
+		<a href="/load">Скачать</a>
+		<ul class="dropdown-menu">
+			<li><a href="/load/1">Расчёт окупаемости</a></li>
+			<li><a href="/load/2">Вендинг-договора</a></li>
+			<li><a href="/load/4">Инструкции к автоматам</a></li>
+			<li><a href="/load/5">Презентации</a></li>
+		</ul>
+	</li>
 </ul>
-</nav>
+
+<?if($MODULE_ID$ = 'board')?>
+	<ul class="board-menu">
+		<li>
+			<?if($ADD_ENTRY_LINK$)?>
+				Добавить объявление: <a href="$ADD_ENTRY_LINK$">Обычное</a> | <a href="http://www.vendors.com.ua/index/0-18" style="color:red;">VIP</a>
+			<?endif?>
+		</li>
+	</ul>
+<?endif?>

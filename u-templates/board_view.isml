@@ -1,33 +1,82 @@
-<div class="board-desc">
- <div class="board-title">
- <h2>
- <?if($SECTION_NAME$)?>
- <a href="$SECTION_URL$">$SECTION_NAME$</a>
- <?else?>
- <a href="$CATEGORY_URL$">$CATEGORY_NAME$</a>
- <?endif?> &rarr; 
- <?if($ID$='14354')?>
- <a href="$ENTRY_URL$" class="VipLink">$TITLE$</a>
- <?else?>
- <a href="$ENTRY_URL$">$TITLE$</a>$MODER_PANEL$
- <?endif?>
- </h2>
- </div>
- <div class="board-body">
- <?if($SCREEN_URL$)?>
- <div class="board-img">
- <a class="ulightbox" title="$TITLE$" href="$SCREEN_URL$">
- <img alt="$TITLE$" src="$SCREEN_URL$">
- </a>
- </div>
- <?endif?>
- <div class="board-text">
- $MESSAGE$
- </div>
- </div>
- <div class="eDetails">
- <img align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/calendar.png"> Дата: $DATE$
- <img align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/read.png"> Просмотров: $READS$ 
- <img align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/comments.png"> <a href="$COMMENTS_URL$">Комментарии ($COMMENTS_NUM$)</a>
- </div>
+<div class="board-img">
+	<a class="ulightbox" title="$TITLE$" href="$SCREEN_URL$">
+		<?if($SCREEN_URL$)?>
+			<img alt="$TITLE$" src="$SCREEN_URL$">
+		<?else?>
+			<img alt="$TITLE$" src="/Images/board_no_img.jpg" />
+		<?endif?>
+	</a>
+	<div class="board-price">
+		$OTHER3$
+	</div>
 </div>
+<div class="board-desc">
+	<h3 class="board-title title">
+		<a href="$ENTRY_URL$">$TITLE$</a>$MODER_PANEL$
+	</h3>
+	<div class="board-text">
+		$MESSAGE$
+	</div>
+	<div class="board-info clearfix">
+		<a href="$PROFILE_URL$">$USERNAME$</a>
+		<ul class="board-details clearfix">
+			<li><i class="far fa-calendar"></i> $DATE$</li>
+			<li><i class="fas fa-eye"></i> $READS$</li>
+			<li><i class="far fa-comment"></i> <a href="$COMMENTS_URL$">$COMMENTS_NUM$</a></li>
+		</ul>
+	</div>
+</div>
+<style>
+	#allEntries:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	#allEntries > div {
+		width: 33%;
+		box-sizing: border-box;
+		padding: 0 10px;
+		float: left;
+	}
+	#allEntries > div:nth-child(3n + 1) {
+		clear: left;
+	}
+	.board-img {
+		float: none;
+		margin: 0 0 15px;
+		position: relative;
+	}
+	.board-img a {
+		width: 266px;
+		height: 266px;
+		overflow: hidden;
+	}
+	.board-img a img {
+		max-width: none;
+		width: 100%;
+		height: auto;
+	}
+	.board-price {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: #1c7bd3;
+		color: #fff;
+		padding: 0 10px;
+		font-weight: bold;
+	}
+	.board-title {
+		padding: 0 10px;
+    	text-align: center;
+	}
+	.board-text {
+		max-height: 105px;
+		overflow: hidden;
+		color: #797979;
+		text-align: center;
+	}
+	.board-info {
+		font-size: 12px;
+		margin-top: 20px;
+	}
+</style>

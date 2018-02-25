@@ -9,7 +9,7 @@
 </head>
  
 
-<body>
+<body class="$MODULE_ID$ $MODULE_ID$-$PAGE_ID$">
 	$GLOBAL_AHEADER$
 	 
 	<div class="main">
@@ -36,20 +36,14 @@
 					</div> 
 					<div style="padding-top:5px;">
 					<?if($SCREEN_URL$)?><IMG align="left" hspace="5" border="0" src="$SCREEN_URL$" title="$TITLE$"><?endif?>$MESSAGE$
-					<hr><b>Источник:</b> <?if($OTHER1$)?><span class="ExternalLink"><a href="$OTHER1$" target="_blank">$OTHER1$</a></span><?else?><a href="http://www.vendors.com.ua/" target="_blank">Вендинг-портал "Вендоры"</a><?endif?>
+					<hr><?if($OTHER1$)?><span class="ExternalLink"><a href="$OTHER1$" target="_blank">Источник</a></span><?else?><b>Источник:</b> <a href="http://www.vendors.com.ua/" target="_blank">Вендинг-портал "Вендоры"</a><?endif?>
 					</div><hr>
 					<div style="clear:both;"></div>
 					<b>Нашли ошибку или неточность?</b><br>
 					Выделите её мышью и нажмите Ctrl + Enter.<br>
 					<p><?if($TAGS$)?><img align="absmiddle" src="/Images-new/Icos/tags.png" width="24" border="0" alt="" />$TAGS$<?endif?></p> 
-
-					<table cellpadding="0" cellspacing="0" border="0" width="740" align="center">
-					<tr>
-					<td width="340"><?$WIDGET$('45','187|0|1|1|1|ru|0|0|1|0|1|0|0|0|0|0|1|0|1|1|1|1')?></td>
-					<td width="200"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.vendors.com.ua&amp;layout=button_count&amp;show_faces=true&amp;width=150&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe></td> 
-					</tr></table> 
 					 
-					 <?if($USER_LOGGED_IN$)?><?else?><br>
+					<?if($USER_LOGGED_IN$)?><?else?><br>
 					<div class="alert_block" valign="center">Уважаемый посетитель, Вы находитесь в группе <b>Гости</b> и не можете оставлять комментарии. Пожалуйста, <a href="$REGISTER_LINK$">зарегистрируйтесь</a> либо <a href="$LOGIN_LINK$">войдите</a> на сайт под своим именем.</div><br><?endif?>
 					 
 					<?if($COM_IS_ACTIVE$)?>

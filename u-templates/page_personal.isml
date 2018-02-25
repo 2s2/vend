@@ -7,7 +7,7 @@
 
 </head>
 
-<body>
+<body class="$MODULE_ID$ $MODULE_ID$-$PAGE_ID$">
 	$GLOBAL_AHEADER$
 
 	<div class="main">
@@ -25,7 +25,7 @@
 			<div class="content-block">
 				<div class="col-left">$GLOBAL_CLEFTER$</div> 
 				<div class="col-main">
-					<style type="text/css">.udtb {text-align:left;padding:3px;} .udtlb {clear:left;float:left;width:150px;}</style>
+					<style type="text/css">.udtb {text-align:left;padding:3px;} .udtlb {clear:left;float:left;width:200px;}</style>
 					<div style="position:relative;float:right;text-align:center;">
 					<?if($_AVATAR$)?>$_AVATAR$<br /><br /><?endif?>
 					<?if($UNET_ID$)?><div style="padding-bottom:4px;"><img style="vertical-align:-4px;" border="0" src="http://src.ucoz.net/img/ma/uid.gif"> <a href="$UNET_PROFILE_URL$" target="_blank"><b></b></a></div><?endif?>

@@ -1,62 +1,40 @@
 <html>
 <head>
 
-<title>$SITE_NAME$ - $MODULE_NAME$</title<?'>'?> 
-<?$META_DESCRIPTION$?>
-<meta name="description" content="Вендоры - портал, посвящённый вендингу в Украине и России. На страницах нашего сайта вы сможете найти много полезной информации о вендинг-бизнесе: новости, статьи, объявления и вендиг-форум."/>
-<meta name="keywords" content="Вендинг, vending, главная, home page, vendors.com.ua, $MODULE_NAME$"/> 
+<title>$MODULE_NAME$ - $SITE_NAME$</title>
+<meta name="description" content="Вендоры - портал, посвящённый вендингу в Украине. На страницах нашего сайта вы сможете найти много полезной информации о вендинг-бизнесе: новости, статьи, объявления о покупке или продаже вендингового оборудования."/>
+<meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
 <link rel="shortcut icon" href="http://vendors.com.ua/ico.png" >
-<link type="text/css" rel="stylesheet" href="/_st/my.css" />
-<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet">
 <link type="text/css" rel="StyleSheet" href="/_st/my.css" />
-<link href="http://s4.ucoz.net/src/layer1.css" rel="stylesheet">
-<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.7.2.min.js"></script>
-<script src="http://s20.ucoz.net/src/uwnd.js"></script>
-<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"></script>
-<script>
- $(document).ready(function() { 
- $('.dropdown-toggle').dropdown();
- $('#myTab a').click(function (e) {
- e.preventDefault();
- $(this).tab('show');
- })
- });
-</script>
-</head<?'>'?>
 
-<body>
-<script type="text/javascript" src="/Orphus/orphus.js"></script>
-<script type="text/javascript"> _shcp = []; _shcp.push({widget_id : 604588, widget : "Chat", side : "right", position : "center", template : "blue" }); (function() { var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true; hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://widget.siteheart.com/apps/js/sh.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hcc, s.nextSibling); })(); </script>
+</head>
 
-<div class="main">
-$GLOBAL_AHEADER$
-<section id="content">
- 
+<body class="$MODULE_ID$ $MODULE_ID$-$PAGE_ID$">
+	$GLOBAL_AHEADER$
 
- <div id="MainBodyBorder">
- 
-$GLOBAL_MENU$
- 
- <ul class="breadcrumb">
- <li>&nbsp; Вы здесь: </li>
- <li><a href="$HOME_PAGE_LINK$">Главная</a> <span class="divider">&raquo;</span></li>
- <li><a href="$MODULE_URL$">$MODULE_NAME$</a></li>
- </ul>
+	<div class="main">
+		<section class="content">
+			
+			<nav class="main-menu clearfix">
+				$GLOBAL_MENU$
+			</nav>
 
-<div class="content-block">
- <div class="col-left">$GLOBAL_CLEFTER$</div> 
- <div class="col-main">$CONTENT$</div> 
-</div> 
- 
- </div>
+			<ul class="breadcrumbs">
+				<li><a href="$HOME_PAGE_LINK$">Главная</a> <span class="divider">&raquo;</span></li>
+				<li><a href="$MODULE_URL$">$MODULE_NAME$</a></li>
+			</ul>
 
- 
-</section>
-$GLOBAL_BFOOTER$
- </div>
+			<div class="content-block">
+				<div class="col-left">$GLOBAL_CLEFTER$</div> 
+				<div class="col-main">$CONTENT$</div> 
+			</div> 
 
-<script type="text/javascript">$(document).ready(function(){$("#back-top").hide();if(document.body.clientWidth > 1200) {$(function (){$(window).scroll(function (){if ($(this).scrollTop() > 100){$('#back-top').fadeIn()}else{$('#back-top').fadeOut()}});$('#back-top a').click(function (){$('body,html').animate({scrollTop:0},200);return false});});}});</script> 
-<p id="back-top"><a href="#top"><span>Наверх</span></a></p>
+		</section>
+	</div>
+	
+	$GLOBAL_BFOOTER$
+
+	$GLOBAL_SCRIPTS$
 </body>
 
 </html>

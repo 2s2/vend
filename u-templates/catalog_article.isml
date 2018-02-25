@@ -8,7 +8,7 @@
 
 </head>
 
-<body>
+<body class="$MODULE_ID$ $MODULE_ID$-$PAGE_ID$">
 	$GLOBAL_AHEADER$
 
 	<div class="main">
@@ -33,7 +33,7 @@
 					<div class="eDetails2">
 					<?if($SCREEN_URL$)?><IMG align="left" hspace="5" border="0" src="$SCREEN_URL$" title="$TITLE$"><?endif?>$MESSAGE$
 					<hr><div style="font-size:20px;padding-bottom:10px;"><img align="absmiddle" width="32" src="/Images-new/Icos/Contacts.png" border="0" alt="" />Контактные данные</div>
-					<?if($SITE_URL$)?><b>Сайт:</b> <a href="$SITE_URL$" target="_blank">$SITE_DIRECT_URL$</a><br /><?endif?>
+					<?if($SITE_URL$)?><b>Сайт:</b> <a href="$SITE_DIRECT_URL$" target="_blank">$SITE_DIRECT_URL$</a><br /><?endif?>
 					<?if($AUTHOR_EMAIL$)?><b>E-mail: </b><a href="$AUTHOR_EMAIL_JS$" target="_blank">$AUTHOR_EMAIL$</a><br /><?endif?>
 					<?if($OTHER1$)?><b>Контактное лицо: </b>$OTHER1$<br /><?endif?>
 					<?if($OTHER2$)?><b>Телефоны: </b>$OTHER2$<br /><?endif?> 
@@ -44,12 +44,6 @@
 					<b>Нашли ошибку или неточность?</b><br>
 					Выделите её мышью и нажмите Ctrl + Enter.<br>
 					<p><?if($TAGS$)?><img align="absmiddle" src="/Images-new/Icos/tags.png" width="24" border="0" alt="" />$TAGS$<?endif?></p> 
-
-					<table cellpadding="0" cellspacing="0" border="0" width="740" align="center">
-					<tr>
-					<td width="340"><?$WIDGET$('45','187|0|1|1|1|ru|0|0|1|0|1|0|0|0|0|0|1|0|1|1|1|1')?></td>
-					<td width="200"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.vendors.com.ua&amp;layout=button_count&amp;show_faces=true&amp;width=150&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe></td> 
-					</tr></table> 
 
 					<?if($USER_LOGGED_IN$)?><?else?><br>
 					<div class="alert_block" valign="center">Уважаемый посетитель, Вы находитесь в группе <b>Гости</b> и не можете оставлять комментарии. Пожалуйста, <a href="$REGISTER_LINK$">зарегистрируйтесь</a> либо <a href="$LOGIN_LINK$">войдите</a> на сайт под своим именем.</div><br><?endif?>

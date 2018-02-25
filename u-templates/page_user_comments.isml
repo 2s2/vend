@@ -8,7 +8,7 @@
 
 </head>
 
-<body>
+<body class="$MODULE_ID$ $MODULE_ID$-$PAGE_ID$">
 	$GLOBAL_AHEADER$
 
 	<div class="main">
