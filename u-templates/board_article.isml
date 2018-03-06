@@ -20,7 +20,9 @@
 
 			<ul class="breadcrumbs">
 				<li><a href="$HOME_PAGE_LINK$">Главная</a> <span class="divider">&raquo;</span></li>
-				<li><a href="$MODULE_URL$">Доска объявлений</a></li>
+				<li><a href="$MODULE_URL$">$MODULE_NAME$</a> <span class="divider">&raquo;</span></li>
+				<?if($SECTION_NAME$)?><li><a href="$MODULE_URL$"><a href="$SECTION_URL$">$SECTION_NAME$</a> <span class="divider">&raquo;</span></li><?endif?>
+				<li><a href="$MODULE_URL$"><a href="$CAT_URL$">$CAT_NAME$</a></li>
 			</ul>
 
 			<div class="content-block">

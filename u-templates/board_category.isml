@@ -28,14 +28,18 @@
 			<div class="content-block">
 				<div class="col-left">$GLOBAL_CLEFTER$</div> 
 				<div class="col-main">
-					<?if($FILTER1_MENU$) or ($FILTER2_MENU$) or ($FILTER3_MENU$)?><hr />Фильтры: <?endif?> 
-					<?if($FILTER1_MENU$)?>$FILTER1_MENU$<?endif?> 
-					<?if($FILTER2_MENU$)?>$FILTER2_MENU$<?endif?>
-					<?if($FILTER3_MENU$)?>$FILTER3_MENU$<?endif?> 
-					<?if($SORTING_MENU$)?><hr />Сортировать по: $SORTING_MENU$<hr /><?endif?>
-					 $GLOBAL_VIPDOSKA$ 
-					$BODY$
-					<?if($PAGE_SELECTOR$)?><div class="catPages1" id="pagesBlock1" align="center">$PAGE_SELECTOR$</div><?endif?> 
+					<div class="listings_board">
+						<div class="listings_filters">
+							<?if($FILTER1_MENU$) or ($FILTER2_MENU$) or ($FILTER3_MENU$)?><hr />Фильтры: <?endif?> 
+							<?if($FILTER1_MENU$)?>$FILTER1_MENU$<?endif?>
+							<?if($FILTER2_MENU$)?>$FILTER2_MENU$<?endif?>
+							<?if($FILTER3_MENU$)?>$FILTER3_MENU$<?endif?>
+						</div>
+						<?if($SORTING_MENU$)?><hr />Сортировать по: $SORTING_MENU$<hr /><?endif?>
+						$GLOBAL_VIPDOSKA$
+						$BODY$
+						<?if($PAGE_SELECTOR$)?><div class="catPages1" id="pagesBlock1" align="center">$PAGE_SELECTOR$</div><?endif?>
+					</div>
 			</div> 
 
 		</section>

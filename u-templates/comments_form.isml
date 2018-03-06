@@ -7,83 +7,12 @@ width: auto;
 } 
 --> 
 </style> 
-
-<table width="100%"> 
-<tr> 
-<td width="5"><img src="/bbcodes/spacer.gif" width="5" height="58" border="0"></td> 
-<td background="/bbcodes/spacer.gif" class="ntitle" valign="top">$ERROR$</td> 
-<td width="5"><img src="/bbcodes/spacer.gif" width="5" height="58" border="0"></td> 
-</tr> 
-<tr> 
-<td background="/bbcodes/spacer.gif"><img src="/bbcodes/spacer.gif" width="5" border="0"></td> 
-<td class="news" valign="top"> 
-<table width="450"> 
-<tr> 
-<td height="25" class="slink">Имя:</td> 
-<td height="25" style="width:380px;"><input type="text" name="name" id="name" value="$NAME$" style="width:140px; height:20px; font-family:tahoma; font-size:11px; border:1px solid #E0E0E0 "></td> 
-</tr> 
-<tr> 
-<td height="25" class="slink">E-Mail:</td> 
-<td height="25"><input type="text" name="mail" id="mail" value="$EMAIL$" style="width:140px; height:20px; font-family:tahoma; font-size:11px; border:1px solid #E0E0E0 "></td> 
-</tr> 
-<tr> 
-<td height="25" class="slink">WWW:</td> 
-<td height="25" style="width:380px;"><input type="text" name="www" id="www" value="$SITE$" style="width:140px; height:20px; font-family:tahoma; font-size:11px; border:1px solid #E0E0E0 "></td> 
-</tr> 
-<?if($USER_LOGGED_IN$)?> 
-
-<tr> 
-<td colspan="2"><?if($USER_LOGGED_IN$)?> 
-<table width="100%" border="0" cellspacing="2" cellpadding="0"> 
-<tr> 
-<td align="left"><table border="0" cellspacing="0" cellpadding="0"> 
-<tr> 
-<td><img src="/bbcodes/b.gif" width="20" height="21" border="0" title="Жирный" onclick="simpletag('b')"></td> 
-<td><img src="/bbcodes/i.gif" border="0" title="Курсив" onclick="simpletag('i')"></td> 
-<td><img src="/bbcodes/u.gif" border="0" title="Подчеркнутый" onclick="simpletag('u')"></td> 
-<td><img src="/bbcodes/s.gif" border="0" title="Зачеркнутый" onclick="simpletag('s')" ></td> 
-<td><img src="/bbcodes/image.gif" border="0" title="Добавить Картинку" onclick="tag_image()"></td> 
-<td><img src="/bbcodes/link.gif" border="0" title="Вставить ссылку" onclick="tag_url()"></td> 
-<td><img src="/bbcodes/email.gif" border="0" title="Вставить email" onclick="tag_email()"></td> 
-<td><img src="/bbcodes/code.gif" border="0" title="Код" onclick="simpletag('code')"></td> 
-<td><img src="/bbcodes/quote.gif" border="0" title="Цитата" onclick="simpletag('quote')"></td> 
-<td><img src="/bbcodes/l.gif" border="0" title="По левому краю" onclick="simpletag('l')"></td> 
-<td><img src="/bbcodes/c.gif" border="0" title="По центру" onclick="simpletag('c')"></td> 
-<td><img src="/bbcodes/r.gif" border="0" title="По правому краю" onclick="simpletag('r')"></td> 
-<td><img src="/bbcodes/hide.gif" title="hide" onclick="simpletag('hide')" border="0"></td> 
-<td><img src="/bbcodes/translit.gif" title="Транслит" onclick="simpletag('translit')" border="0"></td> 
-<td><img src="/bbcodes/mp3.gif" title="Аудио" onclick="simpletag('audio')" border="0"></td> 
-<td><img src="/bbcodes/mp.gif" title="Video" onclick="simpletag('video')" border="0"></td> 
-<td><img src="/bbcodes/emo.gif" title="Cмайл" onclick="openLayerB('Sml',0,'http://ваш сайт.ру/index/35-1-0','Полный список смайлов',250,300);return false;" border="0"></td> 
-<div id="dle_emo" style="visibility:hidden; display: none; position: absolute; width:140px; height: 124px; overflow: auto; border: 1px solid #BBB; background:#E9E8F2;filter: alpha(opacity=95, enabled=1) progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=3);">{$output}</div> 
-</tr> 
-</table></td> 
-</tr> 
-</table> 
-<?endif?></td> 
-</tr> 
-<?endif?><tr> 
-<td colspan="2"><textarea name="message" id="message" onclick="setNewField(this.name, document.getElementById( 'dle-comments-form' ))" style="width:461px; height:160px; font-family:verdana; font-size:11px; border:1px solid #E0E0E0;">$MESSAGE$</textarea></td> 
-</tr> 
+$ERROR$
+<input placeholder="Имя" type="text" name="name" id="name" value="$NAME$">
+<input placeholder="E-mail" type="text" name="mail" id="mail" value="$EMAIL$">
+<input placeholder="Сайт" type="text" name="www" id="www" value="$SITE$">
+<textarea name="message" id="message">$MESSAGE$</textarea>
 <?if($SECURITY_CODE$)?> 
-<tr> 
-<td class="slink">Код:</td> 
-<td class="slink">$SECURITY_CODE$</td> 
-</tr> 
+	Код: $SECURITY_CODE$
 <?endif?> 
-<tr> 
-<td colspan="2"> 
-<input onClick="doAddComments();return false;" name="submit" type="image" src="/bbcodes/send.png"> 
-
-</td> 
-</tr> 
-</table> 
-</td> 
-<td background="/bbcodes/spacer.gif"><img src="/bbcodes/spacer.gif" width="5" border="0"></td> 
-</tr> 
-<tr> 
-<td><img src="/bbcodes/spacer.gif" width="5" height="10" border="0"></td> 
-<td background="/bbcodes/spacer.gif"><img src="/bbcodes/spacer.gif" width="1" height="10" border="0"></td> 
-<td><img src="/bbcodes/spacer.gif" width="5" height="10" border="0"></td> 
-</tr> 
-</table>
+<input onClick="doAddComments();return false;" name="submit" type="submit" value="Отправить"> 

@@ -27,20 +27,6 @@
 	</div>
 </div>
 <style>
-	#allEntries:after {
-		content: '';
-		clear: both;
-		display: block;
-	}
-	#allEntries > div {
-		width: 33%;
-		box-sizing: border-box;
-		padding: 0 10px;
-		float: left;
-	}
-	#allEntries > div:nth-child(3n + 1) {
-		clear: left;
-	}
 	.board-img {
 		float: none;
 		margin: 0 0 15px;
