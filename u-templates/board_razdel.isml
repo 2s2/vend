@@ -27,10 +27,12 @@
 			<div class="content-block">
 				<div class="col-left">$GLOBAL_CLEFTER$</div> 
 				<div class="col-main">
-				<?if($SORTING_MENU$)?><hr />Сортировать по: $SORTING_MENU$<hr /><?endif?>
-				$GLOBAL_VIPDOSKA$
-				$BODY$
-				<?if($PAGE_SELECTOR$)?><div class="catPages1" id="pagesBlock1" align="center">$PAGE_SELECTOR$</div><?endif?> </div> 
+					<div class="listings_board">
+						$GLOBAL_VIPDOSKA$
+						$BODY$
+						<?if($PAGE_SELECTOR$)?><div class="catPages1" id="pagesBlock1" align="center">$PAGE_SELECTOR$</div><?endif?>
+					</div> 
+				</div> 
 			</div> 
 
 		</section>
