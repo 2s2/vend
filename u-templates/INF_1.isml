@@ -1,0 +1,8 @@
+<dd>
+ <?if($SECTION_URL$)?>
+ <a href="$SECTION_URL$">$SECTION_NAME$</a>
+ <?else?>
+ <a href="$CATEGORY_URL$">Ремонт</a><?endif?>
+ &rarr; 
+ <a href="$ENTRY_URL$">$TITLE$</a>
+</dd>
