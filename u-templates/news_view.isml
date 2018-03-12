@@ -1,0 +1,12 @@
+<h2><a href="$CATEGORY_URL$">Новости вендинга $CATEGORY_NAME$</a> &rarr; <a href="$ENTRY_URL$">$TITLE$</a>&nbsp;$MODER_PANEL$</h2>
+<div>
+<?if($SCREEN_URL$)?><span><IMG align="left" hspace="5" align="top" border="0" src="$SCREEN_URL$" title="$TITLE$"></span><?endif?>
+ <span>$MESSAGE$</span>
+</div>
+<div style="clear:both;"></div>
+
+<div class="eDetails">
+<img align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/calendar.png"> Дата: <span title="$TIME$">$DATE$</span>
+<IMG align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/read.png"> Просмотров: $READS$ 
+<IMG align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/comments.png"> <a href="$COMMENTS_URL$">Комментарии ($COMMENTS_NUM$)</a>
+</div><hr><br>
