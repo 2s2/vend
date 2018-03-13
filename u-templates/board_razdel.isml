@@ -27,8 +27,7 @@
 			<div class="content-block">
 				<div class="col-left">$GLOBAL_CLEFTER$</div> 
 				<div class="col-main">
-					<div class="listings_board">
-						$GLOBAL_VIPDOSKA$
+					<div class="listings m-three_in_row">
 						$BODY$
 						<?if($PAGE_SELECTOR$)?><div class="catPages1" id="pagesBlock1" align="center">$PAGE_SELECTOR$</div><?endif?>
 					</div> 

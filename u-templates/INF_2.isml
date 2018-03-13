@@ -1,0 +1,21 @@
+<li class="listing_tile m-homepage_company">
+	<a class="listing_tile-link" href="$ENTRY_URL$">
+		<img class="homepage_company-img" alt="$TITLE$" src="$SCREEN_URL$" />
+	</a>
+	<div class="listing_tile-desc">
+		<h3 class="listing_tile-title">
+			<a href="$ENTRY_URL$">$TITLE$</a>
+		</h3>
+		<div class="listing_tile-text">$MESSAGE$</div>
+		<div class="listing_tile-additional_info"><b>Виды деятельности:</b> $FILTER1$</div>
+		<div class="details">
+			<?if($CATEGORY_NAME$)?>
+				<a href="$CATEGORY_URL$">$CATEGORY_NAME$</a>
+			<?endif?>
+			<ul class="details-list">
+				<li class="details-item"><i class="fas fa-eye"></i> $READS$</li>
+				<li class="details-item"><i class="fas fa-external-link-alt"></i> $REDIRECTS$</li>
+			</ul>
+		</div>
+	</div>
+</li>

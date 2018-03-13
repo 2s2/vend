@@ -1,0 +1,71 @@
+<table border="0" width="100%" id="table1" cellspacing="1" cellpadding="2">
+	<tr>
+		<td width="35%">Категория <font color="red">*</font>:</td>
+		<td>
+			<select name="f5">
+				<option>Украинские компании</option>
+				<option>Российские компании</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Название <font color="red">*</font>:</td>
+		<td><input type="text" name="f2" size="30"> </td>
+	</tr>
+	<tr>
+		<td>Сайт:</td><td><input type="text" name="f6" size="30" maxlength="70"> </td>
+	</tr>
+	<tr>
+		<td>E-mail <font color="red">*</font>:</td><td><input type="text" name="f1" size="30" maxlength="70"> </td>
+	</tr>
+	<tr>
+		<td>Логотип <font color="red">*</font>:</td><td><input type="file" name="f8" size="30"> </td>
+	</tr>
+	<tr>
+		<td>Краткое описание <font color="red">*</font>:</td><td><textarea rows="5" name="f9" cols="30"></textarea> </td>
+	</tr>
+	<tr>
+		<td>Описание компании <font color="red">*</font>:</td><td><textarea rows="5" name="f3" cols="30"></textarea> </td>
+	</tr>
+	<tr>
+		<td>Контактное лицо:</td><td><input type="text" name="f4" size="30" maxlength="70"> </td>
+	</tr>
+	<tr>
+		<td>Телефон:</td><td><input type="text" name="f10" size="30" maxlength="70"> </td>
+	</tr>
+	<tr>
+		<td>Факс:</td><td><input type="text" name="f7" size="30" maxlength="70"> </td>
+	</tr>
+	<tr>
+		<td>Адрес:</td><td><input type="text" name="f11" size="30"> </td>
+	</tr>
+	<tr>
+		<td>Виды деятельности:</td>
+		<td>
+			<input id="fc121" type="checkbox" name="f12" value="Кофейные"> <label for="fc121">Кофейные</label><br />
+			<input id="fc122" type="checkbox" name="f12" value="Снековые"> <label for="fc122">Снековые</label><br />
+			<input id="fc123" type="checkbox" name="f12" value="Музыкальные"> <label for="fc123">Музыкальные</label><br />
+			<input id="fc124" type="checkbox" name="f12" value="Платёжные терминалы"> <label for="fc124">Платёжные терминалы</label><br />
+			<input id="fc125" type="checkbox" name="f12" value="Фотокиоск"> <label for="fc125">Фотокиоск</label><br />
+			<input id="fc126" type="checkbox" name="f12" value="Механические"> <label for="fc126">Механические</label><br />
+			<input id="fc127" type="checkbox" name="f12" value="Продажа мороженого"> <label for="fc127">Продажа мороженого</label><br />
+			<input id="fc128" type="checkbox" name="f12" value="Продажа напитков на разлив"> <label for="fc128">Продажа напитков на разлив</label><br />
+			<input id="fc129" type="checkbox" name="f12" value="Продажа охлаждённых напитков"> <label for="fc129">Продажа охлаждённых напитков</label><br />
+			<input id="fc1210" type="checkbox" name="f12" value="Массажные кресла"> <label for="fc1210">Массажные кресла</label><br />
+			<input id="fc1211" type="checkbox" name="f12" value="Ландроматы"> <label for="fc1211">Ландроматы</label><br />
+			<input id="fc1212" type="checkbox" name="f12" value="Другие виды вендинга"> <label for="fc1212">Другие виды вендинга</label><br />
+			<input id="fc1213" type="checkbox" name="f12" value="Ингредиенты"> <label for="fc1213">Ингредиенты</label><br />
+			<input id="fc1214" type="checkbox" name="f12" value="Расходные материалы"> <label for="fc1214">Расходные материалы</label><br />
+			<input id="fc1215" type="checkbox" name="f12" value="Наполнитель"> <label for="fc1215">Наполнитель</label><br />
+			<input id="fc1216" type="checkbox" name="f12" value="Комплектующие"> <label for="fc1216">Комплектующие</label><br />
+			<input id="fc1217" type="checkbox" name="f12" value="Производство корпусов"> <label for="fc1217">Производство корпусов</label><br />
+			<input id="fc1218" type="checkbox" name="f12" value="Услуги локатора"> <label for="fc1218">Услуги локатора</label><br />
+			<input id="fc1219" type="checkbox" name="f12" value="Программное обеспечение"> <label for="fc1219">Программное обеспечение</label><br />
+			<input id="fc1220" type="checkbox" name="f12" value="Ремонт и техобслуживание"> <label for="fc1220">Ремонт и техобслуживание</label><br />
+			<input id="fc1221" type="checkbox" name="f12" value="Банковские услуги и лизинг"> <label for="fc1221">Банковские услуги и лизинг</label><br />
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><br /><input type="submit" value="Добавить компанию"></td>
+	</tr>
+</table>
