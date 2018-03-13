@@ -1,68 +1,32 @@
-<div class="board-img">
-	<a class="ulightbox" title="$TITLE$" href="$SCREEN_URL$">
+<div class="listing_tile">
+	<a class="listing_tile-link" title="$TITLE$" href="$ENTRY_URL$">
 		<?if($SCREEN_URL$)?>
-			<img alt="$TITLE$" src="$SCREEN_URL$">
+			<img class="listing_tile-img" alt="$TITLE$" src="$SCREEN_URL$">
 		<?else?>
-			<img alt="$TITLE$" src="/Images/board_no_img.jpg" />
+			<img class="listing_tile-img" alt="$TITLE$" src="/Images/board_no_img.jpg" />
+		<?endif?>
+		<?if($OTHER3$)?>
+			<span class="listing_tile-price">
+				$OTHER3$
+			</span>
 		<?endif?>
 	</a>
-	<div class="board-price">
-		$OTHER3$
+	<div class="listing_tile-desc">
+		<h3 class="listing_tile-title">
+			<a href="$ENTRY_URL$">$TITLE$</a>$MODER_PANEL$
+		</h3>
+		<div class="listing_tile-text">
+			$MESSAGE$
+		</div>
+		<div class="details">
+			<?if($USERNAME$)?>
+				<a href="$PROFILE_URL$">$USERNAME$</a>
+			<?endif?>
+			<ul class="details-list">
+				<li class="details-item"><i class="far fa-calendar"></i> $DATE$</li>
+				<li class="details-item"><i class="fas fa-eye"></i> $READS$</li>
+				<li class="details-item"><i class="far fa-comment"></i> <a href="$COMMENTS_URL$">$COMMENTS_NUM$</a></li>
+			</ul>
+		</div>
 	</div>
 </div>
-<div class="board-desc">
-	<h3 class="board-title title">
-		<a href="$ENTRY_URL$">$TITLE$</a>$MODER_PANEL$
-	</h3>
-	<div class="board-text">
-		$MESSAGE$
-	</div>
-	<div class="board-info clearfix">
-		<a href="$PROFILE_URL$">$USERNAME$</a>
-		<ul class="board-details clearfix">
-			<li><i class="far fa-calendar"></i> $DATE$</li>
-			<li><i class="fas fa-eye"></i> $READS$</li>
-			<li><i class="far fa-comment"></i> <a href="$COMMENTS_URL$">$COMMENTS_NUM$</a></li>
-		</ul>
-	</div>
-</div>
-<style>
-	.board-img {
-		float: none;
-		margin: 0 0 15px;
-		position: relative;
-	}
-	.board-img a {
-		width: 266px;
-		height: 266px;
-		overflow: hidden;
-	}
-	.board-img a img {
-		max-width: none;
-		width: 100%;
-		height: auto;
-	}
-	.board-price {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		background: #1c7bd3;
-		color: #fff;
-		padding: 0 10px;
-		font-weight: bold;
-	}
-	.board-title {
-		padding: 0 10px;
-    	text-align: center;
-	}
-	.board-text {
-		max-height: 105px;
-		overflow: hidden;
-		color: #797979;
-		text-align: center;
-	}
-	.board-info {
-		font-size: 12px;
-		margin-top: 20px;
-	}
-</style>

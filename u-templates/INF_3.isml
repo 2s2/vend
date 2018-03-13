@@ -1,0 +1,17 @@
+<li class="homepage_articles_list-item">
+	<h4 class="homepage_articles_list-title">
+		<a class="homepage_articles_list-link" href="$ENTRY_URL$">$TITLE$</a>
+	</h4>
+	<div class="homepage_articles_list-desc">
+		<img class="homepage_articles_list-img" src="$IMG_SMALL_URL1$" alt="$TITLE$" />
+		<div class="homepage_articles_list-text">$MESSAGE$</div>
+	</div>
+	<div class="details">
+		<ul class="details-list">
+			<?if($CATEGORY_NAME$)?>
+				<li class="details-item"><i class="fas fa-tag"></i> <a href="$CATEGORY_URL$">$CATEGORY_NAME$</a></li>
+			<?endif?>
+			<li class="details-item"><i class="fas fa-eye"></i> $READS$</li>
+		</ul>
+	</div>
+</li>

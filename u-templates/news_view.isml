@@ -1,12 +1,19 @@
-<h2><a href="$CATEGORY_URL$">Новости вендинга $CATEGORY_NAME$</a> &rarr; <a href="$ENTRY_URL$">$TITLE$</a>&nbsp;$MODER_PANEL$</h2>
-<div>
-<?if($SCREEN_URL$)?><span><IMG align="left" hspace="5" align="top" border="0" src="$SCREEN_URL$" title="$TITLE$"></span><?endif?>
- <span>$MESSAGE$</span>
-</div>
-<div style="clear:both;"></div>
+<div class="article">
+	<h2><a href="$ENTRY_URL$">$TITLE$</a>&nbsp;$MODER_PANEL$</h2>
+	<div>
+	<?if($IMG_SMALL_URL1$)?><span><IMG align="left" hspace="5" align="top" border="0" src="$IMG_SMALL_URL1$" alt="$TITLE$"></span><?endif?>
+	 <span>$MESSAGE$</span>
+	</div>
+	<div style="clear:both;"></div>
 
-<div class="eDetails">
-<img align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/calendar.png"> Дата: <span title="$TIME$">$DATE$</span>
-<IMG align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/read.png"> Просмотров: $READS$ 
-<IMG align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/comments.png"> <a href="$COMMENTS_URL$">Комментарии ($COMMENTS_NUM$)</a>
-</div><hr><br>
+	<div class="details">
+		<?if($CATEGORY_NAME$)?>
+			<i class="fas fa-tag"></i> <a href="$CATEGORY_URL$">$CATEGORY_NAME$</a>
+		<?endif?>
+		<ul class="details-list">
+			<li class="details-item"><i class="fas fa-eye"></i> $READS$</li>
+			<li class="details-item"><i class="far fa-comment"></i> <a href="$COMMENTS_URL$">$COMMENTS_NUM$</a></li>
+		</ul>
+	</div>
+	<hr><br>
+</div>
