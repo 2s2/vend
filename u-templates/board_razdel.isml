@@ -14,8 +14,14 @@
 	<div class="main">
 		<section class="content">
 			
-			<nav class="main-menu clearfix">
-				$GLOBAL_MENU$
+			<nav class="main-menu">
+				<ul class="board-menu">
+					<li>
+						<?if($ADD_ENTRY_LINK$)?>
+							Добавить объявление: <a href="$ADD_ENTRY_LINK$">Обычное</a> | <a href="http://www.vendors.com.ua/index/0-18" style="color:red;">VIP</a>
+						<?endif?>
+					</li>
+				</ul>
 			</nav>
 
 			<ul class="breadcrumbs">

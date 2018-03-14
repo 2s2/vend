@@ -13,10 +13,6 @@
 
 	<div class="main">
 		<section class="content">
-			
-			<nav class="main-menu clearfix">
-				$GLOBAL_MENU$
-			</nav>
 
 			<ul class="breadcrumbs">
 				<li><a href="$HOME_PAGE_LINK$">Главная</a></li>
