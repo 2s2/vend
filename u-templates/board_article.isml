@@ -167,141 +167,106 @@
 					$GLOBAL_CLEFTER$
 				</div> 
 				<div class="col-main">
-					<?if($GROUP_ID$='4')?> 
-					<div class="board-desc">
-					<div class="board-title">
-					<h2>
-					$ENTRY_TITLE$&nbsp;$MODER_PANEL$
-					</h2> 
+					<div class="listing">
+						<h2 class="listing-title">
+							$ENTRY_TITLE$&nbsp;$MODER_PANEL$
+						</h2>
+						<?if($TIMESTAMP$ < 1480550400) and ($TIMESTAMP$ != 1320530601)?>
+							<div class="notice notice-danger">
+								<strong>Внимание! </strong>
+								Данное объявление устарело! Дата публикации: $ADD_DATE$
+							</div>
+						<?endif?>
+						<div class="listing-body">
+							<div class="listing-img">
+								<?if($SCREEN_URL$)?>
+									<a class="ulightbox" href="$SCREEN_URL$" title="$ENTRY_TITLE$">
+										<img src="$SCREEN_URL$" title="$ENTRY_TITLE$" alt="$ENTRY_TITLE$" />
+									</a>
+								<?else?>
+									<img src="/img/board_no_img.jpg" title="$ENTRY_TITLE$" alt="$ENTRY_TITLE$" />
+								<?endif?>
+							</div>
+							<div class="listing-info">
+								<?if($OTHER3$)?><span class="listing-price">$OTHER3$</span><?endif?>
+								<ul>
+									<?if($FILTER1_VALUE$)?><li>Страна: <b>$FILTER1_VALUE$</b></li><?endif?>
+									<?if($OTHER1$)?><li>Город: <b>$OTHER1$</b></li><?endif?>
+									<?if($OTHER2$)?><li>Срок эксплуатации: <b>$OTHER2$</b></li><?endif?>
+									<?if($SECTION_NAME$)?>
+										<li>
+											Категории: 
+											<?if($SECTION_NAME$)?><a href="$SECTION_URL$">$SECTION_NAME$</a>,<?endif?>
+											<?if($CAT_NAME$)?><a href="$CAT_URL$">$CAT_NAME$</a><?endif?>
+										</li>
+									<?endif?>
+									<?if($AUTHOR_NAME$)?><li>Контактное лицо: <b>$AUTHOR_NAME$</b></li><?endif?>
+									<?if($AUTHOR_PHONE$)?><li>Телефон: <b>$AUTHOR_PHONE$</b></li><?endif?>
+									<?if($OTHER4$)?><li>Telegram: $OTHER4$</li><?endif?>
+									<?if($OTHER5$)?><li>Viber: $OTHER5$</li><?endif?>
+									<?if($AUTHOR_EMAIL$)?><li>E-mail: <b>$AUTHOR_EMAIL$</b></li><?endif?>
+								</ul>
+								<div class="details">
+									<?if($TAGS$)?><div class="listing-tags"><i class="fas fa-tag"></i> $TAGS$</div><?endif?>
+									<ul class="details-list">
+										<li class="details-item"><i class="far fa-calendar"></i> $ADD_DATE$</li>
+										<li class="details-item"><i class="fas fa-eye"></i> $READS$</li>
+										<li class="details-item" title="ID объявления"><i class="far fa-list-alt"></i> $ID$</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="listing-description">
+							<h3>Описание:</h3>
+							$BRIEF$
+						</div>
 					</div>
-					<?if($TIMESTAMP$ < 1480550400) and ($TIMESTAMP$ != 1320530601)?>
-					<div class="alert alert-error">
-					<strong>Внимание! </strong>
-					Данное объявление устарело! Дата публикации: $ADD_DATE$
-					</div>
-					<?endif?>
-					<div class="eDetails2">
-					<div class="board-body">
-					<?if($SCREEN_URL$)?>
-					<div class="board-img board-img__full">
-					<a class="ulightbox" href="$SCREEN_URL$" title="$ENTRY_TITLE$">
-					<img src="$SCREEN_URL$" title="$ENTRY_TITLE$" alt="$ENTRY_TITLE$" />
-					</a>
-					</div>
-					<?endif?>
-					<div class="board-text">
-					<h4>Информация о товаре</h4>
-					<ul>
-					<?if($OTHER3$)?><li>Цена: <b><font color=red>$OTHER3$</font></b></li><?endif?>
-					<?if($AUTHOR_NAME$)?><li>Контактное лицо: <b>$AUTHOR_NAME$</b></li><?endif?>
-					<?if($AUTHOR_PHONE$)?><li>Телефон: <b>$AUTHOR_PHONE$</b></li><?endif?>
-					<?if($OTHER1$)?><li>Город: <b>$OTHER1$</b></li><?endif?>
-					<?if($OTHER2$)?><li>Срок эксплуатации: <b>$OTHER2$</b></li><?endif?>
-					<?if($AUTHOR_EMAIL$)?><li>E-mail: <b>$AUTHOR_EMAIL$</b></li><?endif?>
-					</ul>
-					<ul>
-					<li>Дата добавления: <b>$ADD_DATE$</b></li>
-					<li>Просмотров: <b>$READS$</b></li>
-					<li>ID объявления: <b>$ID$</b></li>
-					</ul>
-					</div>
-					</div>
-					<hr />
-					<h4>Описание:</h4>
-					$BRIEF$
-					</div>
-					</div>
-					<?else?>
-					<div class="board-desc">
-					<div class="board-title">
-					<h2>
-					$ENTRY_TITLE$&nbsp;$MODER_PANEL$
-					</h2> 
-					</div>
-					<?if($TIMESTAMP$ < 1325506193) and ($TIMESTAMP$ != 1320530601)?>
-					<div class="alert alert-error">
-					<strong>Внимание! </strong>
-					Данное объявление устарело! Дата публикации: $ADD_DATE$
-					</div>
-					<?endif?>
-					<div class="eDetails2">
-					<div class="board-body">
-					<?if($SCREEN_URL$)?>
-					<div class="board-img board-img__full">
-					<a class="ulightbox" href="$SCREEN_URL$" title="$ENTRY_TITLE$">
-					<img src="$SCREEN_URL$" title="$ENTRY_TITLE$" alt="$ENTRY_TITLE$" />
-					</a>
-					</div>
-					<?endif?>
-					<div class="board-text">
-					<h4>Информация о товаре</h4>
-					<ul>
-					<?if($OTHER3$)?><li>Цена: <b><font color=red>$OTHER3$</font></b></li><?endif?>
-					<?if($AUTHOR_NAME$)?><li>Контактное лицо: <b>$AUTHOR_NAME$</b></li><?endif?>
-					<?if($AUTHOR_PHONE$)?><li>Телефон: <b>$AUTHOR_PHONE$</b></li><?endif?>
-					<?if($OTHER1$)?><li>Город: <b>$OTHER1$</b></li><?endif?>
-					<?if($OTHER2$)?><li>Срок эксплуатации: <b>$OTHER2$</b></li><?endif?>
-					<?if($AUTHOR_EMAIL$)?><li>E-mail: <b>$AUTHOR_EMAIL$</b></li><?endif?>
-					</ul>
-					<ul>
-					<li>Дата добавления: <b>$ADD_DATE$</b></li>
-					<li>Просмотров: <b>$READS$</b></li>
-					<li>ID объявления: <b>$ID$</b></li>
-					</ul>
-					</div>
-					</div>
-					<hr />
-					<h4>Описание:</h4>
-					$BRIEF$
-					</div>
-					</div>
-					<?endif?>
 					<div class="google-adv">
-					<script type="text/javascript"><!--
-					google_ad_client = "ca-pub-0669723783840269";
-					/* Доска объявлений */
-					google_ad_slot = "2725897389";
-					google_ad_width = 728;
-					google_ad_height = 90;
-					//-->
-					</script>
+						<script type="text/javascript"><!--
+						google_ad_client = "ca-pub-0669723783840269";
+						/* Доска объявлений */
+						google_ad_slot = "2725897389";
+						google_ad_width = 728;
+						google_ad_height = 90;
+						//-->
+						</script>
 					</div>
-					<br /> 
 					<?if($GROUP_ID$='4')?> 
 					<div style="border:1px solid #999;border-radius:10px;padding:10px;margin-bottom:20px;"><a href="#">Купюрники CashCode</a> На всё гарантия, всё вычищено, отполировано, проведено полное ТО. (012) 345 67 89 mymail@mail.com</div> 
 					<div style="border:1px solid #999;border-radius:10px;padding:10px; margin-bottom:20px; "><a href="#">Продам вендинговый ксерокс</a> В хорошем состоянии в отличном месте, цена - 2000 $. (012) 345 67 89 vend@gmail.com</div> <div style="text-align:right"><a href="#">Добавить сообщение</a></div>
 					<?endif?>
-					<hr /><b>Нашли ошибку или неточность?</b><br />
-					Выделите её мышью и нажмите Ctrl + Enter.<br />
-					<?if($TAGS$)?><p><img align="absmiddle" src="/Images-new/Icos/tags.png" width="24" border="0" alt="" />$TAGS$</p><?endif?>
 
-					<?if($USER_LOGGED_IN$)?>
-					<?else?>
-					<br />
-					<div class="alert alert-danger">
-					Уважаемый посетитель, Вы находитесь в группе <b>Гости</b> и не можете оставлять комментарии. Пожалуйста, <a href="$REGISTER_LINK$">зарегистрируйтесь</a> либо <a href="$LOGIN_LINK$">войдите</a> на сайт под своим логином.
+					<div class="notice notice-info">
+						<strong>Нашли ошибку</strong> или неточность? Выделите её мышью и нажмите Ctrl + Enter.
 					</div>
-					<br />
-					<?endif?>
 
-					<?if($COM_IS_ACTIVE$)?>
-					<?if($COM_CAN_READ$)?>
-					<hr />
-					<div style="font-size:20px;"><img align="absmiddle" width="32" src="/Images-new/Icos/Comments.png" border="0" alt="" />
-					<?if($COM_NUM_ENTRIES$=0)?>
-					Комментариев пока нет
-					<?else?>
-					Комментарии ($COM_NUM_ENTRIES$)
-					<?endif?>
+					<div class="article_comments">
+						<h3 class="article_comments-title">Комментарии <?if($COM_NUM_ENTRIES$>0)?>($COM_NUM_ENTRIES$)<?endif?></h3>
+
+						<?if($COM_IS_ACTIVE$)?>
+							<?if($COM_CAN_READ$)?>
+								<div class="article_comments-list">
+									<?if($COM_NUM_ENTRIES$=0)?>
+										Комментариев пока нет
+									<?else?>
+										<p>$COM_BODY$</p>
+										<p align="center">$COM_PAGE_SELECTOR$</p>
+									<?endif?>
+								</div>
+							<?endif?>
+
+							<?if($COM_CAN_ADD$)?>
+								<div class="article_comments-add_form">
+									<h3 class="article_comments-title">Написать комментарий</h3>
+									$COM_ADD_FORM$
+								</div>
+							<?else?>
+								<div class="notice notice-danger">
+									<strong>Уважаемый посетитель</strong>, Вы находитесь в группе <b>Гости</b> и не можете оставлять комментарии. Пожалуйста, <a href="$REGISTER_LINK$">зарегистрируйтесь</a> либо <a href="$LOGIN_LINK$">войдите</a> на сайт под своим логином.
+								</div>
+							<?endif?>
+						<?endif?>
 					</div>
-					<p>$COM_BODY$</p>
-					<p align="center">$COM_PAGE_SELECTOR$</p>
-					<?endif?>
-
-					<?if($COM_CAN_ADD$)?>
-					$COM_ADD_FORM$
-					<?endif?>
-					<?endif?> 
 				</div> 
 			</div> 
 

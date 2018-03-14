@@ -3,7 +3,7 @@
 		<?if($SCREEN_URL$)?>
 			<img class="listing_tile-img" alt="$TITLE$" src="$SCREEN_URL$">
 		<?else?>
-			<img class="listing_tile-img" alt="$TITLE$" src="/Images/board_no_img.jpg" />
+			<img class="listing_tile-img" alt="$TITLE$" src="/img/board_no_img.jpg" />
 		<?endif?>
 		<?if($OTHER3$)?>
 			<span class="listing_tile-price">
