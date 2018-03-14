@@ -85,6 +85,10 @@ h4 a {
 
 .wrapper {width:100%; overflow:hidden;position:relative;}
 
+.hidden {
+    display: none !important;
+}
+
 .content,
 .header-content,
 .footer-content {
@@ -197,7 +201,7 @@ header {
  background-repeat: no-repeat;
  background-position: 0px 16%;
  height: 320px;
- background-size: cover;
+ background-size: 100% auto;
  margin-bottom: -100px;
 }
 
@@ -430,7 +434,6 @@ border-radius: 4px;
 
 .content-block {
  position:relative;
- overflow:hidden;
  margin-top: 20px;
 }
 
@@ -732,99 +735,115 @@ padding:0;
  padding:10px;
 }
 
-.seller-info {
+.seller_info-header {
  margin-bottom:10px;
 }
 
-.seller-avatar {
+.seller_info-avatar {
  float:left;
  margin-right:10px;
  max-width:50px;
 }
 
-.seller-avatar img {
+.seller_info-avatar img {
  border:1px solid #666;
  width:50px;
 }
 
-.seller-name {
+.seller_info-name {
  display: block;
  font-size: 16px;
+ float: left;
  line-height: 24px;
  overflow-x: hidden;
- text-transform: capitalize;
  font-weight:bold;
  margin-bottom:5px;
 }
 
-.seller-status {
+.seller_info-status {
  font-size:10px;
  line-height:12px;
 }
 
-.seller-online {
+.seller_info-status.online {
  color:green;
  font-weight:bold;
 }
 
-.seller-offline {
+.seller_info-status.offline {
  color:#B94A48;
 }
 
-.seller-list-param {
+.seller_info-last_visit {
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 12px;
+    margin-top: 5px;
+}
+
+.seller_info-list {
  margin:0;
  padding:0;
  list-style: none;
 }
 
-.seller-param {
+.seller_info-item {
  margin-bottom:10px;
  position:relative;
 }
 
-.seller-param__border {
- border-bottom: 1px dotted #DDDDDD;
- height:1px;
+.seller_info-item.border {
+    border-bottom: 1px dotted #DDDDDD;
+    padding-bottom: 10px;
 }
 
-.seller-param__display-none {
- display:none;
-}
-
-.seller-reputation {
+.seller_info-reputation {
  position:relative;
 }
 
-.seller-reputation span:hover {
+.seller_info-reputation span:hover {
  text-decoration:underline;
 }
 
-.seller-reputation-info {}
-
-.seller-ban a {color:#B94A48;}
-
-.seller-banned-till {
- text-align:center;
-}
+.seller_info-ban a {color:#B94A48;}
 
 .hint-wrap {
  position:relative;
 }
 
 .hint-block {
- display:none;
- position:absolute;
- left:0;
- top:20px;
- border:1px solid #B8B8B8;
- background-color:#E0F1FD;
- padding: 0 5px;
- height:auto;
- width:250px;
- z-index:2;
- border-radius: 5px;
- -moz-border-radius: 5px;
- -webkit-border-radius: 5px;
+    margin-bottom: 15px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    text-align: center;
+    padding: 5px 12px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font: 400 11px 'PT Sans', Arial, sans-serif;
+    line-height: 1.5;
+    transition: all .2s ease-out;
+    max-width: 200px;
+}
+
+.hint-block:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 100%;
+    left: 21px;
+    margin: 0 0 0 -6px;
+    border: 6px solid rgba(0, 0, 0, 0);
+    border-top-color: #000;
+    border-top-color: rgba(0, 0, 0, 0.7);
+}
+
+.hint-link:hover + .hint-block {
+    visibility: visible;
+    opacity: 1;
 }
 
 div.bordered,
@@ -1338,7 +1357,7 @@ a.catNameActive:hover {text-decoration:underline; color:#000000;}
 .commFl {width:100%;}
 .smiles {border:1px inset;background:#FAFCFE;}
 .commReg {padding: 10 0 10 0px; text-align:center;}
-.commError {color:#FF0000;}
+.commError {color:#FF0000; margin-bottom: 10px;}
 .securityCode {}
 /* ------------------- */
 
@@ -1409,6 +1428,10 @@ input[type="button"]:hover {
  background-image: none;
  background-color: #1c7bd3;
  color: #fff;
+}
+
+.button.full {
+    display: block;
 }
 
 .buttons_row {
@@ -1483,4 +1506,6 @@ a.groupOther1,a.groupOther1:hover {color:#0088CC;}
 .seller-param:after,
 .header_links:after,
 .form-group:after,
+.content-block:after,
+.seller_info-header:after,
 .homepage_articles_list-desc:after { display:block; content:""; clear:both; font-size:0; line-height:0; height:0; }
