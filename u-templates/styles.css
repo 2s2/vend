@@ -663,9 +663,7 @@ border-radius: 4px;
 }
 
 .listing-description {
-    border: 1px solid #f4f4f4;
     margin-bottom: 50px;
-    padding: 20px;
 }
 
 .homepage_title {
@@ -793,7 +791,7 @@ padding:0;
 }
 
 .seller_info-item.border {
-    border-bottom: 1px dotted #DDDDDD;
+    border-bottom: 1px solid #eaeff5;
     padding-bottom: 10px;
 }
 
@@ -886,7 +884,7 @@ h5.bordered
  width:334px;
 }
 
-#exhib, #video, #tehotdel, #law, #vendukr .title, #vendru .title, #vendworld .title
+/*#exhib, #video, #tehotdel, #law, #vendukr .title, #vendru .title, #vendworld .title
 {
  color:#fff;
  font-size:16px;
@@ -990,7 +988,7 @@ h5.bordered
 
 #vendworld .title {background-color:#00688B;}
 #vendukr .title {background-color:#0e6100;font-weight:normal;}
-#vendru .title {background-color:#bb1a00;}
+#vendru .title {background-color:#bb1a00;}*/
 
 
 .eDetails {
@@ -1044,8 +1042,53 @@ h5.bordered
 .login-block a {color:#4D6D91;}
 .login-block .control-group {margin-bottom:10px;}
 
-.table-adv-price {}
-.table-adv-price td {font-size:14px;}
+/*--------------------- Tabs ---------------------*/
+
+.tabs-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #eaeff5;
+}
+
+.tabs-input {
+  display: none;
+}
+
+.tabs-label {
+    border: 1px solid transparent;
+    color: #bbb;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0 0 -1px;
+    padding: 15px;
+    text-align: center;
+}
+
+.tabs-label.big {
+    font-size: 22px;
+    line-height: 30px;
+    padding: 15px 25px;
+}
+
+.tabs-label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+.tabs-input:checked + label {
+  color: #333;
+  border: 1px solid #eaeff5;
+  border-top: 2px solid #1c7bd3;
+  border-bottom: 1px solid #fff;
+}
+
+.tabs #tab1:checked ~ #content1,
+.tabs #tab2:checked ~ #content2,
+.tabs #tab3:checked ~ #content3,
+.tabs #tab4:checked ~ #content4 {
+  display: block;
+}
 
 /*--------------------- Content end ---------------------*/
 

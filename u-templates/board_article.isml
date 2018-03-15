@@ -132,11 +132,7 @@
 											<?if($CAT_NAME$)?><a href="$CAT_URL$">$CAT_NAME$</a><?endif?>
 										</li>
 									<?endif?>
-									<?if($AUTHOR_NAME$)?><li>Контактное лицо: <b>$AUTHOR_NAME$</b></li><?endif?>
-									<?if($AUTHOR_PHONE$)?><li>Телефон: <b>$AUTHOR_PHONE$</b></li><?endif?>
-									<?if($OTHER4$)?><li>Telegram: <b>$OTHER4$</b></li><?endif?>
-									<?if($OTHER5$)?><li>Viber: <b>$OTHER5$</b></li><?endif?>
-									<?if($AUTHOR_EMAIL$)?><li>E-mail: <b>$AUTHOR_EMAIL$</b></li><?endif?>
+									
 								</ul>
 								<div class="details">
 									<?if($TAGS$)?><div class="listing-tags"><i class="fas fa-tag"></i> $TAGS$</div><?endif?>
@@ -149,8 +145,33 @@
 							</div>
 						</div>
 						<div class="listing-description">
-							<h3>Описание:</h3>
-							$BRIEF$
+							<?if($GROUP_ID$='4')?>
+							<div class="tabs">
+
+								<input class="tabs-input" id="tab1" type="radio" name="tabs" checked>
+								<label class="tabs-label big" for="tab1">Описание</label>
+
+								<input class="tabs-input" id="tab2" type="radio" name="tabs">
+								<label class="tabs-label big" for="tab2">Контакты</label>
+
+								<section class="tabs-content" id="content1">
+									$BRIEF$
+								</section>
+
+								<section class="tabs-content" id="content2">
+									<ul>
+										<?if($AUTHOR_NAME$)?><li>Контактное лицо: <b>$AUTHOR_NAME$</b></li><?endif?>
+										<?if($AUTHOR_PHONE$)?><li>Телефон: <b>$AUTHOR_PHONE$</b></li><?endif?>
+										<?if($OTHER4$)?><li>Telegram: <b>$OTHER4$</b></li><?endif?>
+										<?if($OTHER5$)?><li>Viber: <b>$OTHER5$</b></li><?endif?>
+										<?if($AUTHOR_EMAIL$)?><li>E-mail: <b>$AUTHOR_EMAIL$</b></li><?endif?>
+									</ul>
+								</section>
+								</div>
+							<?else?>
+								<h3>Описание:</h3>
+								$BRIEF$
+							<?endif?>
 						</div>
 					</div>
 					<div class="google-adv">
