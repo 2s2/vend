@@ -122,8 +122,13 @@
 							<div class="listing-info">
 								<?if($OTHER3$)?><span class="listing-price">$OTHER3$</span><?endif?>
 								<ul>
-									<?if($FILTER1_VALUE$)?><li>Страна: <b>$FILTER1_VALUE$</b></li><?endif?>
-									<?if($OTHER1$)?><li>Город: <b>$OTHER1$</b></li><?endif?>
+									<li>
+										<?if($OTHER1$)?>
+											Город: <b>$OTHER1$</b><?if($FILTER1_VALUE$)?>, <b>$FILTER1_VALUE$<?endif?></b>
+										<?else?>
+											Страна: <b>$FILTER1_VALUE$</b>
+										<?endif?>
+									</li>
 									<?if($OTHER2$)?><li>Срок эксплуатации: <b>$OTHER2$</b></li><?endif?>
 									<?if($SECTION_NAME$)?>
 										<li>
@@ -145,9 +150,7 @@
 							</div>
 						</div>
 						<div class="listing-description">
-							<?if($GROUP_ID$='4')?>
 							<div class="tabs">
-
 								<input class="tabs-input" id="tab1" type="radio" name="tabs" checked>
 								<label class="tabs-label big" for="tab1">Описание</label>
 
@@ -167,11 +170,7 @@
 										<?if($AUTHOR_EMAIL$)?><li>E-mail: <b>$AUTHOR_EMAIL$</b></li><?endif?>
 									</ul>
 								</section>
-								</div>
-							<?else?>
-								<h3>Описание:</h3>
-								$BRIEF$
-							<?endif?>
+							</div>
 						</div>
 					</div>
 					<div class="google-adv">

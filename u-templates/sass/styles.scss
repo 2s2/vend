@@ -1,129 +1,17 @@
 @import "reset";
 @import "variables";
+@import "mixins";
 
 @import "general";
+@import "layouts";
 @import "header";
 @import "footer";
 @import "tabs";
+@import "menus";
 
 /*--------------------- Content ---------------------*/
 
 .space { height:20px; }
-
-.content {
- box-shadow: 0 2px 10px 0 #d8dde6;
- margin-bottom: 20px;
- position: relative;
- background-color: #fff;
- padding: 20px;
- border-radius: 4px;
-}
-
-/*.HMenu {
- text-align:left;
- padding: 0; 
- margin: 0 auto;
- border-bottom:1px solid #d0d1d5;
- overflow:hidden;
-}
-
-.HMenu li {
- float:left;
- display:inline-block;
- font-family:Times New Roman;
- font-size:15px;
- line-height: 18px;
- color:#696969;
- font-weight:bold;
- list-style:none;
-}
-
-.HMenu li a {
- display:inline-block;
- text-decoration:none; 
- color:#696969;
- padding: 1px 6px 4px;
-}
-.HMenu a:hover {text-decoration:none;}*/
-
-.main-menu {
- font-size: 15px;
-}
-
-.top-menu {
- text-align:left;
- padding: 0;
- margin: 0;
- list-style: none;
- float: left;
-}
-
-.top-menu > li {
- float:left;
- position: relative;
- transition: ease 0.2s all;
-}
-
-.top-menu > li:hover {
-    background: none;
-}
-
-.top-menu > li > a {
- display:inline-block;
- text-decoration:none; 
- color: #fff;
- margin: 0;
- padding: 4px 25px;
-}
-
-.top-menu > li > a:hover {
- color: #d4d4d4;
-}
-
-.top-menu .dropdown-menu {
-position: absolute;
-top: 100%;
-left: 0;
-z-index: 1000;
-display: none;
-float: left;
-min-width: 200px;
-padding: 5px 0;
-margin: 2px 0 0;
-list-style: none;
-background-color: #ffffff;
-box-shadow: 0 0 53px rgba(0,0,0,.1);
-border-radius: 4px;
-}
-
-.top-menu .dropdown-menu li a {
-    display: block;
-    font-size: 13px;
-    padding: 7px 15px;
-    transition: ease 0.2s all;
-}
-
-.top-menu .dropdown-menu li:last-child a {
-    border-bottom: none;
-}
-
-.top-menu .dropdown-menu li a:hover {
-    text-decoration: none;
-    background-color: #F5F5F5;
-}
-
-.top-menu > li:hover .dropdown-menu {
- display: block;
- margin: 0;
-}
-
-.board-menu {
-    float: right;
-    line-height: 34px;
-    margin-right: 15px;
-}
-
-.HMenu > li.last {float:right;}
 
 .breadcrumbs {
  font-size: 11px;
@@ -174,28 +62,11 @@ border-radius: 4px;
     top: 37px !important;
 }
 
-.content-block {
- position:relative;
- margin-top: 20px;
-}
 
-.col-main {
- box-sizing: border-box;
- float:right;
- width:74%;
- margin-left: 1%;
-}
-
-.col-left {
- box-sizing: border-box;
- float:left;
- width:25%;
-}
-
-.MainImg {
+/*.MainImg {
  margin-bottom:5px;
  margin-top:5px;
-}
+}*/
 
 .listings .listings_filters select {
     width: 200px;
@@ -779,10 +650,10 @@ h5.bordered
     padding: 0 5px;
 }
 
-.login-block .username {display:block;}
+/*.login-block .username {display:block;}
 .login-block .loginButton {float:right;}
 .login-block a {color:#4D6D91;}
-.login-block .control-group {margin-bottom:10px;}
+.login-block .control-group {margin-bottom:10px;}*/
 
 
 /*--------------------- Content end ---------------------*/
@@ -824,12 +695,6 @@ a.VipLink {color:#B22222;}
 }
 
 /* ====== Переключатель страниц End ====== */
-
-/* Menus */
-ul.uz {list-style: none; margin: 0 0 0 0; padding-left: 0px;line-height: 16px;}
-.uz li,
-li.menus {font-size:12px; margin: 0; padding: 0 0 0 11px; background: url('http://src.ucoz.ru/t/831/22.gif') no-repeat 3px 4px; margin-bottom: 10px;}
-/* ----- */
 
 /* --Последнее--- */
 #toprightPan{width:170px; height:185px; position:absolute; top:0px; right:0px;}
@@ -947,10 +812,6 @@ a.catNameActive:hover {text-decoration:underline; color:#000000;}
 
 .article_comments-list {
     margin-bottom: 30px;
-}
-
-.article_comments-add_form {
-
 }
 
 .comment {
@@ -1138,7 +999,6 @@ a.groupOther1,a.groupOther1:hover {color:#0088CC;}
 .category_list:after,
 .listing_tile-info:after,
 .seller-param:after,
-.header_links:after,
 .form-group:after,
 .content-block:after,
 .seller_info-header:after,

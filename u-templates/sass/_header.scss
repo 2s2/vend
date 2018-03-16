@@ -26,6 +26,8 @@ header:before {
 }
 
 .header_links {
+    @include clearfix;
+
     border-bottom: 1px solid rgba(255,255,255,.1);
     margin-bottom: 20px;
 }

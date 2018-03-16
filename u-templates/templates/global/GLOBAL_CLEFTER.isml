@@ -40,12 +40,6 @@
  <div class="sidebar-block-content">$POLL$</div>
 </div>
 
-<?if($GROUP_ID$="4")?>
-<div class="sidebar-block">
-<div class="sidebar-block-title">Мы в социальных сетях</div><a href="http://twitter.com/vendors_ua" target="_blank"><img width="180" src="http://www.vendors.com.ua/Images/Icos/twitter.png" alt="Twitter" /></a>
-</div>
-<?endif?>
-
 <div class="sidebar-block">
 	<div class="sidebar-block-title">Статистика</div>
 	<div class="sidebar-block-content">

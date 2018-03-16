@@ -58,7 +58,7 @@
 							<input type="checkbox" name="iagree" value="iagree" onClick="document.getElementById('bdF77').disabled=''"><font color="red">*</font> 
 							<font color="#A52A2A"><a href="javascript://" onclick="$('#ReadRules').toggle();document.getElementById('bdF77').disabled='';document.agree.iagree.checked='checked';"><b>Я ознакомился (-ась) с правилами размещения объявлений</b></a></font>
 						</form>
-						<div id="ReadRules" style="line-height:1.5;font-size:17px;border:1px solid red;padding:10px;display:none;">
+						<div class="notice notice-danger" id="ReadRules">
 							<h2>Запрещается:</h2>
 							<ul>
 								<li>- в заголовке и тексте сообщения</li>
