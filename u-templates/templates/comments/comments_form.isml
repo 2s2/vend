@@ -1,0 +1,16 @@
+$ERROR$
+<div class="form-group col-2">
+	<div class="form-row">
+		<input placeholder="Имя" type="text" name="name" id="name" value="$NAME$">
+	</div>
+	<div class="form-row">
+		<input placeholder="E-mail" type="text" name="mail" id="mail" value="$EMAIL$">
+	</div>
+</div>
+<div class="form-row">
+	<textarea name="message" id="message">$MESSAGE$</textarea>
+</div>
+<?if($SECURITY_CODE$)?> 
+	Код: $SECURITY_CODE$
+<?endif?> 
+<input onClick="doAddComments();return false;" name="submit" type="submit" value="Добавить"> 

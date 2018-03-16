@@ -1,0 +1,41 @@
+<div class="comment">
+	<div class="comment-header">
+		<div class="comment-header_left">
+			<span class="comment-raiting">
+				<?if($COMMENT_RATING$<0)?>
+					<span class="myWinError"> <b>$COMMENT_RATING$</b></span>
+				<?else?>
+					<?if($COMMENT_RATING$=0)?><span style="color:gray;"><b>$COMMENT_RATING$</b></span>
+						<?else?><span class="myWinSuccess"><b>+$COMMENT_RATING$</b></span>
+					<?endif?>
+				<?endif?>
+				<?if($GOOD_COMMENT_URL$)?>
+					<a href="$GOOD_COMMENT_URL$">
+						<img src="http://s20.ucoz.net/img/icon/thumbu.png" width="13" align="absmiddle" border="0" title="Хороший пост">
+					</a>
+					<a href="$BAD_COMMENT_URL$">
+						<img src="http://s20.ucoz.net/img/icon/thumbd.png" width="13" border="0" align="absmiddle" title="Плохой пост">
+					</a>
+				<?else?>
+					<img src="http://s20.ucoz.net/img/icon/thumbu_.png" align="absmiddle" width="13" border="0" title="Хороший пост">
+					<img src="http://s20.ucoz.net/img/icon/thumbd_.png" width="13" align="absmiddle" border="0" title="Плохой пост">
+				<?endif?>
+			</span>
+			<?if($USERNAME$)?><a class="comment-author" href="$PROFILE_URL$">$USERNAME$</a><?else?><b>$NAME$</b><?endif?>
+			<span class="cTop" style="text-align:left;padding-top:10px;"><?if($IS_OWN$)?><span class="myWinError">*</span> <?else?><?if($IS_NEW$)?><span class="myWinSuccess">*</span> <?endif?><?endif?></span>
+		</div>
+		<div class="comment-header_right">
+			<span class="comment-material">
+				<?if($ENTRY_URL$)?>[<a href="$ENTRY_URL$" target="_blank" title="Перейти на страницу материала">Материал</a>]<?endif?>
+			</span>
+			<a href="#ent$ID$" onclick="if (document.getElementById('comEnt$ID$')){$('body').scrollTo( { top:$('#comEnt$ID$').offset().top-22, left:0}, 500 );return false;}" name="ent$ID$"><span style="font-size:7pt;unicode-bidi:embed;">$DATE$ $TIME$</span></a>
+			$MODER_PANEL$
+		</div>
+	
+	</div>
+	<div class="comment-body">
+		<div style="text-align:left;clear:both;padding:2px 0;"><?if($USER_AVATAR_URL$)?><a href="$PROFILE_URL$" title="$USERNAME$"><img align="left" src="$USER_AVATAR_URL$" width="30" border="0" hspace="5"></a><?endif?>$MESSAGE$</div>
+		<?if($ANSWER$)?><div class="cAnswer" style="text-align:left;clear:both;"><b>Ответ</b>: $ANSWER$</div><?endif?>
+		<?if($ANSWER_URL$)?><div style="clear:both;padding:4px 0;font-size:7pt;">[<a href="$ANSWER_URL$">Ответить</a>]</div><?endif?>
+	</div>
+</div>

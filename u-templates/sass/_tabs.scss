@@ -1,0 +1,47 @@
+/*--------------------- Tabs ---------------------*/
+
+.tabs-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #eaeff5;
+}
+
+.tabs-input {
+  display: none;
+}
+
+.tabs-label {
+    border: 1px solid transparent;
+    color: #bbb;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0 0 -1px;
+    padding: 15px;
+    text-align: center;
+}
+
+.tabs-label.big {
+    font-size: 22px;
+    line-height: 30px;
+    padding: 15px 25px;
+}
+
+.tabs-label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+.tabs-input:checked + label {
+  color: #333;
+  border: 1px solid #eaeff5;
+  border-top: 2px solid $color;
+  border-bottom: 1px solid #fff;
+}
+
+.tabs #tab1:checked ~ #content1,
+.tabs #tab2:checked ~ #content2,
+.tabs #tab3:checked ~ #content3,
+.tabs #tab4:checked ~ #content4 {
+  display: block;
+}

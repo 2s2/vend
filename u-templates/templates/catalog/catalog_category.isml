@@ -1,0 +1,41 @@
+<html>
+<head>
+
+<title>$CAT_NAME$ <?if($SECTION_NAME$)?>- $SECTION_NAME$<?endif?> - $SITE_NAME$</title>
+<meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
+<link rel="shortcut icon" href="http://vendors.com.ua/ico.png" >
+<link type="text/css" rel="StyleSheet" href="/_st/my.css" />
+
+</head>
+
+<body class="$MODULE_ID$ $MODULE_ID$-$PAGE_ID$">
+	$GLOBAL_AHEADER$
+
+	<div class="main">
+		<section class="content">
+
+			<ul class="breadcrumbs">
+				<li><a href="$HOME_PAGE_LINK$">Главная</a> <span class="divider">&raquo;</span></li>
+				<li><a href="$SECTION_URL$">$SECTION_NAME$</a> <span class="divider">&raquo;</span></li>
+				<li><a href="$CAT_URL$">$CAT_NAME$</a></li>
+			</ul>
+
+			<div class="content-block">
+				<div class="col-left">$GLOBAL_CLEFTER$</div> 
+				<div class="col-main">
+					<?if($FILTER1_MENU$)?><hr />Фильтр: $FILTER1_MENU$<?endif?>
+					<?if($SORTING_MENU$)?><hr />Сортировать по: $SORTING_MENU$<hr /><?endif?>$BODY$
+					<?if($PAGE_SELECTOR$)?><div class="catPages1" align="center">$PAGE_SELECTOR$</div><?endif?>
+				</div> 
+			</div> 
+
+		</section>
+	</div>
+	
+	$GLOBAL_BFOOTER$
+
+	$GLOBAL_SCRIPTS$
+	
+</body>
+
+</html>

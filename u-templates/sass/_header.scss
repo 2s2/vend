@@ -1,0 +1,71 @@
+/*--------------------- Header ---------------------*/
+
+header {
+ margin-bottom: 20px;
+ position: relative;
+ background-image: url(/img/header_bg.jpg);
+ background-repeat: no-repeat;
+ background-position: 0px 16%;
+ height: 320px;
+ background-size: 100% auto;
+ margin-bottom: -100px;
+}
+
+header:before {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #1f222b;
+    opacity: .67;
+    content: "";
+}
+
+.header_links {
+    @include clearfix;
+
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    margin-bottom: 20px;
+}
+
+.header_links-list {
+    float: right;
+}
+
+.header_links-item {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.header_links-item a {
+    color: #fff;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+h1.logo {
+ float:left;
+ margin: 0 80px 0 0;
+ padding: 0;
+}
+
+h1.logo a {
+    display: block;
+}
+
+.banner-top {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    clear: both;
+    font-size: 25px;
+    font-weight: bold;
+    height:55px;
+    line-height: 55px;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
