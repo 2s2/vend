@@ -9,6 +9,11 @@ dl, dd {
 html {
   margin-top: 0 !important; }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 /*--------------------- General ---------------------*/
 body {
   font-family: arial, helvetica;
@@ -337,6 +342,29 @@ a.menu1:active {
 .blockT2 {
   padding: 5px; }
 
+.content {
+  box-shadow: 0 2px 10px 0 #d8dde6;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px; }
+
+.content-block {
+  position: relative;
+  margin-top: 20px; }
+
+.col-main {
+  box-sizing: border-box;
+  float: right;
+  width: 74%;
+  margin-left: 1%; }
+
+.col-left {
+  box-sizing: border-box;
+  float: left;
+  width: 25%; }
+
 /*--------------------- Header ---------------------*/
 header {
   margin-bottom: 20px;
@@ -364,6 +392,10 @@ header:before {
 .header_links {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 20px; }
+  .header_links:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .header_links-list {
   float: right; }
@@ -478,18 +510,6 @@ footer {
 .tabs #tab4:checked ~ #content4 {
   display: block; }
 
-/*--------------------- Content ---------------------*/
-.space {
-  height: 20px; }
-
-.content {
-  box-shadow: 0 2px 10px 0 #d8dde6;
-  margin-bottom: 20px;
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 4px; }
-
 /*.HMenu {
  text-align:left;
  padding: 0; 
@@ -516,6 +536,23 @@ footer {
  padding: 1px 6px 4px;
 }
 .HMenu a:hover {text-decoration:none;}*/
+/*.HMenu > li.last {float:right;}*/
+/* Menus */
+ul.uz {
+  list-style: none;
+  margin: 0 0 0 0;
+  padding-left: 0px;
+  line-height: 16px; }
+
+.uz li,
+li.menus {
+  font-size: 12px;
+  margin: 0;
+  padding: 0 0 0 11px;
+  background: url("http://src.ucoz.ru/t/831/22.gif") no-repeat 3px 4px;
+  margin-bottom: 10px; }
+
+/* ----- */
 .main-menu {
   font-size: 15px; }
 
@@ -581,8 +618,9 @@ footer {
   line-height: 34px;
   margin-right: 15px; }
 
-.HMenu > li.last {
-  float: right; }
+/*--------------------- Content ---------------------*/
+.space {
+  height: 20px; }
 
 .breadcrumbs {
   font-size: 11px;
@@ -623,25 +661,10 @@ footer {
   left: 0 !important;
   top: 37px !important; }
 
-.content-block {
-  position: relative;
-  margin-top: 20px; }
-
-.col-main {
-  box-sizing: border-box;
-  float: right;
-  width: 74%;
-  margin-left: 1%; }
-
-.col-left {
-  box-sizing: border-box;
-  float: left;
-  width: 25%; }
-
-.MainImg {
-  margin-bottom: 5px;
-  margin-top: 5px; }
-
+/*.MainImg {
+ margin-bottom:5px;
+ margin-top:5px;
+}*/
 .listings .listings_filters select {
   width: 200px; }
 
@@ -1144,18 +1167,10 @@ h5.bordered {
 .sidebar-block-content {
   padding: 0 5px; }
 
-.login-block .username {
-  display: block; }
-
-.login-block .loginButton {
-  float: right; }
-
-.login-block a {
-  color: #4D6D91; }
-
-.login-block .control-group {
-  margin-bottom: 10px; }
-
+/*.login-block .username {display:block;}
+.login-block .loginButton {float:right;}
+.login-block a {color:#4D6D91;}
+.login-block .control-group {margin-bottom:10px;}*/
 /*--------------------- Content end ---------------------*/
 a.VipLink {
   color: #B22222; }
@@ -1193,22 +1208,6 @@ a.VipLink {
   color: #CCC; }
 
 /* ====== Переключатель страниц End ====== */
-/* Menus */
-ul.uz {
-  list-style: none;
-  margin: 0 0 0 0;
-  padding-left: 0px;
-  line-height: 16px; }
-
-.uz li,
-li.menus {
-  font-size: 12px;
-  margin: 0;
-  padding: 0 0 0 11px;
-  background: url("http://src.ucoz.ru/t/831/22.gif") no-repeat 3px 4px;
-  margin-bottom: 10px; }
-
-/* ----- */
 /* --Последнее--- */
 #toprightPan {
   width: 170px;
@@ -1272,8 +1271,7 @@ a.k:hover {
   background: url(http://vendors.com.ua/Images/Temp/arrow-hover.gif) 0 50% no-repeat;
   text-decoration: none; }
 
-.ka
-a.ka {
+.ka a.ka {
   width: 117px;
   display: block;
   background: url(http://vendors.com.ua/Images/Temp/arrow-normal.gif) 0 50% no-repeat #fff;
@@ -1720,7 +1718,6 @@ a.groupOther1, a.groupOther1:hover {
 .category_list:after,
 .listing_tile-info:after,
 .seller-param:after,
-.header_links:after,
 .form-group:after,
 .content-block:after,
 .seller_info-header:after,
