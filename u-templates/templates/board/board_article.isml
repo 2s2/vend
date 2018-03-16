@@ -162,12 +162,37 @@
 								</section>
 
 								<section class="tabs-content" id="content2">
-									<ul>
-										<?if($AUTHOR_NAME$)?><li>Контактное лицо: <b>$AUTHOR_NAME$</b></li><?endif?>
-										<?if($AUTHOR_PHONE$)?><li>Телефон: <b>$AUTHOR_PHONE$</b></li><?endif?>
-										<?if($OTHER4$)?><li>Telegram: <b>$OTHER4$</b></li><?endif?>
-										<?if($OTHER5$)?><li>Viber: <b>$OTHER5$</b></li><?endif?>
-										<?if($AUTHOR_EMAIL$)?><li>E-mail: <b>$AUTHOR_EMAIL$</b></li><?endif?>
+									<ul class="listing-contact_list">
+										<?if($AUTHOR_NAME$)?>
+											<li class="listing-contact_item">
+												<span class="listing-contact_item_icon"><i class="far fa-user"></i></span>
+												<span class="listing-contact_item_type">Контактное лицо:</span> $AUTHOR_NAME$
+											</li>
+										<?endif?>
+										<?if($AUTHOR_PHONE$)?>
+											<li class="listing-contact_item">
+												<span class="listing-contact_item_icon"><i class="fas fa-phone-volume"></i></span>
+												<span class="listing-contact_item_type">Телефон:</span> $AUTHOR_PHONE$
+											</li>
+										<?endif?>
+										<?if($OTHER4$)?>
+											<li class="listing-contact_item">
+												<span class="listing-contact_item_icon"><i class="fab fa-telegram-plane"></i></span>
+												<span class="listing-contact_item_type">Telegram:</span> $OTHER4$
+											</li>
+										<?endif?> 	
+										<?if($OTHER5$)?>
+											<li class="listing-contact_item">
+												<span class="listing-contact_item_icon"><i class="fab fa-viber"></i></span>
+												<span class="listing-contact_item_type">Viber:</span> $OTHER5$
+											</li>
+										<?endif?>
+										<?if($AUTHOR_EMAIL$)?>
+											<li class="listing-contact_item">
+												<span class="listing-contact_item_icon"><i class="far fa-envelope"></i></span>
+												<span class="listing-contact_item_type">E-mail:</span> $AUTHOR_EMAIL$
+											</li>
+										<?endif?>
 									</ul>
 								</section>
 							</div>
