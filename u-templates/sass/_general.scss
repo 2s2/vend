@@ -192,6 +192,29 @@ a:hover {text-decoration:underline;}
 
 td {text-align:left;}
 form {padding:0 !important;margin:0 !important;}
+
+
+
+.form-row {
+    clear: both;
+    margin-bottom: 15px;
+    width: 100%;
+
+    &.no-indent {
+        margin-bottom: 0;
+    }
+}
+
+.field-wrapper {
+    &.short {
+        input,
+        select,
+        textarea {
+            width: 300px;
+        }
+    }
+}
+
 input,textarea,select {
     border-radius: 4px;
     border: 1px solid #ced4da;
@@ -212,19 +235,6 @@ input[type="checkbox"] {
     width: auto;
 }
 
-.form-row {
-    margin-bottom: 15px;
-}
-
-.form-group.col-2 .form-row {
-    box-sizing: border-box;
-    float: left;
-    width: 50%;
-}
-
-.form-group.col-2 .form-row:first-child {
-    padding-right: 15px;
-}
 
 .copy {font-size:7pt;}
 

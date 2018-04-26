@@ -239,6 +239,18 @@ form {
   padding: 0 !important;
   margin: 0 !important; }
 
+.form-row {
+  clear: both;
+  margin-bottom: 15px;
+  width: 100%; }
+  .form-row.no-indent {
+    margin-bottom: 0; }
+
+.field-wrapper.short input,
+.field-wrapper.short select,
+.field-wrapper.short textarea {
+  width: 300px; }
+
 input, textarea, select {
   border-radius: 4px;
   border: 1px solid #ced4da;
@@ -255,17 +267,6 @@ input[type="radio"],
 input[type="checkbox"] {
   height: auto;
   width: auto; }
-
-.form-row {
-  margin-bottom: 15px; }
-
-.form-group.col-2 .form-row {
-  box-sizing: border-box;
-  float: left;
-  width: 50%; }
-
-.form-group.col-2 .form-row:first-child {
-  padding-right: 15px; }
 
 .copy {
   font-size: 7pt; }
@@ -619,6 +620,21 @@ li.menus {
   margin-right: 15px; }
 
 /*--------------------- User ---------------------*/
+.user_profile-list {
+  margin-bottom: 40px; }
+
+.user_profile-item {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px; }
+
+.user_profile-item_title {
+  display: inline-flex;
+  flex-basis: 24%; }
+
+.user_profile-item_content {
+  flex-basis: 76%; }
+
 .user_block {
   margin-bottom: 20px;
   text-align: center; }
