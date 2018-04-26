@@ -1,0 +1,36 @@
+/*--------------------- User ---------------------*/
+
+.user_profile {
+
+}
+
+.user_block {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user_block-avatar img {
+  height: auto;
+  max-width: 200px;
+}
+
+.user_block-avatar span {
+  display: inline-block;
+}
+
+.user_block-username span.statusOnline,
+.user_block-username span.statusOffline {
+  border-radius: 4px;
+  display: inline-block;
+  height: 8px;
+  text-indent: -5000px;
+  width: 8px;
+}
+
+.user_block-username span.statusOnline {
+  background: green;
+}
+
+.user_block-username span.statusOffline {
+  background: red;
+}
