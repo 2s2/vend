@@ -618,6 +618,32 @@ li.menus {
   line-height: 34px;
   margin-right: 15px; }
 
+/*--------------------- User ---------------------*/
+.user_block {
+  margin-bottom: 20px;
+  text-align: center; }
+
+.user_block-avatar img {
+  height: auto;
+  max-width: 200px; }
+
+.user_block-avatar span {
+  display: inline-block; }
+
+.user_block-username span.statusOnline,
+.user_block-username span.statusOffline {
+  border-radius: 4px;
+  display: inline-block;
+  height: 8px;
+  text-indent: -5000px;
+  width: 8px; }
+
+.user_block-username span.statusOnline {
+  background: green; }
+
+.user_block-username span.statusOffline {
+  background: red; }
+
 /*--------------------- Content ---------------------*/
 .space {
   height: 20px; }
@@ -726,7 +752,7 @@ li.menus {
   font-weight: bold; }
 
 .listing_tile-desc {
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #EAEFF5;
   padding-bottom: 10px;
   margin-bottom: 50px; }
 
@@ -836,6 +862,33 @@ li.menus {
 .listing-description {
   margin-bottom: 50px; }
 
+.listing-contact_item {
+  border-top: 1px solid #EAEFF5;
+  margin-top: 10px;
+  padding-top: 10px; }
+  .listing-contact_item:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.listing-contact_item:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0; }
+
+.listing-contact_item_icon {
+  color: #1c7bd3;
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+  line-height: 27px;
+  margin-right: 15px; }
+
+.listing-contact_item_type {
+  display: inline-block;
+  font-weight: bold;
+  min-width: 150px; }
+
 .homepage_title {
   margin: 30px 0 50px;
   text-align: center; }
@@ -942,7 +995,7 @@ li.menus {
   position: relative; }
 
 .seller_info-item.border {
-  border-bottom: 1px solid #eaeff5;
+  border-bottom: 1px solid #EAEFF5;
   padding-bottom: 10px; }
 
 .seller_info-reputation {
@@ -1320,7 +1373,8 @@ li.k {
 
 .catNumData {
   color: #1c7bd3;
-  float: right; }
+  float: right;
+  font-size: 12px; }
 
 .catDescr {
   padding-left: 10px; }
@@ -1611,6 +1665,9 @@ input[type="button"] {
   padding: 6px 12px;
   box-sizing: border-box; }
 
+select {
+  height: 38px; }
+
 .button:hover,
 .pollBut:hover,
 input[type="reset"]:hover,
@@ -1665,12 +1722,6 @@ input[type="button"]:hover {
 
 .poll-answers .answer input {
   margin: 0; }
-
-.poll-answers .answer label {
-  display: inline-block;
-  font-size: 11px;
-  line-height: 18px;
-  margin-bottom: 0; }
 
 .pollButton {
   margin-top: 10px; }

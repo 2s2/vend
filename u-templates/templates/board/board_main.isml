@@ -33,6 +33,12 @@
 				<div class="col-left">$GLOBAL_CLEFTER$</div> 
 				<div class="col-main">
 					<div class="listings m-three_in_row">
+
+						<?if($GROUP_ID$=4)?>
+							<div class="allEntries">
+							</div>
+						<?endif?>
+
 						$BODY$
 						<?if($PAGE_SELECTOR$)?><div class="catPages1" id="pagesBlock1" align="center">$PAGE_SELECTOR$</div><?endif?>
 					</div>
@@ -43,6 +49,37 @@
 	</div>
 	
 	$GLOBAL_BFOOTER$
+
+	<script id="vip_listing-template" type="text/x-handlebars-template">
+		{{#each listing}}
+		<div class="listing_tile">
+			<a class="listing_tile-link" title="{{name}}" href="{{link}}">
+				<img class="listing_tile-img" alt="{{name}}" src="{{imagelink}}" />
+				<span class="listing_tile-price">
+					{{price}}
+				</span>
+			</a>
+			<div class="listing_tile-desc">
+				<h3 class="listing_tile-title">
+					<a href="{{link}}">{{name}}</a>
+				</h3>
+				<div class="listing_tile-text">
+					{{message}}
+				</div>
+				<div class="details">
+					<?if($USERNAME$)?>
+						<a href="{{usernameLink}}">{{username}}</a>
+					<?endif?>
+					<ul class="details-list">
+						<li class="details-item"><i class="far fa-calendar"></i> $DATE$</li>
+						<li class="details-item"><i class="fas fa-eye"></i> $READS$</li>
+						<li class="details-item"><i class="far fa-comment"></i> <a href="$COMMENTS_URL$">$COMMENTS_NUM$</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+	</script>
 
 	$GLOBAL_SCRIPTS$
 

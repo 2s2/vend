@@ -11,14 +11,14 @@
 	<div class="sidebar-block-title">Меню</div>
 	<div class="sidebar-block-content">
 	<ul class="sidebar-menu">
-	 <li class="item-1"><i class="fas fa-balance-scale"></i><a href="/publ/37">Правовая база</a></li>
-	 <li class="item-2"><i class="fas fa-pencil-alt"></i><a href="/load/2">Вендинг-договора</a></li>
-	 <li class="item-3"><i class="fas fa-calculator"></i><a href="/load/1">Расчёт окупаемости</a></li>
-	 <li class="item-4"><i class="fas fa-list"></i><a href="/load/4">Инструкции к автоматам</a></li>
-	 <li class="item-5"><i class="far fa-calendar-alt"></i><a href="/publ/39">Выставки</a></li>
-	 <li class="item-6"><i class="fab fa-youtube"></i><a href="/publ/40">Видео</a></li>
-	 <li class="item-7"><i class="fas fa-arrow-right"></i><a href="/index/0-2">Реклама на сайте</a></li>
-	 <li class="item-8"><i class="fas fa-phone"></i><a href="/index/0-3">Обратная связь</a></li>
+	 <li class="sidebar-menu_item"><i class="fas fa-balance-scale"></i><a href="/publ/37">Правовая база</a></li>
+	 <li class="sidebar-menu_item"><i class="fas fa-pencil-alt"></i><a href="/load/2">Вендинг-договора</a></li>
+	 <li class="sidebar-menu_item"><i class="fas fa-calculator"></i><a href="/load/1">Расчёт окупаемости</a></li>
+	 <li class="sidebar-menu_item"><i class="fas fa-list"></i><a href="/load/4">Инструкции к автоматам</a></li>
+	 <li class="sidebar-menu_item"><i class="far fa-calendar-alt"></i><a href="/publ/39">Выставки</a></li>
+	 <li class="sidebar-menu_item"><i class="fab fa-youtube"></i><a href="/publ/40">Видео</a></li>
+	 <li class="sidebar-menu_item"><i class="fas fa-arrow-right"></i><a href="/index/0-2">Реклама на сайте</a></li>
+	 <li class="sidebar-menu_item"><i class="fas fa-phone"></i><a href="/index/0-3">Обратная связь</a></li>
 	</ul>
 	</div>
 </div>
@@ -93,7 +93,7 @@
 		<ul class="uz">
 		<li>При полном или частичном использовании материалов портала активная ссылка на <a class="m" href="http://vendors.com.ua/">Вендинг-портал “Вендоры”</a> обязательна.</li>
 		<li>При наполнении данного портала использовалась информация из открытых источников.</li>
-		<li>Если Вы считаете, что администрация сайта или его пользователи нарушили Ваши права, пожалуйста, поставьте нас в известность через раздел <br /><a class="m" href="http://vendors.com.ua/index/0-3">Обратная связь</a>.</li>
+		<li>Если Вы считаете, что администрация сайта или его пользователи нарушили Ваши права, пожалуйста, поставьте нас в известность через раздел <a class="m" href="http://vendors.com.ua/index/0-3">Обратная связь</a>.</li>
 		</ul>
 	</div>
 </div>
