@@ -8,6 +8,7 @@
 @import "footer";
 @import "tabs";
 @import "menus";
+@import "user";
 
 /*--------------------- Content ---------------------*/
 
@@ -140,7 +141,7 @@
 }
 
 .listing_tile-desc {
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid $color-solitude;
     padding-bottom: 10px;
     margin-bottom: 50px;
 }
@@ -281,8 +282,8 @@
 
 .listing-contact_item {
     @include clearfix;
-    
-    border-top: 1px solid #eaeff5;
+
+    border-top: 1px solid $color-solitude;
     margin-top: 10px;
     padding-top: 10px;
 }
@@ -433,7 +434,7 @@ padding:0;
 }
 
 .seller_info-item.border {
-    border-bottom: 1px solid #eaeff5;
+    border-bottom: 1px solid $color-solitude;
     padding-bottom: 10px;
 }
 
@@ -774,7 +775,7 @@ li.k {margin: 0; padding: 0 0 0 31px; background: url('http://vendors.com.ua/Ima
     font-size: 12px;
 }
 
-.catNumData {color:#1c7bd3; float: right;}
+.catNumData {color:#1c7bd3; float: right; font-size: 12px;}
 .catDescr {padding-left:10px;}
 a.catNameActive {text-decoration:none; color:#000000;}
 a.catNameActive:hover {text-decoration:underline; color:#000000;}
@@ -990,12 +991,6 @@ input[type="button"]:hover {
 }
 .poll-answers .answer {margin-bottom:5px;}
 .poll-answers .answer input {margin:0;}
-.poll-answers .answer label {
- display:inline-block;
- font-size:11px;
- line-height:18px;
- margin-bottom:0;
-}
 
 .pollButton {margin-top: 10px;}
 

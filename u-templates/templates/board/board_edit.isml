@@ -36,20 +36,20 @@
 					<div id="rules">
 					<form name="myForm" style="line-height:1.8;font-size:17px;">
 					Пожалуйста, <a href="$LOGIN_LINK$">зайдите</a> под своим логином или <a href="$REGISTER_LINK$">зарегистрируйтесь</a>, чтобы пропустить этот шаг!
-					<h2>В заголовке объявления запрещается:</h2>
-					<input type="checkbox" name="znaki" value="znaki" onClick="document.myForm.uppercase.disabled='';"> Использовать восклицательные знаки<Br>
-					<input type="checkbox" name="uppercase" value="uppercase" disabled="disabled" onClick="document.myForm.contacts.disabled='';"> ПИСАТЬ ЗАГЛАВНЫМИ БУКВАМИ<Br>
-					<input type="checkbox" name="contacts" value="contacts" disabled="disabled" onClick="document.myForm.firm.disabled='';"> Указывать контактные телефоны, цену и т.д. <Br> 
-					<input type="checkbox" name="firm" value="contacts2" disabled="disabled" onClick="document.myForm.znaki2.disabled='';"> Указывать название компании или предприятия. 
-					<h2>Текст объявления:</h2>
-					<input type="checkbox" name="znaki2" value="znaki2" disabled="disabled" onClick="document.myForm.uppercase2.disabled='';"> Использовать восклицательные знаки<Br>
-					<input type="checkbox" name="uppercase2" value="uppercase2" disabled="disabled" onClick="document.myForm.contacts2.disabled='';"> ПИСАТЬ ЗАГЛАВНЫМИ БУКВАМИ<Br>
-					<input type="checkbox" name="contacts2" value="contacts2" disabled="disabled" onClick="document.myForm.firm2.disabled='';"> Указывать контактные телефоны, цену и т.д (для этого предусмотрены специальные формы). <Br> 
-					<input type="checkbox" name="firm2" value="contacts2" disabled="disabled" onClick="document.myForm.rules.disabled='';"> Указывать название компании или предприятия. 
-					<h2>Общие правила:</h2>
-					<input type="checkbox" name="rules" value="rules" disabled="disabled" onClick="document.getElementById('pushme').disabled=false;"> Запрещено многократно размещать одно и тоже объявление, не надо превращать доску объявлений в мусорную корзину<br><br>
-					Нарушители этих ПРОСТЫХ правил будут баниться, а объявления удаляться!<br><br>
-					<input type="button" id="pushme" value="Я прочитал(а) и соглашаюсь с условиями" disabled="disabled" onclick="$('#rules').slideUp(); $('#addpage').slideToggle();"><Br> 
+						<h2>В заголовке объявления запрещается:</h2>
+						<input type="checkbox" name="znaki" value="znaki" onClick="document.myForm.uppercase.disabled='';"> Использовать восклицательные знаки<Br>
+						<input type="checkbox" name="uppercase" value="uppercase" disabled="disabled" onClick="document.myForm.contacts.disabled='';"> ПИСАТЬ ЗАГЛАВНЫМИ БУКВАМИ<Br>
+						<input type="checkbox" name="contacts" value="contacts" disabled="disabled" onClick="document.myForm.firm.disabled='';"> Указывать контактные телефоны, цену и т.д. <Br> 
+						<input type="checkbox" name="firm" value="contacts2" disabled="disabled" onClick="document.myForm.znaki2.disabled='';"> Указывать название компании или предприятия. 
+						<h2>Текст объявления:</h2>
+						<input type="checkbox" name="znaki2" value="znaki2" disabled="disabled" onClick="document.myForm.uppercase2.disabled='';"> Использовать восклицательные знаки<Br>
+						<input type="checkbox" name="uppercase2" value="uppercase2" disabled="disabled" onClick="document.myForm.contacts2.disabled='';"> ПИСАТЬ ЗАГЛАВНЫМИ БУКВАМИ<Br>
+						<input type="checkbox" name="contacts2" value="contacts2" disabled="disabled" onClick="document.myForm.firm2.disabled='';"> Указывать контактные телефоны, цену и т.д (для этого предусмотрены специальные формы). <Br> 
+						<input type="checkbox" name="firm2" value="contacts2" disabled="disabled" onClick="document.myForm.rules.disabled='';"> Указывать название компании или предприятия. 
+						<h2>Общие правила:</h2>
+						<input type="checkbox" name="rules" value="rules" disabled="disabled" onClick="document.getElementById('pushme').disabled=false;"> Запрещено многократно размещать одно и тоже объявление, не надо превращать доску объявлений в мусорную корзину<br><br>
+						Нарушители этих ПРОСТЫХ правил будут баниться, а объявления удаляться!<br><br>
+						<input type="button" id="pushme" value="Я прочитал(а) и соглашаюсь с условиями" disabled="disabled" onclick="$('#rules').slideUp(); $('#addpage').slideToggle();"><Br> 
 					</form>
 					</div>
 					<div id="addpage" style="display: none;">
@@ -62,11 +62,13 @@
 							<h2>Запрещается:</h2>
 							<ul>
 								<li>- в заголовке и тексте сообщения</li>
-								<li>- использовать восклицательные знаки</li>
-								<li>- ПИСАТЬ ЗАГЛАВНЫМИ БУКВАМИ</li>
-								<li>- указывать контактные телефоны, цену, сайт и т.д (для этого предусмотрены специальные формы)</li>
-								<li>- указывать название компании или предприятия.</li>
-								<li>- многократно размещать одно и тоже объявление, не надо превращать доску объявлений в мусорную корзину</li>
+								<ol>
+									<li>Использовать восклицательные знаки</li>
+									<li>ПИСАТЬ ЗАГЛАВНЫМИ БУКВАМИ</li>
+									<li>Указывать контактные телефоны, цену, сайт (в том числе и на загружаемых изображениях) и т.д (для этого предусмотрены специальные формы)</li>
+									<li>Указывать название компании или предприятия.</li>
+								</ol>
+								<li>- многократно размещать одно и тоже объявление (срок между одинаковыми объявлениями не меньше трёх дней), не надо превращать доску объявлений в мусорную корзину.</li>
 							</ul>
 							Нарушители этих <b>простых</b> правил будут баниться, а объявления удаляться!
 						</div>

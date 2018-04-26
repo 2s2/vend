@@ -209,8 +209,10 @@
 						</script>
 					</div>
 					<?if($GROUP_ID$='4')?> 
-					<div style="border:1px solid #999;border-radius:10px;padding:10px;margin-bottom:20px;"><a href="#">Купюрники CashCode</a> На всё гарантия, всё вычищено, отполировано, проведено полное ТО. (012) 345 67 89 mymail@mail.com</div> 
-					<div style="border:1px solid #999;border-radius:10px;padding:10px; margin-bottom:20px; "><a href="#">Продам вендинговый ксерокс</a> В хорошем состоянии в отличном месте, цена - 2000 $. (012) 345 67 89 vend@gmail.com</div> <div style="text-align:right"><a href="#">Добавить сообщение</a></div>
+						<div style="border:1px solid #999;border-radius:10px;padding:10px;margin-bottom:20px;"><a href="#">Купюрники CashCode</a> На всё гарантия, всё вычищено, отполировано, проведено полное ТО. (012) 345 67 89 mymail@mail.com</div> 
+						<div style="border:1px solid #999;border-radius:10px;padding:10px; margin-bottom:20px; "><a href="#">Продам вендинговый ксерокс</a> В хорошем состоянии в отличном месте, цена - 2000 $. (012) 345 67 89 vend@gmail.com</div> <div style="text-align:right"><a href="#">Добавить сообщение</a></div>
+
+						<?$RELATED_ENTRIES$(10)?>
 					<?endif?>
 
 					<div class="notice notice-info">
