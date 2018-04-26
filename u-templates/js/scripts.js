@@ -1,9 +1,12 @@
 function createContent(htmlTemplate, element, objData) {
-    var elementInsert = document.querySelector(element),
-        elementHTML = document.querySelector(htmlTemplate).innerHTML,
-        template = Handlebars.compile(elementHTML);
+    var elementInsert = document.querySelector(element);
+    
+    if (document.querySelector(htmlTemplate) !== null) {
+        var elementHTML = document.querySelector(htmlTemplate).innerHTML,
+            template = Handlebars.compile(elementHTML);
 
-    elementInsert.innerHTML = template(objData);
+        elementInsert.innerHTML = template(objData);
+    }
 }
 
 (function () {
