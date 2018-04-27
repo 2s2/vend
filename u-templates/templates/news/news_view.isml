@@ -15,5 +15,4 @@
 			<li class="details-item"><i class="far fa-comment"></i> <a href="$COMMENTS_URL$">$COMMENTS_NUM$</a></li>
 		</ul>
 	</div>
-	<hr><br>
 </div>

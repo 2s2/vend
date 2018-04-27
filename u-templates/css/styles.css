@@ -1184,6 +1184,10 @@ a.groupVerify, a.groupVerify:hover {
 a.groupOther1, a.groupOther1:hover {
   color: #0088CC; }
 
+.article {
+  border-bottom: 1px solid #EAEFF5;
+  margin-bottom: 30px; }
+
 /* News/Blog Archive Menu */
 .archLi {
   padding: 0 0 3px 10px;
