@@ -1387,6 +1387,9 @@ li.k {
 .catsTd span {
   font-size: 12px; }
 
+.catsTd .catDescr {
+  display: none; }
+
 .catNumData {
   color: #1c7bd3;
   float: right;

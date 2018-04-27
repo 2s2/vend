@@ -1,7 +1,8 @@
 <html>
 <head>
 
-<title>$SECTION_NAME$ вендинг - $MODULE_NAME$ - $SITE_NAME$</title>
+<title>$SECTION_NAME$ вендинг - $MODULE_NAME$</title>
+<meta name="description" content="$SECTION_DESCR$">
 <meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
 <link type="text/css" rel="stylesheet" href="/_st/my.css" />
 <link rel="shortcut icon" href="http://vendors.com.ua/ico.png" >

@@ -768,11 +768,15 @@ li.k {margin: 0; padding: 0 0 0 31px; background: url('http://vendors.com.ua/Ima
 
 /* Module Part Menu */
 .catsTd {
- padding-bottom: 5px;;
+ padding-bottom: 5px;
 }
 
 .catsTd span {
     font-size: 12px;
+}
+
+.catsTd .catDescr {
+    display: none;
 }
 
 .catNumData {color:#1c7bd3; float: right; font-size: 12px;}
