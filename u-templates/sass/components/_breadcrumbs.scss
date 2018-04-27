@@ -1,0 +1,21 @@
+.breadcrumbs {
+	font-size: 11px;
+	margin: 0 0 10px;
+	list-style: none;
+
+	.divider {
+		color: #A52A2A;
+		padding: 0 1px;
+	}
+
+	li {
+		display: inline-block;
+		line-height: 25px;
+	}
+
+	a {
+		text-decoration:none;
+		color:#696969 !important;
+		font-weight:normal;
+	}
+}

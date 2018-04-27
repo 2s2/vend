@@ -248,6 +248,52 @@ input[type="checkbox"] {
     width: auto;
 }
 
+.button,
+.pollBut,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+    display: inline-block;
+    background-image: none;
+    width: auto !important;
+    margin-bottom: 0;
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #1c7bd3;
+    border-radius: 4px;
+    background-position: center center;
+    transition: all 0.1s ease;
+    height: 38px;
+    line-height: 24px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+}
+
+select {
+    height: 38px;
+}
+
+.button:hover,
+.pollBut:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+ text-decoration: none;
+ background-image: none;
+ background-color: #1c7bd3;
+ color: #fff;
+}
+
+.button.full {
+    display: block;
+}
+
+.buttons_row {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 
 .copy {font-size:7pt;}
 
@@ -272,3 +318,21 @@ a.menu1:active {text-decoration:underline; color:#FFFFFF}
 
 .blockT1 {border-left:1px solid #5694B5;}
 .blockT2 {padding:5px;}
+
+.clearfix:after,
+#allEntries:after,
+.allEntries:after,
+.listing-body:after,
+.sidebar-block:after,
+.comment-header:after,
+.seller-info:after,
+.details:after,
+.main-menu:after,
+.details-list:after,
+.category_list:after,
+.listing_tile-info:after,
+.seller-param:after,
+.form-group:after,
+.content-block:after,
+.seller_info-header:after,
+.homepage_articles_list-desc:after { display:block; content:""; clear:both; font-size:0; line-height:0; height:0; }

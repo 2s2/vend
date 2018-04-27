@@ -1,0 +1,34 @@
+/* News/Blog Archive Menu */
+.archLi {padding: 0 0 3px 10px; background: url('http://src.ucoz.ru/t/831/26.gif') no-repeat 0px 4px;}
+.archActive {text-decoration:underline;}
+.archLi {font-family:Tahoma,Arial,Sans-Serif;font-size:11px;}
+a.archLink {text-decoration:none; color:#4D6D91;}
+a.archLink:hover {text-decoration:underline; color:#4D6D91;}
+/* ---------------------- */
+
+/* News/Blog Archive Style */
+.archiveCalendars {text-align:center;color:#0000FF;}
+.archiveDateTitle {font-weight:bold;color:#4D6D91;padding-top:15px;}
+.archEntryHr {width:250px;color:#DDDDDD;}
+.archiveeTitle li {margin-left: 15px; padding: 0 0 0 15px; background: url('http://src.ucoz.ru/t/831/27.gif') no-repeat 0px 3px; margin-bottom: .6em;}
+.archiveEntryTime {width:65px;font-style:italic;}
+.archiveEntryComms {font-size:9px;color:#C3C3C3;}
+a.archiveDateTitleLink {text-decoration:none; color:#4D6D91}
+a.archiveDateTitleLink:hover {text-decoration:underline; color:#4D6D91}
+.archiveNoEntry {text-align:center;color:#0000FF;}
+/* ------------------------ */
+
+/* News/Blog Calendar Style */
+.calMonth {text-align:right; }
+.calWday {border:1px outset #4F5D71; background:#95A5B8; width:17px;color:#FFFFFF;}
+.calWdaySe {border:1px outset #4F5D71; background:#4B6383; width:17px; font-weight:bold;color:#FFFFFF;}
+.calWdaySu {border:1px outset #4F5D71; background:#4B6383; width:17px; font-weight:bold; color:#FFFFFF;}
+.calMday {border:1px inset #4F5D71; background:#FFFFFF;}
+.calMdayA {border:1px inset #4F5D71; background:#E2E5E9; font-weight:bold;}
+.calMdayIs {border:1px outset #4F5D71; background:#C6CCD3;}
+.calMdayIsA {border:1px outset #4F5D71; background:#C6CCD3;font-weight:bold;}
+a.calMonthLink {text-decoration:none; color:#4D6D91;}
+a.calMonthLink:hover {text-decoration:underline; color:#4D6D91;}
+a.calMdayLink {text-decoration:none; color:#4D6D91;}
+a.calMdayLink:hover {text-decoration:underline; color:#000000;}
+/* ------------------------ */

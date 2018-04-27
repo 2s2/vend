@@ -1,0 +1,18 @@
+.details {
+    font-size: 12px;
+    margin-top: 20px;
+
+    &-list {
+        float: right;
+    }
+
+    &-item {
+        float: left;
+        box-sizing: border-box;
+        margin-left: 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}

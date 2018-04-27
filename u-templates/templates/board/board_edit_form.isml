@@ -1,4 +1,4 @@
-<table border="0" width="100%" cellspacing="1" cellpadding="2" class="manTable add-form" id="bdM64">
+<table border="0" width="100%" cellspacing="1" cellpadding="2" class="manTable lising_add_form" id="bdM64">
 	<?if($CAT_FL$)?>
 		<tr id="bdM61">
 			<td class="manTd1" id="bdM62">$CAT_SIGN$:</td>

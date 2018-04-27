@@ -1,365 +1,66 @@
-@import "reset";
-@import "variables";
-@import "mixins";
+@import "settings/all";
 
 @import "general";
 @import "layouts";
 @import "header";
 @import "footer";
-@import "tabs";
-@import "menus";
-@import "user";
+@import "sidebar";
+@import "components/all";
+@import "modules/all";
 
 /*--------------------- Content ---------------------*/
-
-.space { height:20px; }
-
-.breadcrumbs {
- font-size: 11px;
- margin: 0 0 10px;
- list-style: none;
-}
-
-.breadcrumbs .divider {
- color: #A52A2A;
- padding: 0 1px;
-}
-
-.breadcrumbs li {
- display: inline-block;
- line-height: 25px;
-}
-
-.breadcrumbs a {
- text-decoration:none;
- color:#696969 !important;
- font-weight:normal;
-}
-
-.add-form tr {
-    margin: 15px 0;
-}
-
-.add-form .u-combo {
-    border: none;
-    position: relative;
-}
-
-.add-form .u-combo .u-comboeditcell {
-    border: none;
-}
-
-.add-form .u-combo .u-comboedit {
-    min-width: auto;
-    padding: 6px 12px;
-}
-
-.add-form .u-combo .u-combolist {
-    border: 1px solid #B5B8C8;
-}
-
-.add-form .u-combo #uCatsMenu7 {
-    left: 0 !important;
-    top: 37px !important;
-}
-
-
-
-.listings {
-    .listings_filters {
-        select {
-            width: 200px;
-        }
-    }
-
-    .allEntries,
-    #allEntries {
-        > li,
-        > div {
-            box-sizing: border-box;
-            padding: 0 10px;
-            float: left;
-        }
-    }
-
-    &.m-three_in_row {
-        .allEntries,
-        #allEntries {
-            > li,
-            > div {
-                width: 33%;
-
-                &:nth-child(3n + 1) {
-                    clear: left;
-                }
-            }
-        }
-    }
-
-    &.m-four_in_row {
-        .allEntries,
-        #allEntries {
-            > li,
-            > div {
-                width: 25%;
-
-                &:nth-child(4n + 1) {
-                    clear: left;
-                }
-            }
-        }
-
-        .listing_tile {
-            &-link {
-                height: 262px;
-                width: 262px;
-            }
-        }
-    }
-}
-
-.listing_tile {
-    &-link {
-        display: block;
-        float: none;
-        height: 256px;
-        margin: 0 0 15px;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        width: 256px;
-    }
-
-    &-img {
-        height: auto;
-        max-width: none;
-        width: 100%;
-    }
-
-    &-price {
-        background: $color;
-        bottom: 0;
-        color: #fff;
-        font-weight: bold;
-        padding: 0 10px;
-        position: absolute;
-        right: 0;
-    }
-
-    &-desc {
-        border-bottom: 1px solid $color-solitude;
-        margin-bottom: 50px;
-        padding-bottom: 10px;
-    }
-
-    &-title {
-        font-size: 20px;
-        line-height: 25px;
-        overflow: hidden;
-        padding: 0 10px;
-        text-align: center;
-    }
-
-    &-text {
-        color: #797979;
-        font-size: 14px;
-        margin-bottom: 15px;
-        max-height: 105px;
-        overflow: hidden;
-        text-align: center;
-    }
-
-    &-info {
-        font-size: 12px;
-        margin-top: 20px;
-    }
-
-    &-additional_info {
-        font-size: 12px;
-        line-height: 24px;
-        text-align: center;
-    }
-
-    &.m-homepage_company {
-        .listing_tile {
-            &-link {
-                height: auto;
-                width: auto;
-
-                img {
-                    height: auto;
-                    max-width: 100%;
-                }
-            }
-        }
-    }
-}
-
-.details {
-    font-size: 12px;
-    margin-top: 20px;
-}
-
-.details-list {
-    float: right;
-}
-
-.details-item {
-    float: left;
-    box-sizing: border-box;
-    margin-left: 10px;
-}
-
-.details-item:first-child {
-    margin-left: 0;
-}
-
-.category_list {
-    margin-bottom: 40px;
-}
-
-.categoty_list-item {
-    float: left;
-    width: 20%;
-    box-sizing: border-box;
-    padding: 0 15px;
-    text-align: center;
-}
-
-.categoty_list-link {
-    color: #333;
-    display: inline-block;
-}
-
-.categoty_list-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.categoty_list-title {
-    display: block;
-}
-
-.listing {
-
-}
-
-.listing-title {
- position: relative;
- margin-bottom: 15px;
-}
-
-.listing-body {
-    margin-bottom: 30px;
-}
-
-.listing-img {
-    box-sizing: border-box;
-    float: left;
-    padding: 0 70px 0 0;
-    width: 40%;
-}
-
-.listing-img a {
- display:block;
-}
-
-.listing-img img {
- height: auto;
- width: 100%;
-}
-
-.listing-info {
-    box-sizing: border-box;
-    float: left;
-    margin-top: 30px;
-    width: 60%;
-}
-
-.listing-info .details-list {
-    float: none;
-}
-
-.listing-info ul {
- list-style:none;
- padding:0;
-}
-
-.listing-price {
-    color: #1c7bd3;
-    display: inline-block;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.listing-tags {
-    font-size: 12px;
-}
-
-.listing-description {
-    margin-bottom: 50px;
-}
-
-.listing-contact_item {
-    @include clearfix;
-
-    border-top: 1px solid $color-solitude;
-    margin-top: 10px;
-    padding-top: 10px;
-}
-
-.listing-contact_item:first-child {
-    border-top: none;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.listing-contact_item_icon {
-    color: $color;
-    display: inline-block;
-    float: left;
-    font-size: 12px;
-    line-height: 27px;
-    margin-right: 15px;
-}
-
-.listing-contact_item_type {
-    display: inline-block;
-    font-weight: bold;
-    min-width: 150px;
-}
-
-.homepage_title {
-    margin: 30px 0 50px;
-    text-align: center;
-}
-
-.homepage_column_2 {
-    box-sizing: border-box;
-    float: left;
-    padding: 0 20px;
-    width: 50%;
-}
-
-.homepage_articles_list {
-    
-}
-
-.homepage_articles_list-item {
-    margin-bottom: 20px;
-}
-
-.homepage_articles_list-img {
-    float: left;
-    margin-right: 10px;
-}
 
 .settings-list {display:none;}
 .settings-list span {display:block !important;}
 .settings-list img {display:none;}
 
-.b-border-image__list {
+.eDetails {
+ color:#1A1A1A;
+ padding-bottom:5px;
+ padding-top:5px; 
+ text-align:right;
+ font-size:7pt;
+}
+
+.eDetails1 {
+ background:#fff;
+ font-family:Tahoma,Arial,Sans-Serif;
+ color:#1A1A1A;
+ text-align:left;
+ font-size:8pt;
+}
+
+.eDetails2 {
+ padding-top:5px;
+}
+
+/* Entries Style */
+.eBlock {
+    background:#e2edfb; 
+    border-top:1px solid #C9CFD8;
+    border-left:1px solid #B9BFC7;
+    border-bottom:1px solid #4F5D71;
+    border-right:1px solid #4F5D71;
+}
+.eTitle {font-family:Verdana,Arial,Sans-Serif;font-size:12px;font-weight:bold;color:#4D6D91; padding: 0 0 0 17px; background: url('http://src.ucoz.ru/t/831/24.gif') no-repeat 1px 3px;}
+.eTitlehall {
+    font-family:Verdana,Arial,Sans-Serif;
+    font-size:12px;
+    font-weight:bold;
+    color:#4D6D91;
+    padding: 0 0 0 17px;
+}
+.eMessage {text-align:justify;padding-bottom:5px;}
+.eText {text-align:justify;padding-bottom:5px;padding-top:5px;}
+.textHr {color:#DDDDDD;height:1px;border:1px dashed #DDDDDD;}
+
+.eDetails3 {background:#ffffff;font-family:Tahoma,Arial,Sans-Serif;color:#1A1A1A;padding-bottom:3px;padding-top:3px; text-align:right;font-size:7pt;}
+
+.eRating {font-size:7pt;}
+
+.eAttach {margin: 16px 0 0 0; padding: 0 0 0 15px; background: url('http://src.ucoz.ru/t/831/25.gif') no-repeat 0px 0px;}
+
+/*.b-border-image__list {
  position:absolute;
  background:#fff;
  border:1px solid #b8b8b8;
@@ -395,117 +96,6 @@ padding:0;
 .vip-board-desc {
  border: 1px dashed #f00;
  padding:10px;
-}
-
-.seller_info-header {
- margin-bottom:10px;
-}
-
-.seller_info-avatar {
- float:left;
- margin-right:10px;
- max-width:50px;
-}
-
-.seller_info-avatar img {
- border:1px solid #666;
- width:50px;
-}
-
-.seller_info-name {
- display: block;
- font-size: 16px;
- float: left;
- line-height: 24px;
- overflow-x: hidden;
- font-weight:bold;
- margin-bottom:5px;
-}
-
-.seller_info-status {
- font-size:10px;
- line-height:12px;
-}
-
-.seller_info-status.online {
- color:green;
- font-weight:bold;
-}
-
-.seller_info-status.offline {
- color:#B94A48;
-}
-
-.seller_info-last_visit {
-    font-size: 10px;
-    font-weight: normal;
-    line-height: 12px;
-    margin-top: 5px;
-}
-
-.seller_info-list {
- margin:0;
- padding:0;
- list-style: none;
-}
-
-.seller_info-item {
- margin-bottom:10px;
- position:relative;
-}
-
-.seller_info-item.border {
-    border-bottom: 1px solid $color-solitude;
-    padding-bottom: 10px;
-}
-
-.seller_info-reputation {
- position:relative;
-}
-
-.seller_info-reputation span:hover {
- text-decoration:underline;
-}
-
-.seller_info-ban a {color:#B94A48;}
-
-.hint-wrap {
- position:relative;
-}
-
-.hint-block {
-    margin-bottom: 15px;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    text-align: center;
-    padding: 5px 12px;
-    border-radius: 4px;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    font: 400 11px 'PT Sans', Arial, sans-serif;
-    line-height: 1.5;
-    transition: all .2s ease-out;
-    max-width: 200px;
-}
-
-.hint-block:after {
-    position: absolute;
-    display: block;
-    content: "";
-    top: 100%;
-    left: 21px;
-    margin: 0 0 0 -6px;
-    border: 6px solid rgba(0, 0, 0, 0);
-    border-top-color: #000;
-    border-top-color: rgba(0, 0, 0, 0.7);
-}
-
-.hint-link:hover + .hint-block {
-    visibility: visible;
-    opacity: 1;
 }
 
 div.bordered,
@@ -546,96 +136,22 @@ h5.bordered
 .secondary-cols li.last {
  border:none;
  width:334px;
-}
+}*/
 
-.eDetails {
- color:#1A1A1A;
- padding-bottom:5px;
- padding-top:5px; 
- text-align:right;
- font-size:7pt;
-}
 
-.eDetails1 {
- background:#fff;
- font-family:Tahoma,Arial,Sans-Serif;
- color:#1A1A1A;
- text-align:left;
- font-size:8pt;
-}
-
-.eDetails2 {
- padding-top:5px;
-}
-
-.alert_block {
+/*.alert_block {
  background: url('/Images-new/Icos/i.png') no-repeat 0px 50%;
  border:1px solid #f00;
  min-height:44px;
  padding: 10px 10px 10px 65px;
-}
-
-.sidebar-block {
- margin-bottom: 30px;
- font-size: 14px;
- line-height: 24px;
-}
-
-.sidebar-block a {
-    color: #333;
-}
-
-.sidebar-block-title {
- font-size: 30px;
- margin-bottom: 12px;
-}
-
-.sidebar-block-content {
-    padding: 0 5px;
-}
+}*/
 
 /*--------------------- Content end ---------------------*/
 
-a.VipLink {color:#B22222;}
-/* ====== Переключатель страниц ====== */
-
-.catPages1 {
-    color:#607080;
-    border:0px;
-    margin-bottom:10px;
-    margin-top:10px;
-    font-family:Verdana;
-    font-size:14px;
-}
-.catPages1 b,
-.catPages1 a {
-    text-decoration:none;
-    color: #999;
-    background:#fff;
-    padding:9px;
-    font-weight:bold;
-    min-width: 47px;
-    display: inline-block;
-    min-height: 20px;
-    box-sizing: border-box;
-    border: 1px solid #1c7bd3;
-} 
-
-.catPages1 a:hover {
-    background:#1c7bd3;
-    color:#ffffff;
-    font-weight:bold;
-    text-decoration: none;
-} 
-.catPages1 b {
-    border:none;
-    color:#CCC;
-}
-
-/* ====== Переключатель страниц End ====== */
+/*a.VipLink {color:#B22222;}*/
 
 /* --Последнее--- */
-#toprightPan{width:170px; height:185px; position:absolute; top:0px; right:0px;}
+/*#toprightPan{width:170px; height:185px; position:absolute; top:0px; right:0px;}
 #toprightPan ul{width:117px; height:147px; margin:18px 0 0;}
 #toprightPan ul li{height:30px; border-bottom:1px solid #CBCACA; line-height:29px;}
 #toprightPan ul li a {width:117px; display:block; background:url(images/arrow-normal.gif) 0 50% no-repeat #fff; color:#3B3B3B; text-decoration:none; padding:0 0 0 20px;}
@@ -652,299 +168,32 @@ a.k:hover{margin: 0; padding: 0 0 0 31px; background:url(http://vendors.com.ua/I
 .ka 
 a.ka {width:117px; display:block; background:url(http://vendors.com.ua/Images/Temp/arrow-normal.gif) 0 50% no-repeat #fff; color:#3B3B3B; text-decoration:none; padding:0 0 0 20px;}
 a.ka:hover{margin: 0; padding: 0 0 0 31px; background:url(http://vendors.com.ua/Images/Temp/arrow-hover.gif) no-repeat 3px 4px; margin-bottom: .6em;}
-li.k {margin: 0; padding: 0 0 0 31px; background: url('http://vendors.com.ua/Images/Temp/arrow-normal.gif') no-repeat 3px 4px; margin-bottom: .6em;}
+li.k {margin: 0; padding: 0 0 0 31px; background: url('http://vendors.com.ua/Images/Temp/arrow-normal.gif') no-repeat 3px 4px; margin-bottom: .6em;}*/
 /* --Последнее--- */
 
-/* Sidebar Menu */
-
-.sidebar-menu {
-    margin:0;
-    padding:0;
-
-    li {
-        list-style:none;
-        padding-bottom: 5px;
-
-        a,
-        span {
-            display: inline-block;
-            background-repeat: no-repeat;
-            background-position: 0 0;
-            padding-left: 12px;
-        }
-
-        a:hover {
-            color:#000000;
-        }
-    }
-}
-
-/* Module Part Menu */
-.catsTd {
-    padding-bottom: 5px;
-
-    span {
-        font-size: 12px;
-    }
-
-    .catDescr {
-        display: none;
-        padding-left:10px;
-    }
-}
-
-.catNumData {color:#1c7bd3; float: right; font-size: 12px;}
-a.catNameActive {text-decoration:none; color:#000000;}
-a.catNameActive:hover {text-decoration:underline; color:#000000;}
 /* ----------------- */
 
-/* Entries Style */
-.eBlock {
-	background:#e2edfb; 
-	border-top:1px solid #C9CFD8;
-	border-left:1px solid #B9BFC7;
-	border-bottom:1px solid #4F5D71;
-	border-right:1px solid #4F5D71;
-}
-.eTitle {font-family:Verdana,Arial,Sans-Serif;font-size:12px;font-weight:bold;color:#4D6D91; padding: 0 0 0 17px; background: url('http://src.ucoz.ru/t/831/24.gif') no-repeat 1px 3px;}
-.eTitlehall {
-	font-family:Verdana,Arial,Sans-Serif;
-	font-size:12px;
-	font-weight:bold;
-	color:#4D6D91;
-	padding: 0 0 0 17px;
-}
-.eMessage {text-align:justify;padding-bottom:5px;}
-.eText {text-align:justify;padding-bottom:5px;padding-top:5px;}
-.textHr {color:#DDDDDD;height:1px;border:1px dashed #DDDDDD;}
 
-.eDetails3 {background:#ffffff;font-family:Tahoma,Arial,Sans-Serif;color:#1A1A1A;padding-bottom:3px;padding-top:3px; text-align:right;font-size:7pt;}
-
-.eRating {font-size:7pt;}
-
-.eAttach {margin: 16px 0 0 0; padding: 0 0 0 15px; background: url('http://src.ucoz.ru/t/831/25.gif') no-repeat 0px 0px;}
 /* ------------- */
 
-/* Entry Manage Table */
-.manTable {}
-.manTdError {color:#FF0000;}
-.manTd1 {}
-.manTd2 {}
-.manTd3 {}
-.manTdSep {}
-.manHr {}
-.manTdBrief {}
-.manTdText {}
-.manTdFiles {}
-.manFlFile {}
-.manTdBut {}
-.manFlSbm {}
-.manFlRst {}
-.manFlCnt {}
+/* Entry Manage Table 
+.manTdError {color:#F00;}*/
+
 /* ------------------ */
 
-/* Comments Style */
+/* Comments Style 
 .cAnswer {padding-left:15px;padding-top:4px;font-style:italic;}
 
-.cBlock1 {background:url('http://src.ucoz.ru/t/831/23.gif') bottom repeat-x #FFFFFF;border-top:1px solid #C9CFD8;border-left:1px solid #B9BFC7;border-bottom:1px solid #4F5D71;border-right:1px solid #4F5D71;}
-.cBlock2 {background:url('http://src.ucoz.ru/t/831/23.gif') bottom repeat-x #FFFFFF;border-top:1px solid #C9CFD8;border-left:1px solid #B9BFC7;border-bottom:1px solid #4F5D71;border-right:1px solid #4F5D71;}
-
-.com-order-block {
-    margin-bottom: 30px;
-}
-
-.com-order-block select {
-    width: 200px;
-}
-
-.article_comments-list {
-    margin-bottom: 30px;
-}
-
-.comment {
-    border-bottom: 1px solid #e6e6e6;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.comment-header_left {
-    float: left;
-}
-
-.comment-header_right {
-    float: right;
-}
-
-.comment-raiting {
-    font-size:11px;
-    font-family:Arial,sans-serif;
-    float: left;
-    margin-right: 10px;
-}
-
-.comment-author {
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.comment-material {
-    font-size: 12px;
-}
-/* -------------- */
-
-/* Comments Form Style */
-.commTable {}
-.commTd1 {color:#000000;}
-.commTd2 {}
-.commFl {width:100%;}
-.smiles {border:1px inset;background:#FAFCFE;}
-.commReg {padding: 10 0 10 0px; text-align:center;}
-.commError {color:#FF0000; margin-bottom: 10px;}
-.securityCode {}
-/* ------------------- */
-
-/* News/Blog Archive Menu */
-.archLi {padding: 0 0 3px 10px; background: url('http://src.ucoz.ru/t/831/26.gif') no-repeat 0px 4px;}
-.archActive {text-decoration:underline;}
-.archLi {font-family:Tahoma,Arial,Sans-Serif;font-size:11px;}
-a.archLink {text-decoration:none; color:#4D6D91;}
-a.archLink:hover {text-decoration:underline; color:#4D6D91;}
-/* ---------------------- */
-
-/* News/Blog Archive Style */
-.archiveCalendars {text-align:center;color:#0000FF;}
-.archiveDateTitle {font-weight:bold;color:#4D6D91;padding-top:15px;}
-.archEntryHr {width:250px;color:#DDDDDD;}
-.archiveeTitle li {margin-left: 15px; padding: 0 0 0 15px; background: url('http://src.ucoz.ru/t/831/27.gif') no-repeat 0px 3px; margin-bottom: .6em;}
-.archiveEntryTime {width:65px;font-style:italic;}
-.archiveEntryComms {font-size:9px;color:#C3C3C3;}
-a.archiveDateTitleLink {text-decoration:none; color:#4D6D91}
-a.archiveDateTitleLink:hover {text-decoration:underline; color:#4D6D91}
-.archiveNoEntry {text-align:center;color:#0000FF;}
-/* ------------------------ */
-
-/* News/Blog Calendar Style */
-.calMonth {text-align:right; }
-.calWday {border:1px outset #4F5D71; background:#95A5B8; width:17px;color:#FFFFFF;}
-.calWdaySe {border:1px outset #4F5D71; background:#4B6383; width:17px; font-weight:bold;color:#FFFFFF;}
-.calWdaySu {border:1px outset #4F5D71; background:#4B6383; width:17px; font-weight:bold; color:#FFFFFF;}
-.calMday {border:1px inset #4F5D71; background:#FFFFFF;}
-.calMdayA {border:1px inset #4F5D71; background:#E2E5E9; font-weight:bold;}
-.calMdayIs {border:1px outset #4F5D71; background:#C6CCD3;}
-.calMdayIsA {border:1px outset #4F5D71; background:#C6CCD3;font-weight:bold;}
-a.calMonthLink {text-decoration:none; color:#4D6D91;}
-a.calMonthLink:hover {text-decoration:underline; color:#4D6D91;}
-a.calMdayLink {text-decoration:none; color:#4D6D91;}
-a.calMdayLink:hover {text-decoration:underline; color:#000000;}
-/* ------------------------ */
-
-/* Poll styles */
-.button,
-.pollBut,
-input[type="reset"],
-input[type="submit"],
-input[type="button"] {
- display: inline-block;
- background-image: none;
- width: auto !important;
- margin-bottom: 0;
- cursor: pointer;
- text-align: center;
- background-color: #fff;
- border: 1px solid #1c7bd3;
- border-radius: 4px;
- background-position: center center;
- transition: all 0.1s ease;
- height: 38px;
- line-height: 24px;
- padding: 6px 12px;
- box-sizing: border-box;
-}
-
-select {
-    height: 38px;
-}
-
-.button:hover,
-.pollBut:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover {
- text-decoration: none;
- background-image: none;
- background-color: #1c7bd3;
- color: #fff;
-}
-
-.button.full {
-    display: block;
-}
-
-.buttons_row {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.pollBody {padding:7px; margin:0px; background:#FFFFFF}
-.textResults {background:#E2E6EA}
-.textResultsTd {background:#FFFFFF}
-
-.pollNow {border-bottom:1px solid #E2E6EA; border-left:1px solid #E2E6EA; border-right:1px solid #E2E6EA;}
-.pollNowTd {}
-
-.totalVotesTable {border-bottom:1px solid #E2E6EA; border-left:1px solid #E2E6EA; border-right:1px solid #E2E6EA;}
-.totalVotesTd {background:#FFFFFF}
-
-.poll-block {}
-
-.poll-question {
- font-weight:bold;
- padding-top:2px;
- margin-bottom:5px;
-}
-
-.poll-answers {
- margin-bottom:10px;
-}
-.poll-answers .answer {margin-bottom:5px;}
-.poll-answers .answer input {margin:0;}
-
-.pollButton {margin-top: 10px;}
-
-.total-votes {
- text-align:center;
- padding-top:10px;
-}
-
-/* ---------- */
+/*.cBlock1 {background:url('http://src.ucoz.ru/t/831/23.gif') bottom repeat-x #FFFFFF;border-top:1px solid #C9CFD8;border-left:1px solid #B9BFC7;border-bottom:1px solid #4F5D71;border-right:1px solid #4F5D71;}
+.cBlock2 {background:url('http://src.ucoz.ru/t/831/23.gif') bottom repeat-x #FFFFFF;border-top:1px solid #C9CFD8;border-left:1px solid #B9BFC7;border-bottom:1px solid #4F5D71;border-right:1px solid #4F5D71;}*/
 
 /* User Group Marks */
-a.groupModer,a.groupModer:hover {color:blue;}
-a.groupAdmin,a.groupAdmin:hover {color:red;}
-a.groupVerify,a.groupVerify:hover {color:green;}
-a.groupOther1,a.groupOther1:hover {color:#0088CC;}
+
 /* ---------------- */
 
-/* Other Styles */
+/* Other Styles 
 .replaceTable {background:url('http://src.ucoz.ru/t/831/23.gif') bottom repeat-x #FFFFFF;height:100px;width:300px;border:1px solid #597798;}
 
 .legendTd {font-size:7pt;}
 /* ------------ */
 
-.clearfix:after,
-#allEntries:after,
-.allEntries:after,
-.listing-body:after,
-.sidebar-block:after,
-.comment-header:after,
-.seller-info:after,
-.details:after,
-.main-menu:after,
-.details-list:after,
-.category_list:after,
-.listing_tile-info:after,
-.seller-param:after,
-.form-group:after,
-.content-block:after,
-.seller_info-header:after,
-.homepage_articles_list-desc:after { display:block; content:""; clear:both; font-size:0; line-height:0; height:0; }

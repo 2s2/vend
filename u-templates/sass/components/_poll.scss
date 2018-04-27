@@ -1,0 +1,30 @@
+.pollBody {padding:7px; margin:0px; background:#FFFFFF}
+.textResults {background:#E2E6EA}
+.textResultsTd {background:#FFFFFF}
+
+.pollNow {border-bottom:1px solid #E2E6EA; border-left:1px solid #E2E6EA; border-right:1px solid #E2E6EA;}
+.pollNowTd {}
+
+.totalVotesTable {border-bottom:1px solid #E2E6EA; border-left:1px solid #E2E6EA; border-right:1px solid #E2E6EA;}
+.totalVotesTd {background:#FFFFFF}
+
+.poll-block {}
+
+.poll-question {
+ font-weight:bold;
+ padding-top:2px;
+ margin-bottom:5px;
+}
+
+.poll-answers {
+ margin-bottom:10px;
+}
+.poll-answers .answer {margin-bottom:5px;}
+.poll-answers .answer input {margin:0;}
+
+.pollButton {margin-top: 10px;}
+
+.total-votes {
+ text-align:center;
+ padding-top:10px;
+}

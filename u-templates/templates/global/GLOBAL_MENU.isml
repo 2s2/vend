@@ -1,5 +1,5 @@
 <ul class="top-menu clearfix">
-	<li id="News" class="dropdown">
+	<li>
 		<a href="/news">Новости</a>
 		<ul class="dropdown-menu">
 			<li><a href="/news/1-0-1">В Украине</a></li>
@@ -7,7 +7,7 @@
 			<li><a href="/news/1-0-3">В мире</a></li>
 		</ul>
 	</li>
-	<li id="Articles" class="dropdown">
+	<li>
 		<a href="/publ">Статьи</a>
 		<ul class="dropdown-menu">
 			<li><a href="/publ/1">Статьи о Вендинге</a></li>
@@ -20,7 +20,7 @@
 			<li><a href="/publ/lichnyj_opyt/43">Личный опыт</a></li>
 		</ul>
 	</li>
-	<li id="Board" class="dropdown">
+	<li>
 		<a href="/board">Доска объявлений</a>
 		<ul class="dropdown-menu">
 			<li><a href="/board/10">Продаю</a></li>
@@ -33,7 +33,7 @@
 			<li><a href="/index/0-18">Добавить VIP-объявление</a></li>
 		</ul>
 	</li>
-	<li id="Catalog" class="dropdown">
+	<li>
 		<a href="/dir/4">Каталог</a>
 		<ul class="dropdown-menu">
 			<li><a href="/dir/4">Вендинговые компании</a></li>
@@ -46,7 +46,7 @@
 			<li><a href="/dir/41">Автоматы компаний</a></li>
 		</ul>
 	</li>
-	<li id="Download" class="dropdown">
+	<li>
 		<a href="/load">Скачать</a>
 		<ul class="dropdown-menu">
 			<li><a href="/load/1">Расчёт окупаемости</a></li>
