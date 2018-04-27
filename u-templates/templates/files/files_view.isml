@@ -1,0 +1,12 @@
+<h2><a href="$CATEGORY_URL$">$CATEGORY_NAME$</a> &rarr; <a href="$ENTRY_URL$">$TITLE$</a>&nbsp;$MODER_PANEL$</h2>
+<div>
+<?if($IMG_URL1$)?><span><IMG align="left" hspace="5" width="50" align="top" border="0" src="$IMG_URL1$" title="$TITLE$"></span><?endif?>
+ <span>$MESSAGE$</span>
+</div>
+<div style="clear:both;"></div>
+
+<div class="eDetails">
+<img align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/download.png"> Загрузок: $LOADS$ 
+<IMG align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/read.png"> Просмотров: $READS$ 
+<IMG align="absmiddle" border="0" src="http://vendors.com.ua/Images/Icos/comments.png"> <a href="$COMMENTS_URL$">Комментарии ($COMMENTS_NUM$)</a>
+</div><hr><br>
