@@ -64,114 +64,135 @@
 }
 
 
-/*.MainImg {
- margin-bottom:5px;
- margin-top:5px;
-}*/
 
-.listings .listings_filters select {
-    width: 200px;
+.listings {
+    .listings_filters {
+        select {
+            width: 200px;
+        }
+    }
+
+    .allEntries,
+    #allEntries {
+        > li,
+        > div {
+            box-sizing: border-box;
+            padding: 0 10px;
+            float: left;
+        }
+    }
+
+    &.m-three_in_row {
+        .allEntries,
+        #allEntries {
+            > li,
+            > div {
+                width: 33%;
+
+                &:nth-child(3n + 1) {
+                    clear: left;
+                }
+            }
+        }
+    }
+
+    &.m-four_in_row {
+        .allEntries,
+        #allEntries {
+            > li,
+            > div {
+                width: 25%;
+
+                &:nth-child(4n + 1) {
+                    clear: left;
+                }
+            }
+        }
+
+        .listing_tile {
+            &-link {
+                height: 262px;
+                width: 262px;
+            }
+        }
+    }
 }
 
-.listings .allEntries > li,
-.listings .allEntries > div,
-.listings #allEntries > div {
-    box-sizing: border-box;
-    padding: 0 10px;
-    float: left;
-}
+.listing_tile {
+    &-link {
+        display: block;
+        float: none;
+        height: 256px;
+        margin: 0 0 15px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width: 256px;
+    }
 
-.listings.m-three_in_row .allEntries > li,
-.listings.m-three_in_row .allEntries > div,
-.listings.m-three_in_row #allEntries > div {
-    width: 33%;
-}
+    &-img {
+        height: auto;
+        max-width: none;
+        width: 100%;
+    }
 
-.listings.m-three_in_row .allEntries > li:nth-child(3n + 1),
-.listings.m-three_in_row .allEntries > div:nth-child(3n + 1),
-.listings.m-three_in_row #allEntries > div:nth-child(3n + 1) {
-    clear: left;
-}
+    &-price {
+        background: $color;
+        bottom: 0;
+        color: #fff;
+        font-weight: bold;
+        padding: 0 10px;
+        position: absolute;
+        right: 0;
+    }
 
-.listings.m-four_in_row .allEntries > li,
-.listings.m-four_in_row .allEntries > div,
-.listings.m-four_in_row #allEntries > div {
-    width: 25%;
-}
+    &-desc {
+        border-bottom: 1px solid $color-solitude;
+        margin-bottom: 50px;
+        padding-bottom: 10px;
+    }
 
-.listings.m-four_in_row .listing_tile:nth-child(4n + 1) {
-    clear: left;
-}
+    &-title {
+        font-size: 20px;
+        line-height: 25px;
+        overflow: hidden;
+        padding: 0 10px;
+        text-align: center;
+    }
 
-.listing_tile-link {
-    display: block;
-    float: none;
-    height: 256px;
-    margin: 0 0 15px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 256px;
-}
+    &-text {
+        color: #797979;
+        font-size: 14px;
+        margin-bottom: 15px;
+        max-height: 105px;
+        overflow: hidden;
+        text-align: center;
+    }
 
-.listings.m-four_in_row .listing_tile-link {
-    height: 262px;
-    width: 262px;
-}
+    &-info {
+        font-size: 12px;
+        margin-top: 20px;
+    }
 
-.listing_tile.m-homepage_company .listing_tile-link {
-    height: auto;
-    width: auto;
-}
+    &-additional_info {
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+    }
 
-.listing_tile-img {
-    max-width: none;
-    width: 100%;
-    height: auto;
-}
+    &.m-homepage_company {
+        .listing_tile {
+            &-link {
+                height: auto;
+                width: auto;
 
-.listing_tile-price {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background: #1c7bd3;
-    color: #fff;
-    padding: 0 10px;
-    font-weight: bold;
-}
-
-.listing_tile-desc {
-    border-bottom: 1px solid $color-solitude;
-    padding-bottom: 10px;
-    margin-bottom: 50px;
-}
-
-.listing_tile-title {
-    font-size: 20px;
-    line-height: 25px;
-    overflow: hidden;
-    padding: 0 10px;
-    text-align: center;
-}
-
-.listing_tile-text {
-    color: #797979;
-    font-size: 14px;
-    margin-bottom: 15px;
-    max-height: 105px;
-    overflow: hidden;
-    text-align: center;
-}
-
-.listing_tile-info {
-    font-size: 12px;
-    margin-top: 20px;
-}
-
-.listing_tile-additional_info {
-    font-size: 12px;
-    line-height: 24px;
-    text-align: center;
+                img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }
 
 .details {
@@ -527,113 +548,6 @@ h5.bordered
  width:334px;
 }
 
-/*#exhib, #video, #tehotdel, #law, #vendukr .title, #vendru .title, #vendworld .title
-{
- color:#fff;
- font-size:16px;
- background-color:#104E8B;
- height:25px;
- padding-left:5px;
- margin-bottom:5px;
-}
-
-#video {background-color:#ea7500;}
-#tehotdel {background-color:#556832;}
-#law {background-color:#4b0082;}
-
-.new-companies {
- padding:0 9px;
- margin:0 0 20px;
-}
-
-.new-companies li {
- list-style:none;
- margin-bottom:1px;
-}
-
-.new-companies li ul {
- background-color:#f1f0de;
- padding:0;
- margin:0;
- position:relative;
- overflow:hidden;
-}
-
-.new-companies li ul li {
- float:left;
- border-left: 2px solid #fff;
-}
-.new-companies li ul li:first-child {border-left:none;}
-
-.new-companies li ul li.item-1 {width:140px;}
-.new-companies li ul li.item-2 {width:576px;}
-.new-companies li ul li.item-3 {width:240px;}
-
-.new-companies li ul li.item-1 img {margin:5px; width:100px;}
-.new-companies li ul li.item-2 h3 {font-weight:normal;padding-left:20px;}
-.new-companies li ul li p {
- font-family:Times New Roman;
- font-size:17px;
- line-height:21px;
- padding: 0 10px;
-}
-.new-companies .company-contacts {
- padding: 10px;
-}
-.new-companies .company-contacts li {
- border:none;
- font-family:Times New Roman;
- font-size:15px;
- line-height:18px;
- margin-bottom:5px;
-}
-
-
-.main-news-block {
- padding:0;
- margin:0;
- overflow:hidden;
- position:relative;
-}
-
-.main-news-block > li {
- float:left;
- font-family:Times New Roman;
- font-size:17px;
- line-height:21px;
- list-style:none;
- padding: 0 10px;
- margin-bottom:20px;
- width:468px;
-}
-
-.main-news-block li a {text-decoration:none;color:#000;}
-.main-news-block li a:hover {color:#2d459b;}
-
-.main-news-block > li ul {
- padding:0;
- margin:0;
-}
-.main-news-block > li ul li {
- display:block;
- list-style:none;
- overflow:hidden;
- margin-bottom:5px;
- height:50px;
-}
-
-.main-news-block > li ul li img {float:left;margin: 0 10px;width:50px;}
-.main-news-block > li ul li a {
- font-family:Times New Roman;
- font-size:17px;
- line-height:21px;
-}
-
-#vendworld .title {background-color:#00688B;}
-#vendukr .title {background-color:#0e6100;font-weight:normal;}
-#vendru .title {background-color:#bb1a00;}*/
-
-
 .eDetails {
  color:#1A1A1A;
  padding-bottom:5px;
@@ -679,12 +593,6 @@ h5.bordered
 .sidebar-block-content {
     padding: 0 5px;
 }
-
-/*.login-block .username {display:block;}
-.login-block .loginButton {float:right;}
-.login-block a {color:#4D6D91;}
-.login-block .control-group {margin-bottom:10px;}*/
-
 
 /*--------------------- Content end ---------------------*/
 
@@ -750,37 +658,42 @@ li.k {margin: 0; padding: 0 0 0 31px; background: url('http://vendors.com.ua/Ima
 /* Sidebar Menu */
 
 .sidebar-menu {
- margin:0;
- padding:0;
+    margin:0;
+    padding:0;
+
+    li {
+        list-style:none;
+        padding-bottom: 5px;
+
+        a,
+        span {
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            padding-left: 12px;
+        }
+
+        a:hover {
+            color:#000000;
+        }
+    }
 }
-.sidebar-menu li {
- list-style:none;
- padding-bottom: 5px;
-}
-.sidebar-menu li a,
-.sidebar-menu li span {
- display: inline-block;
- background-repeat: no-repeat;
- background-position: 0 0;
- padding-left: 12px;
-}
-.sidebar-menu li a:hover {color:#000000;}
 
 /* Module Part Menu */
 .catsTd {
- padding-bottom: 5px;
-}
+    padding-bottom: 5px;
 
-.catsTd span {
-    font-size: 12px;
-}
+    span {
+        font-size: 12px;
+    }
 
-.catsTd .catDescr {
-    display: none;
+    .catDescr {
+        display: none;
+        padding-left:10px;
+    }
 }
 
 .catNumData {color:#1c7bd3; float: right; font-size: 12px;}
-.catDescr {padding-left:10px;}
 a.catNameActive {text-decoration:none; color:#000000;}
 a.catNameActive:hover {text-decoration:underline; color:#000000;}
 /* ----------------- */

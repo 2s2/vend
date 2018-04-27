@@ -193,8 +193,6 @@ a:hover {text-decoration:underline;}
 td {text-align:left;}
 form {padding:0 !important;margin:0 !important;}
 
-
-
 .form-row {
     clear: both;
     margin-bottom: 15px;
@@ -211,6 +209,21 @@ form {padding:0 !important;margin:0 !important;}
         select,
         textarea {
             width: 300px;
+        }
+    }
+}
+
+.form-group {
+    display: flex;
+
+    &.col-2 {
+        .form-row {
+            box-sizing: border-box;
+            flex-basis: 50%;
+
+            &:first-child {
+                padding-right: 15px;
+            }
         }
     }
 }
