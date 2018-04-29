@@ -14,13 +14,13 @@
 	<div class="main">
 		<section class="content">
 
-			<h2 class="homepage_title">Категории</h2>
+			<h2 class="homepage-title">Категории</h2>
 			$GLOBAL_BOARDCAT$
 			<div class="buttons_row">
 				<a class="button" href="/board/0-0-0-0-1">Добавить объявление</a>
 				<a class="button" href="/index/0-18">Добавить VIP-объявление</a>
 			</div>
-			<h2 class="homepage_title">Последние объявления</h2>
+			<h2 class="homepage-title">Последние объявления</h2>
 			<div class="listings m-four_in_row">
 				<div class="allEntries">
 					$MYINF_1$
@@ -29,7 +29,7 @@
 			<div class="buttons_row">
 				<a class="button" href="/board/">Смотреть все объявления</a>
 			</div>
-			<h2 class="homepage_title">Каталог компаний</h2>
+			<h2 class="homepage-title">Каталог компаний</h2>
 			<div class="listings m-four_in_row">
 				<ul class="allEntries">
 					$MYINF_2$
@@ -40,18 +40,18 @@
 				<a class="button" href="/index/0-7">Добавить компанию в каталог</a>
 			</div>
 			<div class="clearfix">
-				<div class="homepage_column_2">
-					<h2 class="homepage_title">Новости вендинга</h2>
-					<ul class="homepage_articles_list">
+				<div class="homepage-column_2">
+					<h2 class="homepage-title">Новости вендинга</h2>
+					<ul class="homepage-articles_list">
 						$MYINF_3$
 					</ul>
 					<div class="buttons_row">
 						<a class="button" href="/news">Все новости</a>
 					</div>
 				</div>
-				<div class="homepage_column_2">
-					<h2 class="homepage_title">Полезные статьи</h2>
-					<ul class="homepage_articles_list">
+				<div class="homepage-column_2">
+					<h2 class="homepage-title">Полезные статьи</h2>
+					<ul class="homepage-articles_list">
 						$MYINF_4$
 					</ul>
 					<div class="buttons_row">

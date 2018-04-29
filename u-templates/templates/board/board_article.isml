@@ -1,7 +1,8 @@
 <html>
 <head>
 
-<title>$ENTRY_TITLE$ - $CAT_NAME$ <?if($SECTION_NAME$)?>- $SECTION_NAME$<?endif?> - $MODULE_NAME$ - $SITE_NAME$</title>
+<title>$ENTRY_TITLE$ - $MODULE_NAME$</title>
+<meta name="description" content="<?substr($BRIEF$,0,270)?> ...">
 <meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
 <link type="text/css" rel="stylesheet" href="/_st/my.css" />
 <link rel="shortcut icon" href="/ico.png" >

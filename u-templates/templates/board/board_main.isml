@@ -2,6 +2,7 @@
 <head>
 
 <title>$MODULE_NAME$ - $SITE_NAME$</title>
+<meta name="description" content="Доска объявлений для вендинга. Частные объявления по продаже и покупке вендингового оборудования, комплектующих, ингредиентов, расходных материалов. Сервисы по обслуживанию и ремонту торговых автоматов.">
 <meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
 <link type="text/css" rel="stylesheet" href="/_st/my.css" />
 <link rel="shortcut icon" href="http://vendors.com.ua/ico.png" >
@@ -52,32 +53,34 @@
 
 	<script id="vip_listing-template" type="text/x-handlebars-template">
 		{{#each listing}}
-		<div class="listing_tile">
-			<a class="listing_tile-link" title="{{name}}" href="{{link}}">
-				<img class="listing_tile-img" alt="{{name}}" src="{{imagelink}}" />
-				<span class="listing_tile-price">
-					{{price}}
-				</span>
-			</a>
-			<div class="listing_tile-desc">
-				<h3 class="listing_tile-title">
-					<a href="{{link}}">{{name}}</a>
-				</h3>
-				<div class="listing_tile-text">
-					{{message}}
-				</div>
-				<div class="details">
-					<?if($USERNAME$)?>
-						<a href="{{usernameLink}}">{{username}}</a>
-					<?endif?>
-					<ul class="details-list">
-						<li class="details-item"><i class="far fa-calendar"></i> $DATE$</li>
-						<li class="details-item"><i class="fas fa-eye"></i> $READS$</li>
-						<li class="details-item"><i class="far fa-comment"></i> <a href="$COMMENTS_URL$">$COMMENTS_NUM$</a></li>
-					</ul>
+			{{#if status}}
+			<div class="listing_tile">
+				<a class="listing_tile-link" title="{{name}}" href="{{link}}">
+					<img class="listing_tile-img" alt="{{name}}" src="{{imagelink}}" />
+					<span class="listing_tile-price">
+						{{price}}
+					</span>
+				</a>
+				<div class="listing_tile-desc">
+					<h3 class="listing_tile-title">
+						<a href="{{link}}">{{name}}</a>
+					</h3>
+					<div class="listing_tile-text">
+						{{message}}
+					</div>
+					<div class="details">
+						<?if($USERNAME$)?>
+							<a href="{{usernameLink}}">{{username}}</a>
+						<?endif?>
+						<ul class="details-list">
+							<li class="details-item"><i class="far fa-calendar"></i> $DATE$</li>
+							<li class="details-item"><i class="fas fa-eye"></i> $READS$</li>
+							<li class="details-item"><i class="far fa-comment"></i> <a href="$COMMENTS_URL$">$COMMENTS_NUM$</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
+			{{/if}}
 		{{/each}}
 	</script>
 

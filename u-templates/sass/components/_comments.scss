@@ -1,0 +1,53 @@
+.article_comments {
+    &-list {
+        margin-bottom: 30px;
+    }
+}
+
+.com-order-block {
+    margin-bottom: 30px;
+
+    select {
+        width: 200px;
+    }
+}
+
+.comment {
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    &-header_left {
+        float: left;
+    }
+
+    &-header_right {
+        float: right;
+    }
+
+    &-raiting {
+        font-size:11px;
+        font-family:Arial,sans-serif;
+        float: left;
+        margin-right: 10px;
+    }
+
+    &-author {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    &-material {
+        font-size: 12px;
+    }
+}
+
+/* Default styles */
+.commTable {}
+.commTd1 {color:#000000;}
+.commTd2 {}
+.commFl {width:100%;}
+.smiles {border:1px inset;background:#FAFCFE;}
+.commReg {padding: 10 0 10 0px; text-align:center;}
+.commError {color:#FF0000; margin-bottom: 10px;}
+.securityCode {}

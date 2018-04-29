@@ -1,0 +1,318 @@
+.listings {
+    .listings_filters {
+        select {
+            width: 200px;
+        }
+    }
+
+    .allEntries,
+    #allEntries {
+        > li,
+        > div {
+            box-sizing: border-box;
+            padding: 0 10px;
+            float: left;
+        }
+    }
+
+    &.m-three_in_row {
+        .allEntries,
+        #allEntries {
+            > li,
+            > div {
+                width: 33%;
+
+                &:nth-child(3n + 1) {
+                    clear: left;
+                }
+            }
+        }
+    }
+
+    &.m-four_in_row {
+        .allEntries,
+        #allEntries {
+            > li,
+            > div {
+                width: 25%;
+
+                &:nth-child(4n + 1) {
+                    clear: left;
+                }
+            }
+        }
+
+        .listing_tile {
+            &-link {
+                height: 262px;
+                width: 262px;
+            }
+        }
+    }
+}
+
+.listing_tile {
+    &-link {
+        display: block;
+        float: none;
+        height: 256px;
+        margin: 0 0 15px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width: 256px;
+    }
+
+    &-img {
+        height: auto;
+        max-width: none;
+        width: 100%;
+    }
+
+    &-price {
+        background: $color;
+        bottom: 0;
+        color: #fff;
+        font-weight: bold;
+        padding: 0 10px;
+        position: absolute;
+        right: 0;
+    }
+
+    &-desc {
+        border-bottom: 1px solid $color-solitude;
+        margin-bottom: 50px;
+        padding-bottom: 10px;
+    }
+
+    &-title {
+        font-size: 20px;
+        line-height: 25px;
+        overflow: hidden;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    &-text {
+        color: #797979;
+        font-size: 14px;
+        margin-bottom: 15px;
+        max-height: 105px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    &-info {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    &-additional_info {
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &.m-homepage_company {
+        .listing_tile {
+            &-link {
+                height: auto;
+                width: auto;
+
+                img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.lising_add_form {
+    .u-combo {
+        border: none;
+        position: relative;
+
+        .u-comboeditcell {
+            border: none;
+        }
+
+        .u-comboedit {
+            min-width: auto;
+            padding: 6px 12px;
+        }
+
+        .u-combolist {
+            border: 1px solid #B5B8C8;
+        }
+
+        #uCatsMenu7 {
+            left: 0 !important;
+            top: 37px !important;
+        }
+    }
+}
+
+.listing {
+    &-title {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    &-body {
+        margin-bottom: 30px;
+    }
+
+    &-img {
+        box-sizing: border-box;
+        float: left;
+        padding: 0 70px 0 0;
+        width: 40%;
+
+        a {
+            display:block;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    &-info {
+        box-sizing: border-box;
+        float: left;
+        margin-top: 30px;
+        width: 60%;
+
+        .details-list {
+            float: none;
+        }
+
+        ul {
+            list-style:none;
+            padding:0;
+        }
+    }
+
+    &-price {
+        color: $color;
+        display: inline-block;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    &-tags {
+        font-size: 12px;
+    }
+
+    &-description {
+        margin-bottom: 50px;
+    }
+
+    &-contact_item {
+        @include clearfix;
+
+        border-top: 1px solid $color-solitude;
+        margin-top: 10px;
+        padding-top: 10px;
+
+        &:first-child {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+
+    &-contact_item_icon {
+        color: $color;
+        display: inline-block;
+        float: left;
+        font-size: 12px;
+        line-height: 27px;
+        margin-right: 15px;
+    }
+
+    &-contact_item_type {
+        display: inline-block;
+        font-weight: bold;
+        min-width: 150px;
+    }
+}
+
+.seller_info {
+    &-header {
+        margin-bottom:10px;
+    }
+
+    &-avatar {
+        float:left;
+        margin-right:10px;
+        max-width:50px;
+
+        img {
+            border:1px solid #666;
+            width:50px;
+        }
+    }
+
+    &-name {
+        display: block;
+        font-size: 16px;
+        float: left;
+        line-height: 24px;
+        overflow-x: hidden;
+        font-weight:bold;
+        margin-bottom:5px;
+    }
+
+    &-status {
+        font-size:10px;
+        line-height:12px;
+
+        &.online {
+            color:green;
+            font-weight:bold;
+        }
+
+        &.offline {
+            color:#B94A48;
+        }
+    }
+
+    &-last_visit {
+        font-size: 10px;
+        font-weight: normal;
+        line-height: 12px;
+        margin-top: 5px;
+    }
+
+    &-list {
+        margin:0;
+        padding:0;
+        list-style: none;
+    }
+
+    &-item {
+        margin-bottom:10px;
+        position:relative;
+
+        &.border {
+            border-bottom: 1px solid $color-solitude;
+            padding-bottom: 10px;
+        }
+    }
+
+    &-reputation {
+        position:relative;
+
+        span {
+            &:hover {
+                text-decoration:underline;
+            }
+        }
+    }
+
+    &-ban a {color:#B94A48;}
+}

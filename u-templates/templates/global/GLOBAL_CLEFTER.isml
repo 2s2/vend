@@ -1,15 +1,15 @@
 <?if($CATEGORIES$)?>
- <div class="sidebar-block">
-	 <div class="sidebar-block-title">Категории</div>
-	 <div class="sidebar-block-content">
+ <div class="sidebar_block">
+	 <div class="sidebar_block-title">Категории</div>
+	 <div class="sidebar_block-content">
 	 	<?if($NUM_ENTRIES$)?><p>Найдено материалов: <b>$NUM_ENTRIES$</b></p><?endif?>$CATEGORIES$
 	 </div>
  </div>
 <?endif?>
 
-<div class="sidebar-block">
-	<div class="sidebar-block-title">Меню</div>
-	<div class="sidebar-block-content">
+<div class="sidebar_block">
+	<div class="sidebar_block-title">Меню</div>
+	<div class="sidebar_block-content">
 	<ul class="sidebar-menu">
 	 <li class="sidebar-menu_item"><i class="fas fa-balance-scale"></i><a href="/publ/37">Правовая база</a></li>
 	 <li class="sidebar-menu_item"><i class="fas fa-pencil-alt"></i><a href="/load/2">Вендинг-договора</a></li>
@@ -25,24 +25,24 @@
 
 <?if($URI_ID$="page2")?>
 
-<div class="sidebar-block">
+<div class="sidebar_block">
 <img src="http://www.vendors.com.ua/Images/banners/banner200x200.png" border="0" alt="" />
 </div>
 
-<div class="sidebar-block">
+<div class="sidebar_block">
 <img src="http://www.vendors.com.ua/Images/banners/banner200x100.png" border="0" alt="" />
 </div>
 
 <?endif?>
 
-<div class="sidebar-block">
- <div class="sidebar-block-title">Опрос</div>
- <div class="sidebar-block-content">$POLL$</div>
+<div class="sidebar_block">
+ <div class="sidebar_block-title">Опрос</div>
+ <div class="sidebar_block-content">$POLL$</div>
 </div>
 
-<div class="sidebar-block">
-	<div class="sidebar-block-title">Статистика</div>
-	<div class="sidebar-block-content">
+<div class="sidebar_block">
+	<div class="sidebar_block-title">Статистика</div>
+	<div class="sidebar_block-content">
 	<!--LiveInternet counter--><script type="text/javascript">document.write("<a href='http://www.liveinternet.ru/click' target=_blank><img src='http://counter.yadro.ru/hit?t22.10;r" + escape(document.referrer) + ((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + "; u" + escape(document.URL) + ";" + Math.random() + "' border=0 width=88 height=31 alt='' title='LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня'><\/a>")</script><!--/LiveInternet--> 
 
 	<!-- MyCounter v.2.0 -->
@@ -87,9 +87,9 @@
 	</div>
 </div>
 
-<div class="sidebar-block"> 
-	<div class="sidebar-block-title">Важно</div>
-	<div class="sidebar-block-content">
+<div class="sidebar_block"> 
+	<div class="sidebar_block-title">Важно</div>
+	<div class="sidebar_block-content">
 		<ul class="uz">
 		<li>При полном или частичном использовании материалов портала активная ссылка на <a class="m" href="http://vendors.com.ua/">Вендинг-портал “Вендоры”</a> обязательна.</li>
 		<li>При наполнении данного портала использовалась информация из открытых источников.</li>
@@ -99,16 +99,16 @@
 </div>
 
 <!-- Форма для входа -->
-<div class="sidebar-block login-block">
+<div class="sidebar_block login-block">
 	<?if($LOGIN_FORM$)?>
-		<div class="sidebar-block-title">Форма входа</div>
-		<div class="sidebar-block-content">
+		<div class="sidebar_block-title">Форма входа</div>
+		<div class="sidebar_block-content">
 		$LOGIN_FORM$
 		</div>
 	<?else?>
 
-		<div class="sidebar-block-title">Мой профиль</div>
-		<div class="sidebar-block-content">
+		<div class="sidebar_block-title">Мой профиль</div>
+		<div class="sidebar_block-content">
 			<div class="aligncenter">
 				<strong class="username m10">Привет: $USERNAME$</strong> 
 

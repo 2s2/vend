@@ -1,32 +1,32 @@
 <ul class="category_list">
-	<li class="categoty_list-item">
-		<a href="/board/10" class="categoty_list-link">
-			<img src="/img/category_img1.jpg" alt="" class="categoty_list-img">
-			<span class="categoty_list-title">Продаю</span>
+	<li class="category_list-item">
+		<a href="/board/10" class="category_list-link">
+			<img src="/img/category_img1.jpg" alt="" class="category_list-img">
+			<span class="category_list-title">Продаю</span>
 		</a>
 	</li>
-	<li class="categoty_list-item">
-		<a href="/board/9" class="categoty_list-link">
-			<img src="/img/category_img2.jpg" alt="" class="categoty_list-img">
-			<span class="categoty_list-title">Куплю</span>
+	<li class="category_list-item">
+		<a href="/board/9" class="category_list-link">
+			<img src="/img/category_img2.jpg" alt="" class="category_list-img">
+			<span class="category_list-title">Куплю</span>
 		</a>
 	</li>
-	<li class="categoty_list-item">
-		<a href="/board/23" class="categoty_list-link">
-			<img src="/img/category_img3.jpg" alt="" class="categoty_list-img">
-			<span class="categoty_list-title">Аренда</span>
+	<li class="category_list-item">
+		<a href="/board/23" class="category_list-link">
+			<img src="/img/category_img3.jpg" alt="" class="category_list-img">
+			<span class="category_list-title">Аренда</span>
 		</a>
 	</li>
-	<li class="categoty_list-item">
-		<a href="/board/6" class="categoty_list-link">
-			<img src="/img/category_img4.jpg" alt="" class="categoty_list-img">
-			<span class="categoty_list-title">Ремонт, обслуживание</span>
+	<li class="category_list-item">
+		<a href="/board/6" class="category_list-link">
+			<img src="/img/category_img4.jpg" alt="" class="category_list-img">
+			<span class="category_list-title">Ремонт, обслуживание</span>
 		</a>
 	</li>
-	<li class="categoty_list-item">
-		<a href="/board/7" class="categoty_list-link">
-			<img src="/img/category_img5.jpg" alt="" class="categoty_list-img">
-			<span class="categoty_list-title">Работа, сотрудничество</span>
+	<li class="category_list-item">
+		<a href="/board/7" class="category_list-link">
+			<img src="/img/category_img5.jpg" alt="" class="category_list-img">
+			<span class="category_list-title">Работа, сотрудничество</span>
 		</a>
 	</li>
 </ul>

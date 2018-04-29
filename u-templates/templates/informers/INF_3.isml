@@ -1,10 +1,10 @@
-<li class="homepage_articles_list-item">
-	<h4 class="homepage_articles_list-title">
-		<a class="homepage_articles_list-link" href="$ENTRY_URL$">$TITLE$</a>
+<li class="homepage-articles_item">
+	<h4 class="homepage-articles_title">
+		<a class="homepage-articles_link" href="$ENTRY_URL$">$TITLE$</a>
 	</h4>
-	<div class="homepage_articles_list-desc">
-		<img class="homepage_articles_list-img" src="$IMG_SMALL_URL1$" alt="$TITLE$" />
-		<div class="homepage_articles_list-text">$MESSAGE$</div>
+	<div class="homepage-articles_desc">
+		<img class="homepage-articles_img" src="$IMG_SMALL_URL1$" alt="$TITLE$" />
+		<div class="homepage-articles_text">$MESSAGE$</div>
 	</div>
 	<div class="details">
 		<ul class="details-list">

@@ -24,8 +24,10 @@
 					$GLOBAL_CLEFTER$
 				</div>
 				<div class="col-main">
-					$BODY$
-			 		<?if($PAGE_SELECTOR$)?><div class="catPages1" align="center">$PAGE_SELECTOR$</div><?endif?>
+					<div class="news_list">
+						$BODY$
+			 		</div>
+				 	<?if($PAGE_SELECTOR$)?><div class="catPages1" align="center">$PAGE_SELECTOR$</div><?endif?>
 			 	</div> 
 			</div> 
 		 

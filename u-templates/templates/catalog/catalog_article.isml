@@ -48,7 +48,7 @@
 
 					<?if($COM_IS_ACTIVE$)?>
 					<?if($COM_CAN_READ$)?>
-					<hr><div style="font-size:20px;"><img align="absmiddle" width="32" src="/Images-new/Icos/Comments.png" border="0" alt="" /><?if($COM_NUM_ENTRIES$=0)?>Комментариев пока нет<?else?>Комментарии ($COM_NUM_ENTRIES$)<?endif?></div>
+					<hr><div style="font-size:20px;"><?if($COM_NUM_ENTRIES$=0)?>Комментариев пока нет<?else?>Комментарии ($COM_NUM_ENTRIES$)<?endif?></div>
 					<p>$COM_BODY$</p>
 					<p align="center">$COM_PAGE_SELECTOR$</p>
 					<?endif?>

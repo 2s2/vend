@@ -1,0 +1,90 @@
+/*--------------------- User ---------------------*/
+
+.user_profile {
+    &-list {
+        margin-bottom: 40px;
+    }
+
+    &-item {
+        align-items: center;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    &-item_title {
+        display: inline-flex;
+        flex-basis: 24%;
+    }
+
+    &-item_content {
+        flex-basis: 76%;
+    }
+}
+
+.user_block {
+    margin-bottom: 20px;
+    text-align: center;
+
+    &-avatar {
+        img {
+            height: auto;
+            max-width: 200px;
+        }
+
+        span {
+            display: inline-block;
+        }
+    }
+
+    &-username {
+        span {
+            &.statusOnline,
+            &.statusOffline {
+                border-radius: 4px;
+                display: inline-block;
+                height: 8px;
+                text-indent: -5000px;
+                width: 8px;
+            }
+
+            &.statusOnline {
+                background: green;
+            }
+
+            &.statusOffline {
+                background: red;
+            }
+        }
+    }
+}
+
+
+a {
+    &.groupModer {
+        &,
+        &:hover {
+            color:blue;
+        }
+    }
+    
+    &.groupAdmin {
+        &,
+        &:hover {
+            color:red;
+        }
+    }
+    
+    &.groupVerify {
+        &,
+        &:hover {
+            color:green;
+        }
+    }
+
+    &.groupOther1 {
+        &,
+        &:hover {
+            color:#0088CC;
+        }
+    }
+}

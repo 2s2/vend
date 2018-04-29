@@ -1,0 +1,72 @@
+.sidebar_block {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 24px;
+
+    &-title {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    &-content {
+        padding: 0 5px;
+    }
+
+    a {
+        color: #333;
+    }
+}
+
+.sidebar-menu {
+    margin:0;
+    padding:0;
+
+    li {
+        list-style:none;
+        padding-bottom: 5px;
+
+        a,
+        span {
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            padding-left: 12px;
+        }
+
+        a:hover {
+            color:#000;
+        }
+    }
+}
+
+/* Module Part Menu */
+.catsTd {
+    padding-bottom: 5px;
+
+    span {
+        font-size: 12px;
+    }
+
+    .catDescr {
+        display: none;
+        padding-left:10px;
+    }
+
+    a {
+        &.catNameActive {
+            color:#000;
+            text-decoration:none;
+
+            &:hover {
+                color:#000;
+                text-decoration:underline;
+            }
+        }
+    }
+}
+
+.catNumData {
+    color: $color;
+    float: right;
+    font-size: 12px;
+}

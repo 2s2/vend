@@ -20,8 +20,8 @@
 
 			<div class="content-block">
 				<div class="col-left">
-					<div class="sidebar-block">
-						<div class="sidebar-block-content">
+					<div class="sidebar_block">
+						<div class="sidebar_block-content">
 							<div class="user_block">
 								<div class="user_block-avatar">
 									<?if($_AVATAR$)?>
@@ -56,8 +56,8 @@
 							</ul>
 						</div>
 					</div>
-					<div class="sidebar-block">
-						<div class="sidebar-block-content">
+					<div class="sidebar_block">
+						<div class="sidebar_block-content">
 							<ul class="sidebar-menu">
 								<?if($_BOARD_ENTRIES$)?><li class="sidebar-menu_item"><a href="$_BOARD_ACTIVITY_URL$">Объявления</a><span class="catNumData">[$_BOARD_ENTRIES$]</span></li><?endif?>
 								<?if($_COM_ENTRIES$)?><li class="sidebar-menu_item"><a href="$_COM_ACTIVITY_URL$">Комментарии</a><span class="catNumData">[$_COM_ENTRIES$]</span></li><?endif?>
