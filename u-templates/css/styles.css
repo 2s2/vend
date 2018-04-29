@@ -884,7 +884,8 @@ li.menus {
 
 .homepage-articles_img {
   float: left;
-  margin-right: 10px; }
+  margin-right: 10px;
+  width: 150px; }
 
 .category_list {
   margin-bottom: 40px; }
@@ -1187,6 +1188,12 @@ a.groupOther1, a.groupOther1:hover {
 .article {
   border-bottom: 1px solid #EAEFF5;
   margin-bottom: 30px; }
+
+.news_tile {
+  display: flex;
+  margin-bottom: 70px; }
+  .news_tile-img {
+    margin-right: 20px; }
 
 /* News/Blog Archive Menu */
 .archLi {

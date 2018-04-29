@@ -3,6 +3,15 @@
 	margin-bottom: 30px;
 }
 
+.news_tile {
+	display: flex;
+	margin-bottom: 70px;
+
+	&-img {
+		margin-right: 20px;
+	}
+}
+
 /* News/Blog Archive Menu */
 .archLi {padding: 0 0 3px 10px; background: url('http://src.ucoz.ru/t/831/26.gif') no-repeat 0px 4px;}
 .archActive {text-decoration:underline;}
