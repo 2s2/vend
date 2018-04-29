@@ -1,41 +1,45 @@
 <table border="0" width="100%" cellspacing="1" cellpadding="2" class="manTable" id="nwM16">
- <?if($CAT_FL$)?><tr id="nwM28"><td class="manTd1" >$CAT_SIGN$:</td><td class="manTd2" >$CAT_FL$</td></tr><?endif?>
- <tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
- <?if($TITLE_FL$)?><tr id="nwM17"><td class="manTd1" id="nwM18">$TITLE_SIGN$:</td><td class="manTd2" id="nwM19">$TITLE_FL$</td></tr><?endif?>
- <?if($HGU_TITLE_FL$)?><tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
- <tr id="kdsM3"><td class="manTd1" id="kdsrM4">$HGU_TITLE_SIGN$:</td><td class="manTd2" id="kdsM5">$HGU_TITLE_FL$</td></tr><?endif?>
- <tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
- <?if($BRIEF_FL$)?><tr id="nwM12"><td colspan="2" class="manTdBrief" id="nwM13">$BRIEF_FL$</td></tr><?endif?>
- <?if($MESSAGE_FL$)?><tr id="nwM22"><td colspan="2" class="manTdText" id="nwM23">$MESSAGE_FL$</td></tr><?endif?>
- <tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
- <?if($WHO_ADDED_FL$)?><tr id="nwM30"><td class="manTd1" id="nwM31">$WHO_ADDED_SIGN$:</td><td class="manTd2" id="nwM32">$WHO_ADDED_FL$</td></tr><?endif?>
- <?if($ADD_TIME_FL$)?><tr id="nwM33"><td class="manTd1" id="nwM34">$ADD_TIME_SIGN$:</td><td class="manTd2" id="nwM35">$ADD_TIME_FL$</td></tr><?endif?>
- <tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
- <?if($IMAGES_FL$)?><tr id="nwM38"><td class="manTd1" id="nwM39">$IMAGES_SIGN$</td><td class="manTd2" id="nwM40">$IMAGES_FL$</td></tr><?endif?>
- <tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
- <?if($ATTACHMENTS_FL$)?><tr id="nwM51"><td class="manTd1" id="nwM52">$ATTACHMENTS_SIGN$</td><td class="manTd2" id="nwM53">$ATTACHMENTS_FL$</td></tr><?endif?>
- <?if($OTHER1_FL$)?><tr id="nwM61"><td class="manTd1" id="nwM62">$OTHER1_SIGN$:</td><td class="manTd2" id="nwM63">$OTHER1_FL$</td></tr><?endif?>
- <?if($OTHER2_FL$)?><tr id="nwM64"><td class="manTd1" id="nwM65">$OTHER2_SIGN$:</td><td class="manTd2" id="nwM66">$OTHER2_FL$</td></tr><?endif?>
- <?if($OTHER3_FL$)?><tr id="nwM67"><td class="manTd1" id="nwM68">$OTHER3_SIGN$:</td><td class="manTd2" id="nwM69">$OTHER3_FL$</td></tr><?endif?>
- <?if($OTHER4_FL$)?><tr id="nwM70"><td class="manTd1" id="nwM71">$OTHER4_SIGN$:</td><td class="manTd2" id="nwM72">$OTHER4_FL$</td></tr><?endif?>
- <?if($OTHER5_FL$)?><tr id="nwM73"><td class="manTd1" id="nwM74">$OTHER5_SIGN$:</td><td class="manTd2" id="nwM75">$OTHER5_FL$</td></tr><?endif?>
- <tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
- <?if($COM_NOTICE_FL$)?><tr id="sbsctr"><td class="manTd1">$COM_NOTICE_SIGN$:</td><td class="manTd2">$COM_NOTICE_FL$</td></tr><?endif?>
+	<?if($CAT_FL$)?><tr id="nwM28"><td class="manTd1" >$CAT_SIGN$:</td><td class="manTd2" >$CAT_FL$</td></tr><?endif?>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<?if($TITLE_FL$)?><tr id="nwM17"><td class="manTd1" id="nwM18">$TITLE_SIGN$:</td><td class="manTd2" id="nwM19">$TITLE_FL$</td></tr><?endif?>
+	<?if($HGU_TITLE_FL$)?><tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<tr id="kdsM3"><td class="manTd1" id="kdsrM4">$HGU_TITLE_SIGN$:</td><td class="manTd2" id="kdsM5">$HGU_TITLE_FL$</td></tr><?endif?>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<?if($OTHER2_FL$)?><tr id="nwM64"><td class="manTd1" id="nwM65">$OTHER2_SIGN$:</td><td class="manTd2" id="nwM66">$OTHER2_FL$</td></tr><?endif?>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<?if($OTHER3_FL$)?><tr id="nwM67"><td class="manTd1" id="nwM68">$OTHER3_SIGN$:</td><td class="manTd2" id="nwM69">$OTHER3_FL$</td></tr><?endif?>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<?if($OTHER4_FL$)?><tr id="nwM70"><td class="manTd1" id="nwM71">$OTHER4_SIGN$:</td><td class="manTd2" id="nwM72">$OTHER4_FL$</td></tr><?endif?>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<?if($BRIEF_FL$)?><tr id="nwM12"><td colspan="2" class="manTdBrief" id="nwM13">$BRIEF_FL$</td></tr><?endif?>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<?if($MESSAGE_FL$)?><tr id="nwM22"><td colspan="2" class="manTdText" id="nwM23">$MESSAGE_FL$</td></tr><?endif?>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<?if($WHO_ADDED_FL$)?><tr id="nwM30"><td class="manTd1" id="nwM31">$WHO_ADDED_SIGN$:</td><td class="manTd2" id="nwM32">$WHO_ADDED_FL$</td></tr><?endif?>
+	<?if($ADD_TIME_FL$)?><tr id="nwM33"><td class="manTd1" id="nwM34">$ADD_TIME_SIGN$:</td><td class="manTd2" id="nwM35">$ADD_TIME_FL$</td></tr><?endif?>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<?if($IMAGES_FL$)?><tr id="nwM38"><td class="manTd1" id="nwM39">$IMAGES_SIGN$</td><td class="manTd2" id="nwM40">$IMAGES_FL$</td></tr><?endif?>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<?if($ATTACHMENTS_FL$)?><tr id="nwM51"><td class="manTd1" id="nwM52">$ATTACHMENTS_SIGN$</td><td class="manTd2" id="nwM53">$ATTACHMENTS_FL$</td></tr><?endif?>
+	<?if($OTHER1_FL$)?><tr id="nwM61"><td class="manTd1" id="nwM62">$OTHER1_SIGN$:</td><td class="manTd2" id="nwM63">$OTHER1_FL$</td></tr><?endif?>
+	<?if($OTHER5_FL$)?><tr id="nwM73"><td class="manTd1" id="nwM74">$OTHER5_SIGN$:</td><td class="manTd2" id="nwM75">$OTHER5_FL$</td></tr><?endif?>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr>
+	<?if($COM_NOTICE_FL$)?><tr id="sbsctr"><td class="manTd1">$COM_NOTICE_SIGN$:</td><td class="manTd2">$COM_NOTICE_FL$</td></tr><?endif?>
 
- <?if($TAGS_FL$)?><tr><td class="manTd1" id="tagsTd1">$TAGS_SIGN$:</td><td class="manTd2" id="tagsTd2">$TAGS_FL$</td></tr>
- <tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr><?endif?>
- <?if($ORDERING_FL$)?><tr id="mdM33"><td class="manTd1" id="mdM34">$ORDERING_SIGN$:</td><td class="manTd2" id="mdM35">$ORDERING_FL$</td></tr>
- <tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr><?endif?>
+	<?if($TAGS_FL$)?><tr><td class="manTd1" id="tagsTd1">$TAGS_SIGN$:</td><td class="manTd2" id="tagsTd2">$TAGS_FL$</td></tr>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr><?endif?>
+	<?if($ORDERING_FL$)?><tr id="mdM33"><td class="manTd1" id="mdM34">$ORDERING_SIGN$:</td><td class="manTd2" id="mdM35">$ORDERING_FL$</td></tr>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr><?endif?>
 
- <?if($MODER_OPT_FL$)?><tr id="nwM7"><td class="manTd1" id="nwM8">$MODER_OPT_SIGN$:</td><td class="manTd2" id="nwM9">$MODER_OPT_FL$</td></tr>
- <tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr><?endif?>
+	<?if($MODER_OPT_FL$)?><tr id="nwM7"><td class="manTd1" id="nwM8">$MODER_OPT_SIGN$:</td><td class="manTd2" id="nwM9">$MODER_OPT_FL$</td></tr>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr><?endif?>
 
- <?if($META_FIELDS_OLD$)?>$META_FIELDS_OLD$<?endif?>
+	<?if($META_FIELDS_OLD$)?>$META_FIELDS_OLD$<?endif?>
 
- <?if($CROSSPOST_FORM_OLD$)?>$CROSSPOST_FORM_OLD$<?endif?>
+	<?if($CROSSPOST_FORM_OLD$)?>$CROSSPOST_FORM_OLD$<?endif?>
 
- <?if($SECURE_FL$)?><tr id="nwM67"><td class="manTd1" id="nwM68">$SECURE_SIGN$:</td><td class="manTd2" id="nwM69">$SECURE_FL$</td></tr>
- <tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr><?endif?>
+	<?if($SECURE_FL$)?><tr id="nwM67"><td class="manTd1" id="nwM68">$SECURE_SIGN$:</td><td class="manTd2" id="nwM69">$SECURE_FL$</td></tr>
+	<tr><td height="10" class="manTdSep" colspan="2"><hr class="manHr" /></td></tr><?endif?>
 </table>
 
 <center>$SUBMIT_FL$
