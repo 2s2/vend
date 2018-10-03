@@ -22,34 +22,55 @@
 			<div class="content-block">
 				<div class="col-left">$GLOBAL_CLEFTER$</div> 
 				<div class="col-main">
-					<h1>$ENTRY_TITLE$&nbsp;$MODER_PANEL$</h1> 
-					<div class="eDetails1">
-					 <a href="$PROFILE_URL$">$USER$</a> | Дата: $ADD_DATE$ | Просмотров: $READS$ 
-					</div> 
-					<div class="eDetails2">
+					<h1>$ENTRY_TITLE$&nbsp;$MODER_PANEL$</h1>
+
+					<div class="details">
+						<?if($USER$)?>
+							<i class="far fa-user"></i> <a href="$PROFILE_URL$">$USER$</a></a>
+						<?endif?>
+						<ul class="details-list">
+							<li class="details-item"><i class="far fa-calendar"></i> $ADD_DATE$</li>
+							<li class="details-item"><i class="fas fa-eye"></i> $READS$</li>
+						</ul>
+					</div>
+					
 					<?if($IMG_URL1$)?><IMG align="left" hspace="5" border="0" width="150" src="$IMG_URL1$" title="$TITLE$"><?endif?>$MESSAGE$
-					<?if($SOURCE$)?><a href="$SOURCE$" target="_blank">Источник</a><?endif?>
-					</div><hr>
-					<div style="clear:both;"></div>
-					<b>Нашли ошибку или неточность?</b><br>
-					Выделите её мышью и нажмите Ctrl + Enter.<br>
-					<p><?if($TAGS$)?>$TAGS$<?endif?></p> 
 
-					 
-					<?if($USER_LOGGED_IN$)?><?else?><br>
-					<div class="alert_block" valign="center">Уважаемый посетитель, Вы находитесь в группе <b>Гости</b> и не можете оставлять комментарии. Пожалуйста, <a href="$REGISTER_LINK$">зарегистрируйтесь</a> либо <a href="$LOGIN_LINK$">войдите</a> на сайт под своим именем.</div><br><?endif?>
-					 
-					<?if($COM_IS_ACTIVE$)?>
-					<?if($COM_CAN_READ$)?>
-					<hr><div style="font-size:20px;"><?if($COM_NUM_ENTRIES$=0)?>Комментариев пока нет<?else?>Комментарии ($COM_NUM_ENTRIES$)<?endif?></div>
-					<p>$COM_BODY$</p>
-					<p align="center">$COM_PAGE_SELECTOR$</p>
-					<?endif?>
+					<?if($SOURCE$)?><a href="$SOURCE$" target="_blank">Источник</a><?endif?><hr>
 
-					<?if($COM_CAN_ADD$)?>
-					$COM_ADD_FORM$
-					<?endif?>
-					<?endif?> 
+					<div class="tags"><?if($TAGS$)?><i class="fas fa-tag"></i> $TAGS$<?endif?></div>
+
+					<div class="notice notice-info">
+						<strong>Нашли ошибку</strong> или неточность? Выделите её мышью и нажмите Ctrl + Enter.
+					</div>
+
+					<div class="article_comments">
+						<h3 class="article_comments-title">Комментарии <?if($COM_NUM_ENTRIES$>0)?>($COM_NUM_ENTRIES$)<?endif?></h3>
+
+						<?if($COM_IS_ACTIVE$)?>
+							<?if($COM_CAN_READ$)?>
+								<div class="article_comments-list">
+									<?if($COM_NUM_ENTRIES$=0)?>
+										Комментариев пока нет
+									<?else?>
+										<p>$COM_BODY$</p>
+										<p align="center">$COM_PAGE_SELECTOR$</p>
+									<?endif?>
+								</div>
+							<?endif?>
+
+							<?if($COM_CAN_ADD$)?>
+								<div class="article_comments-add_form">
+									<h3 class="article_comments-title">Написать комментарий</h3>
+									$COM_ADD_FORM$
+								</div>
+							<?else?>
+								<div class="notice notice-danger">
+									<strong>Уважаемый посетитель</strong>, Вы находитесь в группе <b>Гости</b> и не можете оставлять комментарии. Пожалуйста, <a href="$REGISTER_LINK$">зарегистрируйтесь</a> либо <a href="$LOGIN_LINK$">войдите</a> на сайт под своим логином.
+								</div>
+							<?endif?>
+						<?endif?>
+					</div>
 				</div> 
 			</div> 
 

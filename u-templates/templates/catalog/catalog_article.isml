@@ -31,7 +31,7 @@
 					<div class="eDetails2">
 					<?if($SCREEN_URL$)?><IMG align="left" hspace="5" border="0" src="$SCREEN_URL$" title="$TITLE$"><?endif?>$MESSAGE$
 					<hr><div style="font-size:20px;padding-bottom:10px;"><img align="absmiddle" width="32" src="/Images-new/Icos/Contacts.png" border="0" alt="" />Контактные данные</div>
-					<?if($SITE_URL$)?><b>Сайт:</b> <a href="$SITE_DIRECT_URL$" target="_blank">$SITE_DIRECT_URL$</a><br /><?endif?>
+					<?if($SITE_URL$)?><b>Сайт:</b> <a href="$SITE_URL$" target="_blank">$SITE_DIRECT_URL$</a><br /><?endif?>
 					<?if($AUTHOR_EMAIL$)?><b>E-mail: </b><a href="$AUTHOR_EMAIL_JS$" target="_blank">$AUTHOR_EMAIL$</a><br /><?endif?>
 					<?if($OTHER1$)?><b>Контактное лицо: </b>$OTHER1$<br /><?endif?>
 					<?if($OTHER2$)?><b>Телефоны: </b>$OTHER2$<br /><?endif?> 

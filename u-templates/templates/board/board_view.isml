@@ -16,6 +16,7 @@
 			<a href="$ENTRY_URL$">$TITLE$</a>$MODER_PANEL$
 		</h3>
 		<div class="listing_tile-text">
+			<?if($CUR_GROUP_ID$ = 4)?><div><a href="$CATEGORY_URL$">$CATEGORY_NAME$</a></div><?endif?>
 			$MESSAGE$
 		</div>
 		<div class="details">
