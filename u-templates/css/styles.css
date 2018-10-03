@@ -869,6 +869,10 @@ li.menus {
   text-align: center;
   padding-top: 10px; }
 
+.tags {
+  font-size: 12px;
+  margin-bottom: 20px; }
+
 .homepage-title {
   margin: 30px 0 50px;
   text-align: center; }
@@ -1194,6 +1198,9 @@ a.groupOther1, a.groupOther1:hover {
   margin-bottom: 70px; }
   .news_tile-img {
     margin-right: 20px; }
+
+.news_content .details {
+  margin-bottom: 20px; }
 
 /* News/Blog Archive Menu */
 .archLi {

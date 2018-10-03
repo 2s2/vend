@@ -2,7 +2,12 @@
 <head>
 
 <title>$ENTRY_NAME$ - $SITE_NAME$</title>
-<meta name="keywords" content="Вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг доска, доска объявлений, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
+<?if($OTHER2$)?><meta name="description" content="$OTHER2$$OTHER3$"><?endif?>
+<?if($OTHER4$)?>
+	<meta name="keywords" content="$OTHER4$"/>
+<?else?>
+	<meta name="keywords" content="вендинг, vending, кофейник, кофейный автомат, кофейный аппарат, вендинг новости, снек, снековый автомат, снековые, платёжный, терминал, кофе, ингредиенты, купить, продать, vendors.com.ua, $MODULE_NAME$"/> 
+<?endif?>
 <link type="text/css" rel="stylesheet" href="/_st/my.css" />
 <link rel="shortcut icon" href="http://vendors.com.ua/ico.png" >
 </head>
@@ -24,34 +29,58 @@
 					$GLOBAL_CLEFTER$
 				</div>
 				<div class="col-main">
-					<h2>$ENTRY_TITLE$&nbsp;$MODER_PANEL$</h2> 
-					<div class="eDetails1">
-					 <a href="$PROFILE_URL$">$USER$</a> | Дата: $ADD_DATE$ | Просмотров: $READS$ 
-					</div> 
-					<div style="padding-top:5px;">
-					<?if($SCREEN_URL$)?><IMG align="left" hspace="5" border="0" src="$SCREEN_URL$" title="$TITLE$"><?endif?>$MESSAGE$
-					<hr><?if($OTHER1$)?><span class="ExternalLink"><a href="$OTHER1$" target="_blank">Источник</a></span><?else?><b>Источник:</b> <a href="http://www.vendors.com.ua/" target="_blank">Вендинг-портал "Вендоры"</a><?endif?>
-					</div><hr>
-					<div style="clear:both;"></div>
-					<b>Нашли ошибку или неточность?</b><br>
-					Выделите её мышью и нажмите Ctrl + Enter.<br>
-					<p><?if($TAGS$)?>$TAGS$<?endif?></p> 
-					 
-					<?if($USER_LOGGED_IN$)?><?else?><br>
-					<div class="alert_block" valign="center">Уважаемый посетитель, Вы находитесь в группе <b>Гости</b> и не можете оставлять комментарии. Пожалуйста, <a href="$REGISTER_LINK$">зарегистрируйтесь</a> либо <a href="$LOGIN_LINK$">войдите</a> на сайт под своим именем.</div><br><?endif?>
-					 
-					<?if($COM_IS_ACTIVE$)?>
-					<?if($COM_CAN_READ$)?>
-					<hr><div style="font-size:20px;"><?if($COM_NUM_ENTRIES$=0)?>Комментариев пока нет<?else?>Комментарии ($COM_NUM_ENTRIES$)<?endif?></div>
-					<p>$COM_BODY$</p>
-					<p align="center">$COM_PAGE_SELECTOR$</p>
-					<?endif?>
+					<div class="news_content">
+						<h2>$ENTRY_TITLE$&nbsp;$MODER_PANEL$</h2> 
 
-					<?if($COM_CAN_ADD$)?>
-					$COM_ADD_FORM$
-					<?endif?>
-					<?endif?> 
-			 	</div> 
+						<div class="details">
+							<?if($USER$)?>
+								<i class="far fa-user"></i> <a href="$PROFILE_URL$">$USER$</a></a>
+							<?endif?>
+							<ul class="details-list">
+								<li class="details-item"><i class="far fa-calendar"></i> $ADD_DATE$</li>
+								<li class="details-item"><i class="fas fa-eye"></i> $READS$</li>
+							</ul>
+						</div>
+
+						<?if($SCREEN_URL$)?><IMG align="left" hspace="5" border="0" src="$SCREEN_URL$" title="$TITLE$"><?endif?>$MESSAGE$
+
+						<?if($OTHER1$)?><a href="$OTHER1$" target="_blank">Источник</a><?else?><b>Источник:</b> <a href="/" target="_blank">Вендинг-портал "Вендоры"</a><?endif?><hr>
+
+						<div class="tags"><?if($TAGS$)?><i class="fas fa-tag"></i> $TAGS$<?endif?></div> 
+
+						<div class="notice notice-info">
+							<strong>Нашли ошибку</strong> или неточность? Выделите её мышью и нажмите Ctrl + Enter.
+						</div>
+						 
+						<div class="article_comments">
+							<h3 class="article_comments-title">Комментарии <?if($COM_NUM_ENTRIES$>0)?>($COM_NUM_ENTRIES$)<?endif?></h3>
+
+							<?if($COM_IS_ACTIVE$)?>
+								<?if($COM_CAN_READ$)?>
+									<div class="article_comments-list">
+										<?if($COM_NUM_ENTRIES$=0)?>
+											Комментариев пока нет
+										<?else?>
+											<p>$COM_BODY$</p>
+											<p align="center">$COM_PAGE_SELECTOR$</p>
+										<?endif?>
+									</div>
+								<?endif?>
+
+								<?if($COM_CAN_ADD$)?>
+									<div class="article_comments-add_form">
+										<h3 class="article_comments-title">Написать комментарий</h3>
+										$COM_ADD_FORM$
+									</div>
+								<?else?>
+									<div class="notice notice-danger">
+										<strong>Уважаемый посетитель</strong>, Вы находитесь в группе <b>Гости</b> и не можете оставлять комментарии. Пожалуйста, <a href="$REGISTER_LINK$">зарегистрируйтесь</a> либо <a href="$LOGIN_LINK$">войдите</a> на сайт под своим логином.
+									</div>
+								<?endif?>
+							<?endif?>
+						</div>
+					</div>
+			 	</div>
 			</div> 
 		 
 		</section>
